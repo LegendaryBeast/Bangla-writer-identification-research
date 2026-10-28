@@ -1,0 +1,24 @@
+{
+  "fractions": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "dims": {
+    "hc183": 183,
+    "stroke": 208,
+    "stroke_cnn": 512,
+    "resnet18": 512,
+    "efficientnet_b0": 1280,
+    "vit_b_16": 768,
+    "global_intensity": 7
+  },
+  "device": "mps",
+  "python": "3.13.9",
+  "torch": "2.14.0",
+  "torchvision": "0.29.0",
+  "n_units": 5040,
+  "n_invalid": 39,
+  "seconds": 2570
+}

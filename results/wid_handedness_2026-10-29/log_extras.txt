@@ -1,0 +1,35 @@
+  evidence hand 0 (2s)
+  evidence pseudo 0 (27s)
+  evidence pseudo 1 (52s)
+  evidence pseudo 2 (77s)
+  evidence pseudo 3 (101s)
+  evidence pseudo 4 (125s)
+  evidence pseudo 5 (148s)
+  evidence pseudo 6 (174s)
+  evidence pseudo 7 (202s)
+  evidence pseudo 8 (230s)
+  evidence pseudo 9 (256s)
+  evidence pseudo 10 (285s)
+  evidence pseudo 11 (319s)
+  evidence pseudo 12 (354s)
+  evidence pseudo 13 (385s)
+  evidence pseudo 14 (415s)
+  evidence pseudo 15 (444s)
+  evidence pseudo 16 (473s)
+  evidence pseudo 17 (502s)
+  evidence pseudo 18 (530s)
+  evidence pseudo 19 (559s)
+  stroke done (587s)
+  hc183 done (614s)
+  resnet18 done (641s)
+  efficientnet_b0 done (669s)
+  vit_b_16 done (694s)
+  stroke_cnn done (717s)
+part                         own  shared
+label  regime                           
+hand   enrolment-trained   0.773   0.789
+       writer-independent  0.650   0.659
+pseudo enrolment-trained   0.624   0.650
+       writer-independent  0.330   0.318
+filter law {'r': 0.9955673076754235, 'mae': 0.014823380969507227, 'bias': -0.009374850766554099, 'n_points': 456}
+done in 12.0 min
