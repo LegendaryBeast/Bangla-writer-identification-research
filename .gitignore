@@ -1,31 +1,22 @@
-# Data are distributed through Mendeley Data (doi:10.17632/n4sjstdzfy.1); camera originals are not released
+# BanglaHand is distributed through Mendeley Data (doi:10.17632/n4sjstdzfy.1); download it into dataset/
 dataset/
-camera_originals/
-# Generated packages, manuscripts under review, internal notes
-release/
-manuscripts/
-results/*/protocol/
-results/*/logs/
-results/*/FINDINGS.md
-audit/review_sheets/
-# OS / Python / Jupyter / LaTeX
+# Upload-ready archives are built from the tracked files (see zenodo/README.md)
+zenodo/*.zip
+# 60 MB unit features and 65 MB per-query ranks; regenerate with code/wid_features.py and code/run_wid_handedness.py,
+# or take them from the Zenodo archive
+results/*/features/unit_features.npz
+results/*/id_ranks.csv.gz
+# OS / Python / LaTeX
 .DS_Store
 ._*
 __pycache__/
 *.py[cod]
-.pytest_cache/
-.benchmarks/
-.ipynb_checkpoints/
 .venv/
 *.aux
 *.log
 *.out
 *.spl
 *.blg
-# Journal submission proofs and other local PDFs at the root
-/*.pdf
-# 59 MB fine-tuned features (scripts/run_finetuned_grey_cnn.py output); regenerate with step 7c of REPRODUCIBILITY.md
-results/*/finetune_grey_embeddings.npz
-# 60 MB unit features and 65 MB per-query ranks of the writer identification study; regenerate with scripts/wid/wid_features.py and run_wid_handedness.py
-results/*/features/unit_features.npz
-results/*/id_ranks.csv.gz
+*.fls
+*.fdb_latexmk
+*.synctex.gz

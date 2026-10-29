@@ -1,47 +1,63 @@
-# BanglaHand: handedness identification from Bangla handwriting
+# Soft biometrics for writer identification: a utility law from Bangla handedness
 
-Code and saved results for the study of writer-independent handedness identification on **BanglaHand**, a balanced dataset of handwritten Bangla paragraphs from 42 writers (21 left-handed, 21 right-handed).
+Code and results of the paper *Soft Biometrics for Writer Identification: A Utility Law from Bangla Handedness*.
 
-- **Dataset:** BanglaHand, Mendeley Data, V1, doi:[10.17632/n4sjstdzfy.1](https://doi.org/10.17632/n4sjstdzfy.1) (CC BY 4.0). It is described in the data article *BanglaHand: A Dataset of Handwritten Paragraphs for Writer-Independent Handedness Recognition* (Data in Brief, submitted).
-- **Research article:** *Writer-independent handedness identification from offline Bangla handwriting under controlled acquisition* (Pattern Recognition Letters, submitted).
+The study identifies the 42 writers of the BanglaHand dataset from Bangla paragraphs and horizontal strips of them, with six
+representations in 120 settings, and fuses handedness evidence from a model that never saw the queried writer. Known
+handedness raises top-1 accuracy by 6.0 points; handedness predicted from the handwriting (65.5% accurate) does not help.
+A utility law, top-1 with filtering = handedness accuracy x top-1 with known handedness, predicts the filter results
+(r = 0.996), and a random-label control shows that attribute accuracies obtained on enrolled writers mainly measure
+writer recognition.
 
-The images are **not** stored in this repository. Download them from Mendeley Data, unzip, and rename the folder to `dataset/` in the repository root.
+## Contents
 
-## Repository layout
+| Path | Content |
+|---|---|
+| `code/` | All code used in the paper (see below) |
+| `results/wid_handedness_2026-10-29/` | All outputs of the reported run; see its `README.md` |
+| `dataset/` | BanglaHand images and metadata (input; download separately, see below) |
+| `paper/` | Manuscript sources (Elsevier and IEEE versions), bibliography, figures and tables |
+| `submission/` | Anonymised conference submission (PDF and LaTeX source) |
+| `zenodo/` | Upload-ready archive of code and results, with its metadata |
 
-```
-├── README.md, REPRODUCIBILITY.md, requirements.txt, LICENSE, CITATION.cff
-├── scripts/                     analysis pipeline (see REPRODUCIBILITY.md)
-│   └── dataset_build/           record of how the released images were prepared from the camera originals
-├── tests/                       regression tests (pytest)
-├── notebooks/                   Kaggle notebooks: dataset check, full pipeline on a T4 GPU
-├── audit/                       dataset validation: SIFT-RANSAC duplicate screen, integrity table, fix log
-└── results/final42_2026-10-19/  the run reported in the papers: features, predictions, permutation nulls, summaries
-```
+## Data
 
-## Quick start
+The study uses the BanglaHand dataset (336 paragraph photographs, 42 writers, 21 left-handed), available at Mendeley Data,
+doi:[10.17632/n4sjstdzfy.1](https://doi.org/10.17632/n4sjstdzfy.1), under a CC BY 4.0 licence. Download it and place it so
+that `dataset/metadata/images.csv` and the `Left-Handed/` and `Right-Handed/` folders sit in `dataset/`. The dataset is
+not redistributed here.
+
+## Code
+
+| Script | Purpose |
+|---|---|
+| `code/hc183.py` | HC-183 ink mask and gradient descriptor |
+| `code/stroke_features.py` | Writing-only STROKE features and binary ink tiles |
+| `code/wid_features.py` | Features of paragraphs and of 2, 4 and 8 horizontal strips (six representations) |
+| `code/run_wid_handedness.py` | Leave-one-writer-out handedness evidence, identification in 120 settings, fusion, statistics, break-even simulation, prevalence |
+| `code/run_both_control.py` | Random-label and random-direction controls for the scenario with both hands predicted |
+| `code/run_wid_extras.py` | Leakage control (enrolment-trained vs writer-independent, random labels), confidence gating, filter law |
+| `code/make_wid_paper.py` | All figures, tables and the macros file with every number quoted in the paper |
+
+## Reproduction
 
 ```bash
 python -m pip install -r requirements.txt
-python -m pytest -q tests
+python code/wid_features.py --dataset dataset --output results/wid_handedness_2026-10-29/features
+python code/run_wid_handedness.py --features results/wid_handedness_2026-10-29/features --output results/wid_handedness_2026-10-29
+python code/run_both_control.py --features results/wid_handedness_2026-10-29/features --run results/wid_handedness_2026-10-29
+python code/run_wid_extras.py --features results/wid_handedness_2026-10-29/features --run results/wid_handedness_2026-10-29
+python code/make_wid_paper.py
 ```
 
-The saved results in `results/final42_2026-10-19/` contain every number reported in the papers. To regenerate them from the images, follow `REPRODUCIBILITY.md`. It lists every command with its outputs and run time; the full pipeline takes about 4–5 hours on an 8-core laptop.
+Run times of the reported run on an Apple M-series laptop: features 43 min (MPS), main analysis 9 min, controls 23 min,
+extras 12 min. `--quick` runs every analysis with few permutations and draws as a functional test. All seeds are fixed;
+the classical analyses reproduce exactly for the same library versions, while CNN and ViT embeddings computed on other
+hardware can differ in the last digits.
 
-## Main components
-
-- **Evaluation protocol:** writer-independent, stratified five-fold cross-validation over writers (20 repetitions), whole-writer permutation tests, writer-bootstrap intervals, acquisition controls and adjustments.
-- **Representations:** HC-183 ink-gradient descriptor; STROKE, 208 writing-only stroke features from binary, size-normalised outlines; frozen ResNet-18, EfficientNet-B0 and ViT-B/16; stroke-tile CNNs.
-- **Diagnostics:** mirror test, capture-time analysis, pseudo-pressure measures, leakage pitfalls (writer identification, image-level splits).
-
-## Citation
-
-Please cite the dataset and the articles; see `CITATION.cff`.
+The figures and tables in `paper/figures/` are written by `code/make_wid_paper.py`; every number in the manuscripts is a
+macro from `paper/figures/wid_macros.tex`.
 
 ## Licence
 
-Code: MIT (see `LICENSE`). Data: CC BY 4.0, distributed through Mendeley Data.
-
-## Authors
-
-Tanzim Hasan Prappo (corresponding, tanzimh46@gmail.com), Sayeed Hassan, Sayem Ali, Sukhendra Nath Dhar, M. Shahidur Rahman. Department of Computer Science and Engineering, Shahjalal University of Science and Technology, Sylhet, Bangladesh.
+Code: MIT (`LICENSE`). Results: CC BY 4.0. BanglaHand dataset: CC BY 4.0 (Mendeley Data).

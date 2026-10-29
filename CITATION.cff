@@ -1,24 +1,37 @@
 cff-version: 1.2.0
-message: "If you use this code, please cite the dataset and the articles below."
-title: "BanglaHand: code for writer-independent handedness identification from Bangla handwriting"
+message: "If you use this code or these results, please cite the paper and the BanglaHand dataset."
+title: "Soft Biometrics for Writer Identification: A Utility Law from Bangla Handedness (code and results)"
 type: software
+version: "1.0.0"
+date-released: "2026-10-29"
 license: MIT
-repository-code: "https://github.com/LegendaryBeast/banglahand-handedness-"
 authors:
   - family-names: Prappo
     given-names: Tanzim Hasan
-    email: tanzimh46@gmail.com
+    affiliation: "Department of Computer Science and Engineering, Shahjalal University of Science and Technology"
   - family-names: Hassan
     given-names: Sayeed
+    affiliation: "Department of Computer Science and Engineering, Shahjalal University of Science and Technology"
   - family-names: Ali
     given-names: Sayem
+    affiliation: "Department of Computer Science and Engineering, Shahjalal University of Science and Technology"
   - family-names: Dhar
     given-names: Sukhendra Nath
+    affiliation: "Department of Computer Science and Engineering, Shahjalal University of Science and Technology"
   - family-names: Rahman
     given-names: M. Shahidur
+    affiliation: "Department of Computer Science and Engineering, Shahjalal University of Science and Technology"
+keywords:
+  - writer identification
+  - soft biometrics
+  - handedness
+  - Bangla handwriting
+  - score fusion
+  - data leakage
 references:
   - type: dataset
     title: "BanglaHand"
+    doi: "10.17632/n4sjstdzfy.1"
     authors:
       - family-names: Prappo
         given-names: Tanzim Hasan
@@ -30,8 +43,4 @@ references:
         given-names: Sukhendra Nath
       - family-names: Rahman
         given-names: M. Shahidur
-    publisher:
-      name: Mendeley Data
-    version: "1"
     year: 2026
-    doi: 10.17632/n4sjstdzfy.1
