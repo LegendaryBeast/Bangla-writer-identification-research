@@ -1,0 +1,10 @@
+{
+  "version": "1.6.0",
+  "settings": 120,
+  "writers": 42,
+  "reference_configuration_rows": 1152,
+  "dataset_photographs_included": false,
+  "frozen_features_included": true,
+  "primary_manuscript_included": false,
+  "scientific_input_hashes_preserved": true
+}

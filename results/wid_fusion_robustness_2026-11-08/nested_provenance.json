@@ -1,0 +1,43 @@
+{
+  "parameters": {
+    "source": "results/wid_handedness_2026-10-29",
+    "revision": "results/wid_revision_2026-11-08",
+    "out": "results/wid_fusion_robustness_2026-11-08",
+    "jobs": 3
+  },
+  "seconds": 112.55355191230774,
+  "lambda_grid": [
+    0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.5,
+    0.7,
+    1.0,
+    1.5,
+    2.0,
+    3.0,
+    5.0
+  ],
+  "tie_rule": "lowest lambda among exact development NLL ties",
+  "temperature": "Fixed at the same ID-only temperature used by fixed fusion; outer query writer excluded from temperature loss.",
+  "nested_training": "Outer query writer excluded from all development attribute fits/calibrators; five development writer folds, with additional five-fold writer-group calibration inside each model training set.",
+  "gallery": "42 known gallery hands and reference templates, including the outer writer, remain available candidate metadata throughout.",
+  "primary_family": "Holm across eight exploratory comparisons: four designated settings, nested vs none and nested vs fixed.",
+  "uncertainty": "10000 hand-stratified writer bootstrap and 9999 sign flips; fixed gallery and fitted nested predictions; no new-dataset or full-refitting bootstrap uncertainty.",
+  "inference_seed": 20261110,
+  "fold_seed": 2031,
+  "python": "3.13.9",
+  "numpy": "2.3.5",
+  "pandas": "2.3.2",
+  "scipy": "1.16.3",
+  "sklearn": "1.7.2",
+  "input_sha256": {
+    "results/wid_handedness_2026-10-29/features/units.csv": "5e47aa2a033ffc94de6a995151e0c7cf204e2cf148f6918eb7faae66ed0bafc8",
+    "results/wid_handedness_2026-10-29/features/unit_features.npz": "efe7c0b3cc9f40eefebbcc2fc0a24c5a5353769d414222c722bb5ddca25bf355",
+    "results/wid_handedness_2026-10-29/handedness_lowo.csv.gz": "ad922408b2138cc1759c9f4b38dc6ff53b90436ad7bf779eae9b4d3085ec0396",
+    "code/run_nested_fusion.py": "ed3bf4daa13da870a492fa3b4fb28fce51849c8c808330d440d4a3fde515ef6d",
+    "code/revised_protocol.py": "18c6e99dcb434f0d4424db0226c52b0431fec23e29a1095e10088396bc525a66",
+    "code/run_wid_handedness.py": "a8c78865b5da672ce14faea0fb0101351f4ec46f0aea8cd7b75f1646ccb76fc0"
+  }
+}

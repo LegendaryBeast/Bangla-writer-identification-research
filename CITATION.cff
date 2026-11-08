@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite the paper and the BanglaHand dataset."
+title: "Handedness for Bangla writer identification: Oracle gains and predicted-attribute utility (code and results)"
+type: software
+version: "1.6.0"
+date-released: "2026-11-08"
+license: MIT
+authors:
+  - family-names: Prappo
+    given-names: Tanzim Hasan
+    affiliation: "Department of Computer Science and Engineering, Shahjalal University of Science and Technology"
+  - family-names: Rahman
+    given-names: M. Shahidur
+    affiliation: "Department of Computer Science and Engineering, Shahjalal University of Science and Technology"
+keywords:
+  - writer identification
+  - soft biometrics
+  - handedness
+  - Bangla handwriting
+  - score fusion
+  - evaluation protocol
+references:
+  - type: dataset
+    title: "BanglaHand"
+    doi: "10.17632/n4sjstdzfy.1"
+    authors:
+      - family-names: Prappo
+        given-names: Tanzim Hasan
+      - family-names: Hassan
+        given-names: Sayeed
+      - family-names: Ali
+        given-names: Sayem
+      - family-names: Dhar
+        given-names: Sukhendra Nath
+      - family-names: Rahman
+        given-names: M. Shahidur
+    year: 2026
+url: "https://github.com/LegendaryBeast/Bangla-writer-identification-research"

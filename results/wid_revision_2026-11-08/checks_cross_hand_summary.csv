@@ -1,0 +1,7 @@
+rep,cross_hand_share,ci_lo,ci_hi,uniform_wrong_writer_reference,interpretation
+efficientnet_b0,0.47399529096171455,0.41801497774614044,0.5335343276214238,0.5121951219512195,Proximity to this reference does not establish independence.
+hc183,0.4234561170241955,0.3645531965874207,0.48750100394776547,0.5121951219512195,Proximity to this reference does not establish independence.
+resnet18,0.43770428561142355,0.3893413656330706,0.48446586397144914,0.5121951219512195,Proximity to this reference does not establish independence.
+stroke,0.554181322482248,0.43614627303208153,0.6595589840290583,0.5121951219512195,Proximity to this reference does not establish independence.
+stroke_cnn,0.5244237985360666,0.47982790418681726,0.5709293878323796,0.5121951219512195,Proximity to this reference does not establish independence.
+vit_b_16,0.4465989174650197,0.3836454022464944,0.5099640205066909,0.5121951219512195,Proximity to this reference does not establish independence.

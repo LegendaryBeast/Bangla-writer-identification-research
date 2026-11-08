@@ -1,0 +1,22 @@
+{
+  "status": "pass",
+  "comparators_match_main": [
+    {
+      "method": "none",
+      "rows": 5040,
+      "max_top1_difference": 1.1102230246251565e-16
+    },
+    {
+      "method": "fixed",
+      "rows": 5040,
+      "max_top1_difference": 1.1102230246251565e-16
+    }
+  ],
+  "excluded_outer_query_targets_invariance": true,
+  "two_hand_nll_max_error": 7.105427357601002e-15,
+  "outer_attribute_exclusion_manifests": 840,
+  "settings": 120,
+  "writer_outcomes": 15120,
+  "parameters": 5040,
+  "selected_dev_nll_no_worse_than_lambda0_or1": true
+}

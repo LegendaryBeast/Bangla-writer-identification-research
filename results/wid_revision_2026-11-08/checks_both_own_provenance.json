@@ -1,0 +1,14 @@
+{
+  "seed": 20261108,
+  "bootstrap": 10000,
+  "permutations": 9999,
+  "scope": "Own-text only: 96 settings; paragraphs 7--8 never enter shared-paragraph auxiliary model training.",
+  "inference": "Post-review exploratory paired writer bootstrap/sign flips, stratified by true hand and conditional on fitted evidence, enrolled gallery and realized control families.",
+  "remaining_dependency": "Gallery writer-cross-fitted descriptor models can train on the queried writer's shared enrollment pages; this is enrolment-conditioned descriptor agreement, not globally unseen-query-writer training.",
+  "control_fraction": "p_control_ge_hand is a finite-draw empirical exceedance fraction against designed control families, not an exchangeable permutation-test p-value for handedness itself.",
+  "input_sha256": {
+    "code/summarize_revision_checks.py": "20d8f5077c53091c8dbcaf0ec2a415b90fa3324acd103dd94a710df8ea09df9c",
+    "results/wid_revision_2026-11-08/checks_identification_writer.csv": "de11a126018ce6562f377bc685b1f21b329d6ef34b06fd954a5e4f3b595b9483",
+    "results/wid_revision_2026-11-08/checks_both_control_writer.csv.gz": "5998a82fdcb770c3004b2f8e699e478353ca5d516cc73994298b7b7762345a76"
+  }
+}

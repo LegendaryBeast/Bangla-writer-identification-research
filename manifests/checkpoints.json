@@ -1,0 +1,27 @@
+{
+  "torch": "2.14.0",
+  "torchvision": "0.29.0",
+  "weights": [
+    {
+      "representation": "ResNet-18; Stroke-CNN",
+      "dimension": 512,
+      "weight_enum": "ResNet18_Weights.IMAGENET1K_V1",
+      "url": "https://download.pytorch.org/models/resnet18-f37072fd.pth",
+      "sha256_prefix": "f37072fd"
+    },
+    {
+      "representation": "EfficientNet-B0",
+      "dimension": 1280,
+      "weight_enum": "EfficientNet_B0_Weights.IMAGENET1K_V1",
+      "url": "https://download.pytorch.org/models/efficientnet_b0_rwightman-7f5810bc.pth",
+      "sha256_prefix": "7f5810bc"
+    },
+    {
+      "representation": "ViT-B/16",
+      "dimension": 768,
+      "weight_enum": "ViT_B_16_Weights.IMAGENET1K_V1",
+      "url": "https://download.pytorch.org/models/vit_b_16-c867db91.pth",
+      "sha256_prefix": "c867db91"
+    }
+  ]
+}

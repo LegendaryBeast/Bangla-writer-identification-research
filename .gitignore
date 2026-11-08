@@ -1,0 +1,16 @@
+dataset/
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+*.aux
+*.log
+*.out
+*.spl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bak
+_reproduction_logs/
+*.zip

@@ -1,0 +1,17 @@
+{
+  "seed": 20261109,
+  "n_sim": 200,
+  "n_draws": 1000,
+  "quick": false,
+  "gaussian": "z|h ~ Normal((2h-1)d/2,1); ell=d*z; d=2*Phi^-1(a)",
+  "query_noise": "one draw per unique query unit, reused across reference configurations, k, and representations",
+  "endpoint_half": "ell=0; score fusion exactly baseline; fair random hand for filtering",
+  "endpoint_one": "both fusion and filtering exactly oracle, explicit limiting value",
+  "weights": "configuration mean per unit, unit mean per writer, equal writer mean",
+  "prevalence_scaler": "selected reference paragraphs of selected reduced-gallery writers only",
+  "prevalence_temperature": "frozen full-42-cohort ID-only calibration for the cell, scored query writer excluded",
+  "prevalence_attribute": "original writer-held-out HC183 logodds; approximate balanced source-prior evidence retained unchanged",
+  "prevalence_prior_filter": "add log(m/21) to evidence only for filter_prior; score fusion unchanged",
+  "inference": "Monte Carlo variability conditional on observed cohort and fixed fitted models; no new-population validation",
+  "seconds": 139.24
+}
