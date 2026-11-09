@@ -9,7 +9,8 @@ identity without carrying handedness. The same fusion is repeated with handednes
   pseudo_scaled  the same pseudo-label scores, scaled to the spread of the real log-odds (calibration shrinks
              uninformative scores towards 0, which alone would remove their effect);
   random     a random direction of the standardised HC-183 features, scaled to the spread of the real log-odds.
-If the handedness gain lies within the distribution of these controls, it reflects identity, not handedness.
+Similar control performance shows that descriptor agreement can use writer-associated structure.
+It does not causally attribute the handedness gain or prove leakage in a writer-disjoint primary experiment.
 """
 import argparse
 import json

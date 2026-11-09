@@ -1,0 +1,25 @@
+{
+  "source": "/Users/tanzimhasanprappo/Desktop/Writer-Identifications/results/wid_handedness_2026-10-29",
+  "output": "/Users/tanzimhasanprappo/Desktop/Writer-Identifications/results/wid_revision_2026-11-08",
+  "python": "3.13.9",
+  "seed": 20261108,
+  "n_perm": 9999,
+  "n_boot": 10000,
+  "quick": false,
+  "settings": 120,
+  "standardization": "selected whole reference paragraphs only, fitted separately per configuration",
+  "temperature": "ID-only NLL, equal query-writer means, scored writer excluded",
+  "estimand": "configuration mean per unit, then unit mean per writer, then equal mean over 42 writers",
+  "uncertainty": "conditional on fixed fitted evidence, observed references and writer cohort; no model refitting",
+  "designated_tests": "four retrospective comparisons; original paragraph feasibility cells previously inspected",
+  "ties": "fixed lexical gallery-writer order",
+  "hand_model_training": "unchanged nested held-writer-out SVM and grouped Platt calibration",
+  "sha256": {
+    "results/wid_handedness_2026-10-29/features/units.csv": "5e47aa2a033ffc94de6a995151e0c7cf204e2cf148f6918eb7faae66ed0bafc8",
+    "results/wid_handedness_2026-10-29/features/unit_features.npz": "efe7c0b3cc9f40eefebbcc2fc0a24c5a5353769d414222c722bb5ddca25bf355",
+    "results/wid_handedness_2026-10-29/handedness_lowo.csv.gz": "ad922408b2138cc1759c9f4b38dc6ff53b90436ad7bf779eae9b4d3085ec0396",
+    "/Users/tanzimhasanprappo/Desktop/Writer-Identifications/code/run_revised_identification.py": "29130207ee18be547708f5231ef72955cd5ae76cb39de678955a5eb09cf7edbc",
+    "/Users/tanzimhasanprappo/Desktop/Writer-Identifications/code/revised_protocol.py": "18c6e99dcb434f0d4424db0226c52b0431fec23e29a1095e10088396bc525a66"
+  },
+  "seconds": 38.38
+}

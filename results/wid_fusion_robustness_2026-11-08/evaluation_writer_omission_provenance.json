@@ -1,0 +1,11 @@
+{
+  "bootstrap_seed": 20261109,
+  "n_bootstrap": 10000,
+  "nested_included": true,
+  "omission": "Omit a writer only from evaluation averaging, keeping gallery, fitted models and predictions fixed; give each hand .5 weight among remaining writers.",
+  "inference": "Exploratory influence/sensitivity diagnostic, not leave-one-writer-out model refitting or independent validation; no writer is excluded from reported main results.",
+  "source_sha256": {
+    "results/wid_fusion_robustness_2026-11-08/fixed_seed_writer_outcomes.csv": "99a53f4ab7c7b40ddc10f76821f9326a7c9509b62bf713fe1cc178f653d9cdf9",
+    "results/wid_fusion_robustness_2026-11-08/nested_writer_outcomes.csv": "5441281c2c8059a37718958d34f318d0fcd2c729b8ec8afc3622fda275ae25ce"
+  }
+}

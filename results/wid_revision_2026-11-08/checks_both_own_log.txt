@@ -1,0 +1,6 @@
+               scope              contrast  estimate    ci_lo    ci_hi  p_signflip
+own_text_96_settings both_bayes_minus_none  0.010825 0.005044 0.017165      0.0011
+      control  instances  hand_mean_gain  control_mean_gain  control_q025  control_q975  p_control_ge_hand  estimate    ci_lo    ci_hi  p_signflip
+       pseudo         20        0.010825           0.000904      0.000117      0.003949           0.047619  0.009920 0.004183 0.016228      0.0019
+pseudo_scaled         20        0.010825           0.003921      0.000468      0.009181           0.047619  0.006903 0.001356 0.013004      0.0392
+       random        100        0.010825           0.001981     -0.002257      0.006922           0.009901  0.008844 0.003262 0.015074      0.0060

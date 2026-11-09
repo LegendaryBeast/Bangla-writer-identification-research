@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "total_images": 12825,
+  "binary_hand_writers": 471,
+  "left": 48,
+  "right": 423,
+  "sessions": [
+    {
+      "session": 1,
+      "writers_matched": 475,
+      "images_per_writer": 9,
+      "all_survey_ids_match": true
+    },
+    {
+      "session": 2,
+      "writers_matched": 475,
+      "images_per_writer": 9,
+      "all_survey_ids_match": true
+    },
+    {
+      "session": 3,
+      "writers_matched": 475,
+      "images_per_writer": 9,
+      "all_survey_ids_match": true
+    }
+  ],
+  "checks": "ZIP central directory matched against official survey writer IDs; image pixels and feature validity not yet checked."
+}

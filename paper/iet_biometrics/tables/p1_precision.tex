@@ -1,0 +1,29 @@
+\begin{table}[ht]
+\caption{Post hoc precision of the primary fusion contrasts. $\Delta^*$ is the smallest symmetric margin for which the 90\% conditional writer-bootstrap interval lies inside $(-\Delta^*,\Delta^*)$, i.e.\ two one-sided tests at $\alpha=.05$. MDE$_{80}$ is the minimum detectable effect at 80\% power, $2.80\times$ the bootstrap standard error. The last column is the 90\% upper bound as a share of the known-hand gain in the same setting. All values are percentage points except the share. ``None changed marks a contrast in which no writer decision changed, so the interval is degenerate.}\label{tab:precision}
+\centering\footnotesize\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{llrrrrrr}\toprule
+Setting & Fusion & Change & 90\% CI & $\Delta^*$ & MDE$_{80}$ & Known gain & Upper/known\\\midrule
+\multicolumn{8}{l}{\emph{BanglaHand, 42 writers}}\\
+ResNet-18, paragraph, $k=1$ & Fixed & -0.79 & [-3.37, +1.39] & 3.37 & 4.03 & +4.96 & 28\% \\
+ResNet-18, paragraph, $k=1$ & Nested & -0.20 & [-1.79, +1.39] & 1.79 & 2.66 & +4.96 & 28\% \\
+ResNet-18, quarter, $k=6$ & Fixed & -1.49 & [-3.57, +0.60] & 3.57 & 3.56 & +4.21 & 14\% \\
+ResNet-18, quarter, $k=6$ & Nested & -0.89 & [-2.38, +0.60] & 2.38 & 2.47 & +4.21 & 14\% \\
+ViT-B/16, paragraph, $k=1$ & Fixed & +0.20 & [-2.18, +2.38] & 2.38 & 3.84 & +5.75 & 41\% \\
+ViT-B/16, paragraph, $k=1$ & Nested & +1.19 & [-0.20, +2.58] & 2.58 & 2.32 & +5.75 & 45\% \\
+ViT-B/16, quarter, $k=6$ & Fixed & -0.30 & [-2.98, +2.38] & 2.98 & 4.45 & +8.80 & 27\% \\
+ViT-B/16, quarter, $k=6$ & Nested & -0.30 & [-2.38, +1.49] & 2.38 & 3.46 & +8.80 & 17\% \\
+All 120 settings & Fixed & -0.57 & [-2.00, +0.70] & 2.00 & 2.31 & +6.11 & 12\% \\
+All 120 settings & Nested & -0.08 & [-0.96, +0.67] & 0.96 & 1.39 & +6.11 & 11\% \\
+\midrule
+\multicolumn{8}{l}{\emph{CSAFE, 96 writers, session 2}}\\
+ResNet-18, same prompt & Fixed & +1.04 & [-3.12, +5.21] & 5.21 & 7.63 & +7.29 & 71\% \\
+ResNet-18, same prompt & Nested & +1.04 & [-3.12, +5.21] & 5.21 & 7.70 & +7.29 & 71\% \\
+ViT-B/16, same prompt & Fixed & -2.08 & [-5.21, +1.04] & 5.21 & 5.83 & +3.12 & 33\% \\
+ViT-B/16, same prompt & Nested & -2.08 & [-5.21, +1.04] & 5.21 & 5.79 & +3.12 & 33\% \\
+ResNet-18, different prompt & Fixed & -5.21 & [-9.38, -2.08] & 9.38 & 6.34 & +6.25 & 0\% \\
+ResNet-18, different prompt & Nested & +0.00 & [+0.00, +0.00] & none changed & -- & +6.25 & -- \\
+ViT-B/16, different prompt & Fixed & -1.04 & [-3.12, +0.00] & 3.12 & 2.87 & +6.25 & 0\% \\
+ViT-B/16, different prompt & Nested & -1.04 & [-3.12, +0.00] & 3.12 & 2.91 & +6.25 & 0\% \\
+\bottomrule
+\end{tabular}
+\end{table}

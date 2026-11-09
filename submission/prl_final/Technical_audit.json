@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "version": "1.6.0",
+  "main_pages": 7,
+  "supplement_pages": 14,
+  "abstract_words": 178,
+  "explicit_numeric_claim_checks": 29,
+  "graphical_abstract_values_checked": 5,
+  "printed_table_cells_checked": 812,
+  "scientific_and_document_checks": 15402,
+  "additional_scientific_checks": 5259,
+  "bibliography_entries": 23,
+  "extra_experiments_run": false,
+  "extra_datasets_added": false,
+  "author_history": "Confirmed by user: no history for this manuscript; distinct companion disclosed.",
+  "coauthor_approval": "not recorded",
+  "signature": "blank; to be completed by author",
+  "data_link": "https://data.mendeley.com/datasets/n4sjstdzfy/1",
+  "companion_link": "https://ssrn.com/abstract=7662278",
+  "guide": "https://www.sciencedirect.com/journal/pattern-recognition-letters/publish/guide-for-authors",
+  "guide_checked": "8 November 2026 via browser; graphical abstract required, >=1328 pixels wide; separate file.",
+  "scope": "Numerical consistency, metadata, package integrity and document readiness; author approvals are not certified."
+}

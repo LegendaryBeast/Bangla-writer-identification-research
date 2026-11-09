@@ -1,0 +1,16 @@
+\begin{table}[ht]
+\caption{CSAFE session-2 results split by query hand in the balanced 96-writer gallery (48 writers per hand; one writer is 2.08 points). Changes are percentage points from identity-only ranking with the primary HC-183 predictor; recall is the handedness accuracy for that hand. Descriptive only.}\label{tab:csafebyhand}
+\centering\footnotesize\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lllrrrrrr}\toprule
+Prompt & ID features & Query hand & Identity, \% & Known & Fixed & Nested & Filter & Recall, \%\\\midrule
+Same & ResNet-18 & right & 56.25 & +12.50 & +4.17 & +4.17 & -14.58 & 62.5 \\
+Same & ResNet-18 & left & 66.67 & +2.08 & -2.08 & -2.08 & -20.83 & 72.9 \\
+Same & ViT-B/16 & right & 62.50 & +4.17 & -2.08 & -2.08 & -25.00 & 62.5 \\
+Same & ViT-B/16 & left & 66.67 & +2.08 & -2.08 & -2.08 & -25.00 & 72.9 \\
+Different & ResNet-18 & right & 50.00 & +8.33 & -2.08 & +0.00 & -16.67 & 64.6 \\
+Different & ResNet-18 & left & 58.33 & +4.17 & -8.33 & +0.00 & -29.17 & 52.1 \\
+Different & ViT-B/16 & right & 56.25 & +8.33 & -2.08 & -2.08 & -16.67 & 64.6 \\
+Different & ViT-B/16 & left & 54.17 & +4.17 & +0.00 & +0.00 & -25.00 & 52.1 \\
+\bottomrule
+\end{tabular}
+\end{table}

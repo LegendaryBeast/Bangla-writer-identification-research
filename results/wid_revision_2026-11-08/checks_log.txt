@@ -1,0 +1,268 @@
+both control pseudo 1/20 fitted
+both control pseudo 2/20 fitted
+both control pseudo 3/20 fitted
+both control pseudo 4/20 fitted
+both control pseudo 5/20 fitted
+both control pseudo 6/20 fitted
+both control pseudo 7/20 fitted
+both control pseudo 8/20 fitted
+both control pseudo 9/20 fitted
+both control pseudo 10/20 fitted
+both control pseudo 11/20 fitted
+both control pseudo 12/20 fitted
+both control pseudo 13/20 fitted
+both control pseudo 14/20 fitted
+both control pseudo 15/20 fitted
+both control pseudo 16/20 fitted
+both control pseudo 17/20 fitted
+both control pseudo 18/20 fitted
+both control pseudo 19/20 fitted
+both control pseudo 20/20 fitted
+checks {'rep': 'stroke', 'query': 'shared', 'n': 1, 'k': 5} done (414s)
+checks {'rep': 'stroke', 'query': 'shared', 'n': 2, 'k': 5} done (415s)
+checks {'rep': 'stroke', 'query': 'shared', 'n': 4, 'k': 5} done (416s)
+checks {'rep': 'stroke', 'query': 'shared', 'n': 8, 'k': 5} done (418s)
+checks {'rep': 'stroke', 'query': 'own', 'n': 1, 'k': 1} done (419s)
+checks {'rep': 'stroke', 'query': 'own', 'n': 2, 'k': 1} done (420s)
+checks {'rep': 'stroke', 'query': 'own', 'n': 4, 'k': 1} done (421s)
+checks {'rep': 'stroke', 'query': 'own', 'n': 8, 'k': 1} done (424s)
+checks {'rep': 'stroke', 'query': 'own', 'n': 1, 'k': 2} done (426s)
+checks {'rep': 'stroke', 'query': 'own', 'n': 2, 'k': 2} done (428s)
+checks {'rep': 'stroke', 'query': 'own', 'n': 4, 'k': 2} done (432s)
+checks {'rep': 'stroke', 'query': 'own', 'n': 8, 'k': 2} done (440s)
+checks {'rep': 'stroke', 'query': 'own', 'n': 1, 'k': 3} done (443s)
+checks {'rep': 'stroke', 'query': 'own', 'n': 2, 'k': 3} done (446s)
+checks {'rep': 'stroke', 'query': 'own', 'n': 4, 'k': 3} done (453s)
+checks {'rep': 'stroke', 'query': 'own', 'n': 8, 'k': 3} done (463s)
+checks {'rep': 'stroke', 'query': 'own', 'n': 1, 'k': 6} done (463s)
+checks {'rep': 'stroke', 'query': 'own', 'n': 2, 'k': 6} done (464s)
+checks {'rep': 'stroke', 'query': 'own', 'n': 4, 'k': 6} done (464s)
+checks {'rep': 'stroke', 'query': 'own', 'n': 8, 'k': 6} done (464s)
+checks {'rep': 'hc183', 'query': 'shared', 'n': 1, 'k': 5} done (465s)
+checks {'rep': 'hc183', 'query': 'shared', 'n': 2, 'k': 5} done (466s)
+checks {'rep': 'hc183', 'query': 'shared', 'n': 4, 'k': 5} done (467s)
+checks {'rep': 'hc183', 'query': 'shared', 'n': 8, 'k': 5} done (469s)
+checks {'rep': 'hc183', 'query': 'own', 'n': 1, 'k': 1} done (469s)
+checks {'rep': 'hc183', 'query': 'own', 'n': 2, 'k': 1} done (470s)
+checks {'rep': 'hc183', 'query': 'own', 'n': 4, 'k': 1} done (472s)
+checks {'rep': 'hc183', 'query': 'own', 'n': 8, 'k': 1} done (475s)
+checks {'rep': 'hc183', 'query': 'own', 'n': 1, 'k': 2} done (476s)
+checks {'rep': 'hc183', 'query': 'own', 'n': 2, 'k': 2} done (479s)
+checks {'rep': 'hc183', 'query': 'own', 'n': 4, 'k': 2} done (483s)
+checks {'rep': 'hc183', 'query': 'own', 'n': 8, 'k': 2} done (492s)
+checks {'rep': 'hc183', 'query': 'own', 'n': 1, 'k': 3} done (494s)
+checks {'rep': 'hc183', 'query': 'own', 'n': 2, 'k': 3} done (498s)
+checks {'rep': 'hc183', 'query': 'own', 'n': 4, 'k': 3} done (504s)
+checks {'rep': 'hc183', 'query': 'own', 'n': 8, 'k': 3} done (515s)
+checks {'rep': 'hc183', 'query': 'own', 'n': 1, 'k': 6} done (515s)
+checks {'rep': 'hc183', 'query': 'own', 'n': 2, 'k': 6} done (515s)
+checks {'rep': 'hc183', 'query': 'own', 'n': 4, 'k': 6} done (516s)
+checks {'rep': 'hc183', 'query': 'own', 'n': 8, 'k': 6} done (516s)
+checks {'rep': 'resnet18', 'query': 'shared', 'n': 1, 'k': 5} done (517s)
+checks {'rep': 'resnet18', 'query': 'shared', 'n': 2, 'k': 5} done (518s)
+checks {'rep': 'resnet18', 'query': 'shared', 'n': 4, 'k': 5} done (519s)
+checks {'rep': 'resnet18', 'query': 'shared', 'n': 8, 'k': 5} done (521s)
+checks {'rep': 'resnet18', 'query': 'own', 'n': 1, 'k': 1} done (522s)
+checks {'rep': 'resnet18', 'query': 'own', 'n': 2, 'k': 1} done (523s)
+checks {'rep': 'resnet18', 'query': 'own', 'n': 4, 'k': 1} done (524s)
+checks {'rep': 'resnet18', 'query': 'own', 'n': 8, 'k': 1} done (527s)
+checks {'rep': 'resnet18', 'query': 'own', 'n': 1, 'k': 2} done (528s)
+checks {'rep': 'resnet18', 'query': 'own', 'n': 2, 'k': 2} done (531s)
+checks {'rep': 'resnet18', 'query': 'own', 'n': 4, 'k': 2} done (535s)
+checks {'rep': 'resnet18', 'query': 'own', 'n': 8, 'k': 2} done (543s)
+checks {'rep': 'resnet18', 'query': 'own', 'n': 1, 'k': 3} done (546s)
+checks {'rep': 'resnet18', 'query': 'own', 'n': 2, 'k': 3} done (549s)
+checks {'rep': 'resnet18', 'query': 'own', 'n': 4, 'k': 3} done (555s)
+checks {'rep': 'resnet18', 'query': 'own', 'n': 8, 'k': 3} done (566s)
+checks {'rep': 'resnet18', 'query': 'own', 'n': 1, 'k': 6} done (566s)
+checks {'rep': 'resnet18', 'query': 'own', 'n': 2, 'k': 6} done (566s)
+checks {'rep': 'resnet18', 'query': 'own', 'n': 4, 'k': 6} done (567s)
+checks {'rep': 'resnet18', 'query': 'own', 'n': 8, 'k': 6} done (567s)
+checks {'rep': 'efficientnet_b0', 'query': 'shared', 'n': 1, 'k': 5} done (568s)
+checks {'rep': 'efficientnet_b0', 'query': 'shared', 'n': 2, 'k': 5} done (569s)
+checks {'rep': 'efficientnet_b0', 'query': 'shared', 'n': 4, 'k': 5} done (570s)
+checks {'rep': 'efficientnet_b0', 'query': 'shared', 'n': 8, 'k': 5} done (572s)
+checks {'rep': 'efficientnet_b0', 'query': 'own', 'n': 1, 'k': 1} done (573s)
+checks {'rep': 'efficientnet_b0', 'query': 'own', 'n': 2, 'k': 1} done (574s)
+checks {'rep': 'efficientnet_b0', 'query': 'own', 'n': 4, 'k': 1} done (575s)
+checks {'rep': 'efficientnet_b0', 'query': 'own', 'n': 8, 'k': 1} done (578s)
+checks {'rep': 'efficientnet_b0', 'query': 'own', 'n': 1, 'k': 2} done (580s)
+checks {'rep': 'efficientnet_b0', 'query': 'own', 'n': 2, 'k': 2} done (582s)
+checks {'rep': 'efficientnet_b0', 'query': 'own', 'n': 4, 'k': 2} done (587s)
+checks {'rep': 'efficientnet_b0', 'query': 'own', 'n': 8, 'k': 2} done (594s)
+checks {'rep': 'efficientnet_b0', 'query': 'own', 'n': 1, 'k': 3} done (597s)
+checks {'rep': 'efficientnet_b0', 'query': 'own', 'n': 2, 'k': 3} done (600s)
+checks {'rep': 'efficientnet_b0', 'query': 'own', 'n': 4, 'k': 3} done (607s)
+checks {'rep': 'efficientnet_b0', 'query': 'own', 'n': 8, 'k': 3} done (617s)
+checks {'rep': 'efficientnet_b0', 'query': 'own', 'n': 1, 'k': 6} done (618s)
+checks {'rep': 'efficientnet_b0', 'query': 'own', 'n': 2, 'k': 6} done (618s)
+checks {'rep': 'efficientnet_b0', 'query': 'own', 'n': 4, 'k': 6} done (618s)
+checks {'rep': 'efficientnet_b0', 'query': 'own', 'n': 8, 'k': 6} done (619s)
+checks {'rep': 'vit_b_16', 'query': 'shared', 'n': 1, 'k': 5} done (620s)
+checks {'rep': 'vit_b_16', 'query': 'shared', 'n': 2, 'k': 5} done (620s)
+checks {'rep': 'vit_b_16', 'query': 'shared', 'n': 4, 'k': 5} done (622s)
+checks {'rep': 'vit_b_16', 'query': 'shared', 'n': 8, 'k': 5} done (624s)
+checks {'rep': 'vit_b_16', 'query': 'own', 'n': 1, 'k': 1} done (624s)
+checks {'rep': 'vit_b_16', 'query': 'own', 'n': 2, 'k': 1} done (625s)
+checks {'rep': 'vit_b_16', 'query': 'own', 'n': 4, 'k': 1} done (626s)
+checks {'rep': 'vit_b_16', 'query': 'own', 'n': 8, 'k': 1} done (629s)
+checks {'rep': 'vit_b_16', 'query': 'own', 'n': 1, 'k': 2} done (631s)
+checks {'rep': 'vit_b_16', 'query': 'own', 'n': 2, 'k': 2} done (633s)
+checks {'rep': 'vit_b_16', 'query': 'own', 'n': 4, 'k': 2} done (638s)
+checks {'rep': 'vit_b_16', 'query': 'own', 'n': 8, 'k': 2} done (645s)
+checks {'rep': 'vit_b_16', 'query': 'own', 'n': 1, 'k': 3} done (648s)
+checks {'rep': 'vit_b_16', 'query': 'own', 'n': 2, 'k': 3} done (651s)
+checks {'rep': 'vit_b_16', 'query': 'own', 'n': 4, 'k': 3} done (657s)
+checks {'rep': 'vit_b_16', 'query': 'own', 'n': 8, 'k': 3} done (668s)
+checks {'rep': 'vit_b_16', 'query': 'own', 'n': 1, 'k': 6} done (668s)
+checks {'rep': 'vit_b_16', 'query': 'own', 'n': 2, 'k': 6} done (669s)
+checks {'rep': 'vit_b_16', 'query': 'own', 'n': 4, 'k': 6} done (669s)
+checks {'rep': 'vit_b_16', 'query': 'own', 'n': 8, 'k': 6} done (670s)
+checks {'rep': 'stroke_cnn', 'query': 'shared', 'n': 1, 'k': 5} done (670s)
+checks {'rep': 'stroke_cnn', 'query': 'shared', 'n': 2, 'k': 5} done (671s)
+checks {'rep': 'stroke_cnn', 'query': 'shared', 'n': 4, 'k': 5} done (672s)
+checks {'rep': 'stroke_cnn', 'query': 'shared', 'n': 8, 'k': 5} done (674s)
+checks {'rep': 'stroke_cnn', 'query': 'own', 'n': 1, 'k': 1} done (675s)
+checks {'rep': 'stroke_cnn', 'query': 'own', 'n': 2, 'k': 1} done (676s)
+checks {'rep': 'stroke_cnn', 'query': 'own', 'n': 4, 'k': 1} done (677s)
+checks {'rep': 'stroke_cnn', 'query': 'own', 'n': 8, 'k': 1} done (680s)
+checks {'rep': 'stroke_cnn', 'query': 'own', 'n': 1, 'k': 2} done (682s)
+checks {'rep': 'stroke_cnn', 'query': 'own', 'n': 2, 'k': 2} done (684s)
+checks {'rep': 'stroke_cnn', 'query': 'own', 'n': 4, 'k': 2} done (688s)
+checks {'rep': 'stroke_cnn', 'query': 'own', 'n': 8, 'k': 2} done (696s)
+checks {'rep': 'stroke_cnn', 'query': 'own', 'n': 1, 'k': 3} done (698s)
+checks {'rep': 'stroke_cnn', 'query': 'own', 'n': 2, 'k': 3} done (702s)
+checks {'rep': 'stroke_cnn', 'query': 'own', 'n': 4, 'k': 3} done (708s)
+checks {'rep': 'stroke_cnn', 'query': 'own', 'n': 8, 'k': 3} done (718s)
+checks {'rep': 'stroke_cnn', 'query': 'own', 'n': 1, 'k': 6} done (718s)
+checks {'rep': 'stroke_cnn', 'query': 'own', 'n': 2, 'k': 6} done (719s)
+checks {'rep': 'stroke_cnn', 'query': 'own', 'n': 4, 'k': 6} done (719s)
+checks {'rep': 'stroke_cnn', 'query': 'own', 'n': 8, 'k': 6} done (719s)
+{
+  "n_settings": 120,
+  "n_filter_combinations": 456,
+  "n_writers": 42,
+  "filter_identity_max_error": 0.0,
+  "product_mae": 0.014802515504313997,
+  "product_bias": -0.009396987461641648,
+  "product_r": 0.9955883594304831,
+  "oracle_hand_mean": 0.5781668688435557,
+  "random_partition_exact_mean": 0.5859754805751916,
+  "random_partition_draw_mean": 0.5860809031250589,
+  "random_partition_draw_q025": 0.5780589055106505,
+  "random_partition_draw_q975": 0.5933736221714668,
+  "p_random_partition_ge_hand": 0.9740129935032483,
+  "calibration_hc183_own_paragraph": [
+    {
+      "hand_model": "hc183",
+      "n": 1,
+      "part": "own",
+      "n_units": 84,
+      "n_writers": 42,
+      "accuracy": 0.6547619047619048,
+      "accuracy_ci_lo": 0.5357142857142857,
+      "accuracy_ci_hi": 0.7738095238095238,
+      "brier": 0.20395074072398833,
+      "brier_ci_lo": 0.14875835917451832,
+      "brier_ci_hi": 0.26350240889864135,
+      "log_loss": 0.6018065771271686,
+      "log_loss_ci_lo": 0.4588409678709955,
+      "log_loss_ci_hi": 0.7617250718000907,
+      "brier_uninformative": 0.25,
+      "log_loss_uninformative": 0.6931471805599453
+    }
+  ],
+  "effects": [
+    {
+      "scope": "all_120_settings",
+      "contrast": "known_minus_none",
+      "estimate": 0.061074841734650574,
+      "ci_lo": 0.05120292787845603,
+      "ci_hi": 0.07137593898693664,
+      "p_signflip": 0.0001,
+      "p_holm": NaN
+    },
+    {
+      "scope": "all_120_settings",
+      "contrast": "query_bayes_minus_none",
+      "estimate": -0.005670839144953375,
+      "ci_lo": -0.02324246732208544,
+      "ci_hi": 0.009206928383774118,
+      "p_signflip": 0.5402,
+      "p_holm": NaN
+    },
+    {
+      "scope": "all_120_settings",
+      "contrast": "query_filter_minus_none",
+      "estimate": -0.14288554449249602,
+      "ci_lo": -0.19306994951314563,
+      "ci_hi": -0.0954461832863162,
+      "p_signflip": 0.0001,
+      "p_holm": NaN
+    },
+    {
+      "scope": "all_120_settings",
+      "contrast": "both_bayes_minus_none",
+      "estimate": 0.00970752954711536,
+      "ci_lo": 0.004510376758521569,
+      "ci_hi": 0.015451628159471294,
+      "p_signflip": 0.0007,
+      "p_holm": NaN
+    },
+    {
+      "scope": "all_120_settings",
+      "contrast": "known_random_expected_minus_none",
+      "estimate": 0.06888345346628634,
+      "ci_lo": 0.06438858488004075,
+      "ci_hi": 0.0735945959358049,
+      "p_signflip": 0.0001,
+      "p_holm": NaN
+    },
+    {
+      "scope": "all_120_settings",
+      "contrast": "known_hand_minus_random_partition_expectation",
+      "estimate": -0.007808611731635762,
+      "ci_lo": -0.017698560635790783,
+      "ci_hi": 0.002328465642508349,
+      "p_signflip": 0.1795,
+      "p_holm": NaN
+    },
+    {
+      "scope": "primary:resnet18:own:n1:k1",
+      "contrast": "query_bayes_minus_none",
+      "estimate": -0.007936507936507933,
+      "ci_lo": -0.037698412698412696,
+      "ci_hi": 0.01785714285714286,
+      "p_signflip": 0.6957,
+      "p_holm": 1.0
+    },
+    {
+      "scope": "primary:vit_b_16:own:n1:k1",
+      "contrast": "query_bayes_minus_none",
+      "estimate": 0.001984126984126985,
+      "ci_lo": -0.025793650793650785,
+      "ci_hi": 0.02777777777777778,
+      "p_signflip": 1.0,
+      "p_holm": 1.0
+    },
+    {
+      "scope": "primary:resnet18:own:n4:k6",
+      "contrast": "query_bayes_minus_none",
+      "estimate": -0.01488095238095238,
+      "ci_lo": -0.03869047619047619,
+      "ci_hi": 0.008928571428571428,
+      "p_signflip": 0.3664,
+      "p_holm": 1.0
+    },
+    {
+      "scope": "primary:vit_b_16:own:n4:k6",
+      "contrast": "query_bayes_minus_none",
+      "estimate": -0.002976190476190476,
+      "ci_lo": -0.03273809523809524,
+      "ci_hi": 0.026785714285714284,
+      "p_signflip": 1.0,
+      "p_holm": 1.0
+    }
+  ]
+}
+Finished in 12.1 min

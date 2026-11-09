@@ -1,0 +1,813 @@
+table,row,column,displayed,unrounded
+Main Table 1,stroke,0,92.3,92.26190476190474
+Main Table 1,stroke,1,95.4,95.43650793650792
+Main Table 1,stroke,2,93.3,93.25396825396828
+Main Table 1,stroke,3,62.3,62.301587301587304
+Main Table 1,stroke,4,89.0,88.98809523809523
+Main Table 1,stroke,5,91.1,91.07142857142856
+Main Table 1,stroke,6,88.7,88.69047619047619
+Main Table 1,stroke,7,60.0,59.99149659863945
+Main Table 1,hc183,0,39.7,39.682539682539684
+Main Table 1,hc183,1,48.0,48.01587301587302
+Main Table 1,hc183,2,37.9,37.89682539682539
+Main Table 1,hc183,3,28.0,27.97619047619047
+Main Table 1,hc183,4,33.0,33.03571428571428
+Main Table 1,hc183,5,42.9,42.85714285714285
+Main Table 1,hc183,6,32.1,32.14285714285714
+Main Table 1,hc183,7,25.6,25.595238095238088
+Main Table 1,resnet18,0,62.9,62.89682539682539
+Main Table 1,resnet18,1,67.9,67.85714285714286
+Main Table 1,resnet18,2,62.1,62.10317460317461
+Main Table 1,resnet18,3,42.3,42.26190476190476
+Main Table 1,resnet18,4,47.4,47.44897959183674
+Main Table 1,resnet18,5,51.7,51.65816326530612
+Main Table 1,resnet18,6,46.0,45.9608843537415
+Main Table 1,resnet18,7,35.8,35.79931972789115
+Main Table 1,efficientnet_b0,0,51.4,51.388888888888886
+Main Table 1,efficientnet_b0,1,60.3,60.317460317460316
+Main Table 1,efficientnet_b0,2,51.0,50.9920634920635
+Main Table 1,efficientnet_b0,3,36.7,36.706349206349195
+Main Table 1,efficientnet_b0,4,49.2,49.23469387755103
+Main Table 1,efficientnet_b0,5,57.6,57.56802721088435
+Main Table 1,efficientnet_b0,6,48.9,48.89455782312925
+Main Table 1,efficientnet_b0,7,38.2,38.18027210884353
+Main Table 1,vit_b_16,0,68.1,68.05555555555556
+Main Table 1,vit_b_16,1,73.8,73.80952380952381
+Main Table 1,vit_b_16,2,68.3,68.25396825396825
+Main Table 1,vit_b_16,3,45.8,45.83333333333333
+Main Table 1,vit_b_16,4,48.3,48.256802721088434
+Main Table 1,vit_b_16,5,57.1,57.05782312925171
+Main Table 1,vit_b_16,6,48.0,47.95918367346938
+Main Table 1,vit_b_16,7,39.1,39.1156462585034
+Main Table 1,stroke_cnn,0,58.7,58.73015873015872
+Main Table 1,stroke_cnn,1,70.8,70.83333333333333
+Main Table 1,stroke_cnn,2,59.9,59.92063492063492
+Main Table 1,stroke_cnn,3,43.8,43.84920634920634
+Main Table 1,stroke_cnn,4,10.7,10.71428571428571
+Main Table 1,stroke_cnn,5,15.5,15.476190476190471
+Main Table 1,stroke_cnn,6,10.7,10.71428571428571
+Main Table 1,stroke_cnn,7,8.3,8.33333333333333
+Supplement Table S15,"('stroke', 'shared', 1, 5)",0,100.0,100.0
+Supplement Table S15,"('stroke', 'shared', 1, 5)",1,100.0,100.0
+Supplement Table S15,"('stroke', 'shared', 1, 5)",2,100.0,100.0
+Supplement Table S15,"('stroke', 'shared', 1, 5)",3,100.0,100.0
+Supplement Table S15,"('stroke', 'shared', 1, 5)",4,68.7,68.65079365079364
+Supplement Table S15,"('stroke', 'shared', 1, 5)",5,100.0,100.0
+Supplement Table S15,"('stroke', 'shared', 2, 5)",0,99.2,99.2063492063492
+Supplement Table S15,"('stroke', 'shared', 2, 5)",1,99.4,99.40476190476191
+Supplement Table S15,"('stroke', 'shared', 2, 5)",2,99.2,99.2063492063492
+Supplement Table S15,"('stroke', 'shared', 2, 5)",3,99.2,99.2063492063492
+Supplement Table S15,"('stroke', 'shared', 2, 5)",4,65.3,65.27777777777777
+Supplement Table S15,"('stroke', 'shared', 2, 5)",5,99.8,99.80039920159679
+Supplement Table S15,"('stroke', 'shared', 4, 5)",0,96.1,96.13095238095238
+Supplement Table S15,"('stroke', 'shared', 4, 5)",1,96.9,96.92460317460316
+Supplement Table S15,"('stroke', 'shared', 4, 5)",2,95.7,95.734126984127
+Supplement Table S15,"('stroke', 'shared', 4, 5)",3,95.7,95.734126984127
+Supplement Table S15,"('stroke', 'shared', 4, 5)",4,63.7,63.69047619047619
+Supplement Table S15,"('stroke', 'shared', 4, 5)",5,99.2,99.18116683725692
+Supplement Table S15,"('stroke', 'shared', 8, 5)",0,86.6,86.55046706214607
+Supplement Table S15,"('stroke', 'shared', 8, 5)",1,88.7,88.69203326823586
+Supplement Table S15,"('stroke', 'shared', 8, 5)",2,86.7,86.65288545781144
+Supplement Table S15,"('stroke', 'shared', 8, 5)",3,86.7,86.65288545781144
+Supplement Table S15,"('stroke', 'shared', 8, 5)",4,56.5,56.536208634959785
+Supplement Table S15,"('stroke', 'shared', 8, 5)",5,97.6,97.58539056195391
+Supplement Table S15,"('stroke', 'own', 1, 1)",0,92.3,92.26190476190474
+Supplement Table S15,"('stroke', 'own', 1, 1)",1,95.4,95.43650793650792
+Supplement Table S15,"('stroke', 'own', 1, 1)",2,93.3,93.25396825396828
+Supplement Table S15,"('stroke', 'own', 1, 1)",3,92.5,92.46031746031747
+Supplement Table S15,"('stroke', 'own', 1, 1)",4,62.3,62.301587301587304
+Supplement Table S15,"('stroke', 'own', 1, 1)",5,96.7,96.67359667359668
+Supplement Table S15,"('stroke', 'own', 2, 1)",0,87.7,87.69841269841268
+Supplement Table S15,"('stroke', 'own', 2, 1)",1,91.0,90.97222222222224
+Supplement Table S15,"('stroke', 'own', 2, 1)",2,87.0,87.00396825396824
+Supplement Table S15,"('stroke', 'own', 2, 1)",3,87.7,87.69841269841271
+Supplement Table S15,"('stroke', 'own', 2, 1)",4,59.3,59.32539682539682
+Supplement Table S15,"('stroke', 'own', 2, 1)",5,96.4,96.40130861504905
+Supplement Table S15,"('stroke', 'own', 4, 1)",0,82.8,82.75935374149658
+Supplement Table S15,"('stroke', 'own', 4, 1)",1,86.9,86.88350340136056
+Supplement Table S15,"('stroke', 'own', 4, 1)",2,83.4,83.3545918367347
+Supplement Table S15,"('stroke', 'own', 4, 1)",3,83.6,83.5530045351474
+Supplement Table S15,"('stroke', 'own', 4, 1)",4,57.0,57.00821995464853
+Supplement Table S15,"('stroke', 'own', 4, 1)",5,95.3,95.25324198678734
+Supplement Table S15,"('stroke', 'own', 8, 1)",0,68.4,68.37899369149369
+Supplement Table S15,"('stroke', 'own', 8, 1)",1,72.8,72.75927941106511
+Supplement Table S15,"('stroke', 'own', 8, 1)",2,67.9,67.91439380725095
+Supplement Table S15,"('stroke', 'own', 8, 1)",3,68.5,68.48433973433973
+Supplement Table S15,"('stroke', 'own', 8, 1)",4,45.1,45.126664010592584
+Supplement Table S15,"('stroke', 'own', 8, 1)",5,94.0,93.97975659596034
+Supplement Table S15,"('stroke', 'own', 1, 2)",0,94.9,94.92063492063491
+Supplement Table S15,"('stroke', 'own', 1, 2)",1,97.3,97.3015873015873
+Supplement Table S15,"('stroke', 'own', 1, 2)",2,95.5,95.47619047619048
+Supplement Table S15,"('stroke', 'own', 1, 2)",3,94.9,94.92063492063491
+Supplement Table S15,"('stroke', 'own', 1, 2)",4,63.7,63.73015873015873
+Supplement Table S15,"('stroke', 'own', 1, 2)",5,97.6,97.55301794453507
+Supplement Table S15,"('stroke', 'own', 2, 2)",0,91.6,91.5873015873016
+Supplement Table S15,"('stroke', 'own', 2, 2)",1,93.6,93.57142857142856
+Supplement Table S15,"('stroke', 'own', 2, 2)",2,90.8,90.75396825396824
+Supplement Table S15,"('stroke', 'own', 2, 2)",3,91.3,91.26984126984128
+Supplement Table S15,"('stroke', 'own', 2, 2)",4,61.2,61.230158730158735
+Supplement Table S15,"('stroke', 'own', 2, 2)",5,97.9,97.87955894826126
+Supplement Table S15,"('stroke', 'own', 4, 2)",0,86.5,86.50226757369614
+Supplement Table S15,"('stroke', 'own', 4, 2)",1,90.0,89.95464852607708
+Supplement Table S15,"('stroke', 'own', 4, 2)",2,86.8,86.81972789115646
+Supplement Table S15,"('stroke', 'own', 4, 2)",3,87.1,87.13718820861678
+Supplement Table S15,"('stroke', 'own', 4, 2)",4,59.3,59.31689342403628
+Supplement Table S15,"('stroke', 'own', 4, 2)",5,96.2,96.1620872195614
+Supplement Table S15,"('stroke', 'own', 8, 2)",0,71.4,71.43342834414263
+Supplement Table S15,"('stroke', 'own', 8, 2)",1,75.3,75.33168551025695
+Supplement Table S15,"('stroke', 'own', 8, 2)",2,70.9,70.90381906453335
+Supplement Table S15,"('stroke', 'own', 8, 2)",3,71.8,71.75854172282745
+Supplement Table S15,"('stroke', 'own', 8, 2)",4,46.9,46.90356138570423
+Supplement Table S15,"('stroke', 'own', 8, 2)",5,94.8,94.82520915374508
+Supplement Table S15,"('stroke', 'own', 1, 3)",0,95.2,95.17857142857143
+Supplement Table S15,"('stroke', 'own', 1, 3)",1,97.4,97.38095238095241
+Supplement Table S15,"('stroke', 'own', 1, 3)",2,95.5,95.53571428571428
+Supplement Table S15,"('stroke', 'own', 1, 3)",3,95.2,95.17857142857143
+Supplement Table S15,"('stroke', 'own', 1, 3)",4,63.9,63.92857142857144
+Supplement Table S15,"('stroke', 'own', 1, 3)",5,97.7,97.73838630806844
+Supplement Table S15,"('stroke', 'own', 2, 3)",0,92.6,92.6190476190476
+Supplement Table S15,"('stroke', 'own', 2, 3)",1,94.4,94.40476190476193
+Supplement Table S15,"('stroke', 'own', 2, 3)",2,92.0,91.99404761904763
+Supplement Table S15,"('stroke', 'own', 2, 3)",3,92.3,92.26190476190476
+Supplement Table S15,"('stroke', 'own', 2, 3)",4,62.1,62.05357142857143
+Supplement Table S15,"('stroke', 'own', 2, 3)",5,98.1,98.10844892812102
+Supplement Table S15,"('stroke', 'own', 4, 3)",0,87.9,87.90178571428572
+Supplement Table S15,"('stroke', 'own', 4, 3)",1,91.0,91.01190476190476
+Supplement Table S15,"('stroke', 'own', 4, 3)",2,88.3,88.28869047619047
+Supplement Table S15,"('stroke', 'own', 4, 3)",3,88.5,88.51190476190473
+Supplement Table S15,"('stroke', 'own', 4, 3)",4,60.2,60.184948979591844
+Supplement Table S15,"('stroke', 'own', 4, 3)",5,96.6,96.58273381294966
+Supplement Table S15,"('stroke', 'own', 8, 3)",0,72.4,72.4478373808731
+Supplement Table S15,"('stroke', 'own', 8, 3)",1,76.1,76.06485726575012
+Supplement Table S15,"('stroke', 'own', 8, 3)",2,71.8,71.82966735645309
+Supplement Table S15,"('stroke', 'own', 8, 3)",3,72.6,72.6370380611452
+Supplement Table S15,"('stroke', 'own', 8, 3)",4,47.4,47.42885041545756
+Supplement Table S15,"('stroke', 'own', 8, 3)",5,95.2,95.24482130790027
+Supplement Table S15,"('stroke', 'own', 1, 6)",0,95.2,95.23809523809524
+Supplement Table S15,"('stroke', 'own', 1, 6)",1,98.8,98.8095238095238
+Supplement Table S15,"('stroke', 'own', 1, 6)",2,96.4,96.42857142857144
+Supplement Table S15,"('stroke', 'own', 1, 6)",3,95.2,95.23809523809524
+Supplement Table S15,"('stroke', 'own', 1, 6)",4,65.5,65.47619047619048
+Supplement Table S15,"('stroke', 'own', 1, 6)",5,96.4,96.3855421686747
+Supplement Table S15,"('stroke', 'own', 2, 6)",0,92.9,92.85714285714286
+Supplement Table S15,"('stroke', 'own', 2, 6)",1,94.6,94.64285714285714
+Supplement Table S15,"('stroke', 'own', 2, 6)",2,91.7,91.66666666666666
+Supplement Table S15,"('stroke', 'own', 2, 6)",3,92.3,92.26190476190476
+Supplement Table S15,"('stroke', 'own', 2, 6)",4,61.9,61.904761904761905
+Supplement Table S15,"('stroke', 'own', 2, 6)",5,98.1,98.11320754716982
+Supplement Table S15,"('stroke', 'own', 4, 6)",0,89.0,88.98809523809523
+Supplement Table S15,"('stroke', 'own', 4, 6)",1,91.1,91.07142857142856
+Supplement Table S15,"('stroke', 'own', 4, 6)",2,88.7,88.69047619047619
+Supplement Table S15,"('stroke', 'own', 4, 6)",3,89.0,88.98809523809523
+Supplement Table S15,"('stroke', 'own', 4, 6)",4,60.0,59.99149659863945
+Supplement Table S15,"('stroke', 'own', 4, 6)",5,97.7,97.71241830065361
+Supplement Table S15,"('stroke', 'own', 8, 6)",0,72.6,72.64698595055738
+Supplement Table S15,"('stroke', 'own', 8, 6)",1,76.2,76.15038731110161
+Supplement Table S15,"('stroke', 'own', 8, 6)",2,72.2,72.20055737912881
+Supplement Table S15,"('stroke', 'own', 8, 6)",3,73.3,73.28332381903812
+Supplement Table S15,"('stroke', 'own', 8, 6)",4,47.8,47.836092478949624
+Supplement Table S15,"('stroke', 'own', 8, 6)",5,95.4,95.39936501408512
+Supplement Table S15,"('hc183', 'shared', 1, 5)",0,82.9,82.93650793650794
+Supplement Table S15,"('hc183', 'shared', 1, 5)",1,86.1,86.1111111111111
+Supplement Table S15,"('hc183', 'shared', 1, 5)",2,80.6,80.55555555555554
+Supplement Table S15,"('hc183', 'shared', 1, 5)",3,82.9,82.93650793650794
+Supplement Table S15,"('hc183', 'shared', 1, 5)",4,57.9,57.93650793650793
+Supplement Table S15,"('hc183', 'shared', 1, 5)",5,96.3,96.31336405529956
+Supplement Table S15,"('hc183', 'shared', 2, 5)",0,67.1,67.06349206349206
+Supplement Table S15,"('hc183', 'shared', 2, 5)",1,74.0,74.0079365079365
+Supplement Table S15,"('hc183', 'shared', 2, 5)",2,65.1,65.07936507936508
+Supplement Table S15,"('hc183', 'shared', 2, 5)",3,67.3,67.26190476190477
+Supplement Table S15,"('hc183', 'shared', 2, 5)",4,48.6,48.61111111111111
+Supplement Table S15,"('hc183', 'shared', 2, 5)",5,90.6,90.6166219839142
+Supplement Table S15,"('hc183', 'shared', 4, 5)",0,42.3,42.26190476190476
+Supplement Table S15,"('hc183', 'shared', 4, 5)",1,51.4,51.388888888888886
+Supplement Table S15,"('hc183', 'shared', 4, 5)",2,41.3,41.269841269841265
+Supplement Table S15,"('hc183', 'shared', 4, 5)",3,41.8,41.76587301587302
+Supplement Table S15,"('hc183', 'shared', 4, 5)",4,34.0,34.02777777777778
+Supplement Table S15,"('hc183', 'shared', 4, 5)",5,82.2,82.23938223938224
+Supplement Table S15,"('hc183', 'shared', 8, 5)",0,25.4,25.40906788247213
+Supplement Table S15,"('hc183', 'shared', 8, 5)",1,35.2,35.196864797928626
+Supplement Table S15,"('hc183', 'shared', 8, 5)",2,24.6,24.62069402228976
+Supplement Table S15,"('hc183', 'shared', 8, 5)",3,24.7,24.66818642350557
+Supplement Table S15,"('hc183', 'shared', 8, 5)",4,21.9,21.87373353596758
+Supplement Table S15,"('hc183', 'shared', 8, 5)",5,72.2,72.19128188931043
+Supplement Table S15,"('hc183', 'own', 1, 1)",0,39.7,39.682539682539684
+Supplement Table S15,"('hc183', 'own', 1, 1)",1,48.0,48.01587301587302
+Supplement Table S15,"('hc183', 'own', 1, 1)",2,37.9,37.89682539682539
+Supplement Table S15,"('hc183', 'own', 1, 1)",3,38.5,38.49206349206349
+Supplement Table S15,"('hc183', 'own', 1, 1)",4,28.0,27.97619047619047
+Supplement Table S15,"('hc183', 'own', 1, 1)",5,82.6,82.64462809917354
+Supplement Table S15,"('hc183', 'own', 2, 1)",0,35.2,35.21825396825396
+Supplement Table S15,"('hc183', 'own', 2, 1)",1,43.3,43.25396825396825
+Supplement Table S15,"('hc183', 'own', 2, 1)",2,34.1,34.12698412698412
+Supplement Table S15,"('hc183', 'own', 2, 1)",3,34.1,34.12698412698412
+Supplement Table S15,"('hc183', 'own', 2, 1)",4,29.0,28.96825396825396
+Supplement Table S15,"('hc183', 'own', 2, 1)",5,81.4,81.42201834862384
+Supplement Table S15,"('hc183', 'own', 4, 1)",0,23.3,23.32057823129251
+Supplement Table S15,"('hc183', 'own', 4, 1)",1,31.3,31.26417233560091
+Supplement Table S15,"('hc183', 'own', 4, 1)",2,22.6,22.56944444444444
+Supplement Table S15,"('hc183', 'own', 4, 1)",3,23.0,23.01587301587301
+Supplement Table S15,"('hc183', 'own', 4, 1)",4,19.0,19.04761904761904
+Supplement Table S15,"('hc183', 'own', 4, 1)",5,74.6,74.5920217588395
+Supplement Table S15,"('hc183', 'own', 8, 1)",0,14.2,14.24263897478183
+Supplement Table S15,"('hc183', 'own', 8, 1)",1,21.7,21.72247065104207
+Supplement Table S15,"('hc183', 'own', 8, 1)",2,14.1,14.053010481581909
+Supplement Table S15,"('hc183', 'own', 8, 1)",3,14.1,14.14814682671825
+Supplement Table S15,"('hc183', 'own', 8, 1)",4,11.8,11.8497458229601
+Supplement Table S15,"('hc183', 'own', 8, 1)",5,65.6,65.56638608738818
+Supplement Table S15,"('hc183', 'own', 1, 2)",0,47.4,47.38095238095238
+Supplement Table S15,"('hc183', 'own', 1, 2)",1,53.4,53.41269841269841
+Supplement Table S15,"('hc183', 'own', 1, 2)",2,43.1,43.095238095238095
+Supplement Table S15,"('hc183', 'own', 1, 2)",3,45.3,45.317460317460316
+Supplement Table S15,"('hc183', 'own', 1, 2)",4,30.8,30.79365079365079
+Supplement Table S15,"('hc183', 'own', 1, 2)",5,88.7,88.7072808320951
+Supplement Table S15,"('hc183', 'own', 2, 2)",0,43.4,43.373015873015866
+Supplement Table S15,"('hc183', 'own', 2, 2)",1,51.2,51.1904761904762
+Supplement Table S15,"('hc183', 'own', 2, 2)",2,41.2,41.19047619047619
+Supplement Table S15,"('hc183', 'own', 2, 2)",3,42.5,42.53968253968254
+Supplement Table S15,"('hc183', 'own', 2, 2)",4,34.5,34.52380952380952
+Supplement Table S15,"('hc183', 'own', 2, 2)",5,84.7,84.72868217054261
+Supplement Table S15,"('hc183', 'own', 4, 2)",0,27.3,27.344104308390023
+Supplement Table S15,"('hc183', 'own', 4, 2)",1,35.3,35.34013605442177
+Supplement Table S15,"('hc183', 'own', 4, 2)",2,26.5,26.52777777777778
+Supplement Table S15,"('hc183', 'own', 4, 2)",3,27.1,27.06632653061224
+Supplement Table S15,"('hc183', 'own', 4, 2)",4,22.4,22.38095238095238
+Supplement Table S15,"('hc183', 'own', 4, 2)",5,77.4,77.3740776387552
+Supplement Table S15,"('hc183', 'own', 8, 2)",0,17.0,16.96107662179091
+Supplement Table S15,"('hc183', 'own', 8, 2)",1,25.8,25.75345421773993
+Supplement Table S15,"('hc183', 'own', 8, 2)",2,16.5,16.48567768210625
+Supplement Table S15,"('hc183', 'own', 8, 2)",3,16.9,16.93929483215197
+Supplement Table S15,"('hc183', 'own', 8, 2)",4,14.3,14.30656909228337
+Supplement Table S15,"('hc183', 'own', 8, 2)",5,65.9,65.85942405391
+Supplement Table S15,"('hc183', 'own', 1, 3)",0,51.4,51.36904761904761
+Supplement Table S15,"('hc183', 'own', 1, 3)",1,57.4,57.44047619047619
+Supplement Table S15,"('hc183', 'own', 1, 3)",2,48.0,48.035714285714285
+Supplement Table S15,"('hc183', 'own', 1, 3)",3,50.5,50.47619047619049
+Supplement Table S15,"('hc183', 'own', 1, 3)",4,33.7,33.69047619047619
+Supplement Table S15,"('hc183', 'own', 1, 3)",5,89.4,89.4300518134715
+Supplement Table S15,"('hc183', 'own', 2, 3)",0,47.0,47.02380952380952
+Supplement Table S15,"('hc183', 'own', 2, 3)",1,54.5,54.49404761904761
+Supplement Table S15,"('hc183', 'own', 2, 3)",2,44.8,44.82142857142858
+Supplement Table S15,"('hc183', 'own', 2, 3)",3,46.7,46.726190476190474
+Supplement Table S15,"('hc183', 'own', 2, 3)",4,37.1,37.053571428571416
+Supplement Table S15,"('hc183', 'own', 2, 3)",5,86.3,86.29164391043146
+Supplement Table S15,"('hc183', 'own', 4, 3)",0,29.7,29.73214285714285
+Supplement Table S15,"('hc183', 'own', 4, 3)",1,38.4,38.37797619047619
+Supplement Table S15,"('hc183', 'own', 4, 3)",2,29.1,29.107142857142858
+Supplement Table S15,"('hc183', 'own', 4, 3)",3,29.7,29.73214285714285
+Supplement Table S15,"('hc183', 'own', 4, 3)",4,24.0,24.04761904761904
+Supplement Table S15,"('hc183', 'own', 4, 3)",5,77.5,77.47188832880961
+Supplement Table S15,"('hc183', 'own', 8, 3)",0,18.7,18.7316557450486
+Supplement Table S15,"('hc183', 'own', 8, 3)",1,28.1,28.14113565006422
+Supplement Table S15,"('hc183', 'own', 8, 3)",2,17.6,17.60292435738864
+Supplement Table S15,"('hc183', 'own', 8, 3)",3,18.6,18.55592968539397
+Supplement Table S15,"('hc183', 'own', 8, 3)",4,15.5,15.466074104466959
+Supplement Table S15,"('hc183', 'own', 8, 3)",5,66.6,66.56325451103766
+Supplement Table S15,"('hc183', 'own', 1, 6)",0,57.1,57.14285714285714
+Supplement Table S15,"('hc183', 'own', 1, 6)",1,61.9,61.904761904761905
+Supplement Table S15,"('hc183', 'own', 1, 6)",2,54.8,54.761904761904766
+Supplement Table S15,"('hc183', 'own', 1, 6)",3,54.8,54.761904761904766
+Supplement Table S15,"('hc183', 'own', 1, 6)",4,36.9,36.9047619047619
+Supplement Table S15,"('hc183', 'own', 1, 6)",5,92.3,92.3076923076923
+Supplement Table S15,"('hc183', 'own', 2, 6)",0,54.8,54.761904761904766
+Supplement Table S15,"('hc183', 'own', 2, 6)",1,60.1,60.11904761904761
+Supplement Table S15,"('hc183', 'own', 2, 6)",2,50.6,50.595238095238095
+Supplement Table S15,"('hc183', 'own', 2, 6)",3,53.6,53.57142857142857
+Supplement Table S15,"('hc183', 'own', 2, 6)",4,40.5,40.476190476190474
+Supplement Table S15,"('hc183', 'own', 2, 6)",5,91.1,91.0891089108911
+Supplement Table S15,"('hc183', 'own', 4, 6)",0,33.0,33.03571428571428
+Supplement Table S15,"('hc183', 'own', 4, 6)",1,42.9,42.85714285714285
+Supplement Table S15,"('hc183', 'own', 4, 6)",2,32.1,32.14285714285714
+Supplement Table S15,"('hc183', 'own', 4, 6)",3,32.7,32.73809523809524
+Supplement Table S15,"('hc183', 'own', 4, 6)",4,25.6,25.595238095238088
+Supplement Table S15,"('hc183', 'own', 4, 6)",5,77.1,77.08333333333334
+Supplement Table S15,"('hc183', 'own', 8, 6)",0,21.3,21.28177378177378
+Supplement Table S15,"('hc183', 'own', 8, 6)",1,30.8,30.823511805654658
+Supplement Table S15,"('hc183', 'own', 8, 6)",2,19.3,19.3390736247879
+Supplement Table S15,"('hc183', 'own', 8, 6)",3,20.7,20.676615051615048
+Supplement Table S15,"('hc183', 'own', 8, 6)",4,16.8,16.81923235494663
+Supplement Table S15,"('hc183', 'own', 8, 6)",5,69.0,69.04396201171853
+Supplement Table S15,"('resnet18', 'shared', 1, 5)",0,96.8,96.82539682539681
+Supplement Table S15,"('resnet18', 'shared', 1, 5)",1,96.8,96.82539682539681
+Supplement Table S15,"('resnet18', 'shared', 1, 5)",2,96.0,96.03174603174602
+Supplement Table S15,"('resnet18', 'shared', 1, 5)",3,96.4,96.42857142857144
+Supplement Table S15,"('resnet18', 'shared', 1, 5)",4,66.7,66.66666666666666
+Supplement Table S15,"('resnet18', 'shared', 1, 5)",5,100.0,100.0
+Supplement Table S15,"('resnet18', 'shared', 2, 5)",0,80.4,80.35714285714286
+Supplement Table S15,"('resnet18', 'shared', 2, 5)",1,85.3,85.3174603174603
+Supplement Table S15,"('resnet18', 'shared', 2, 5)",2,79.0,78.96825396825396
+Supplement Table S15,"('resnet18', 'shared', 2, 5)",3,79.4,79.36507936507937
+Supplement Table S15,"('resnet18', 'shared', 2, 5)",4,55.6,55.55555555555556
+Supplement Table S15,"('resnet18', 'shared', 2, 5)",5,94.2,94.18604651162794
+Supplement Table S15,"('resnet18', 'shared', 4, 5)",0,63.8,63.78968253968254
+Supplement Table S15,"('resnet18', 'shared', 4, 5)",1,70.2,70.23809523809523
+Supplement Table S15,"('resnet18', 'shared', 4, 5)",2,62.9,62.89682539682539
+Supplement Table S15,"('resnet18', 'shared', 4, 5)",3,63.5,63.49206349206349
+Supplement Table S15,"('resnet18', 'shared', 4, 5)",4,46.1,46.13095238095238
+Supplement Table S15,"('resnet18', 'shared', 4, 5)",5,90.8,90.81920903954803
+Supplement Table S15,"('resnet18', 'shared', 8, 5)",0,17.4,17.440834104224482
+Supplement Table S15,"('resnet18', 'shared', 8, 5)",1,24.8,24.76416237170168
+Supplement Table S15,"('resnet18', 'shared', 8, 5)",2,18.0,18.03923835954363
+Supplement Table S15,"('resnet18', 'shared', 8, 5)",3,17.8,17.84082566113093
+Supplement Table S15,"('resnet18', 'shared', 8, 5)",4,17.0,16.96743657890743
+Supplement Table S15,"('resnet18', 'shared', 8, 5)",5,70.4,70.42771664328264
+Supplement Table S15,"('resnet18', 'own', 1, 1)",0,62.9,62.89682539682539
+Supplement Table S15,"('resnet18', 'own', 1, 1)",1,67.9,67.85714285714286
+Supplement Table S15,"('resnet18', 'own', 1, 1)",2,62.1,62.10317460317461
+Supplement Table S15,"('resnet18', 'own', 1, 1)",3,62.7,62.698412698412696
+Supplement Table S15,"('resnet18', 'own', 1, 1)",4,42.3,42.26190476190476
+Supplement Table S15,"('resnet18', 'own', 1, 1)",5,92.7,92.69005847953215
+Supplement Table S15,"('resnet18', 'own', 2, 1)",0,43.8,43.84920634920635
+Supplement Table S15,"('resnet18', 'own', 2, 1)",1,50.8,50.79365079365079
+Supplement Table S15,"('resnet18', 'own', 2, 1)",2,44.5,44.543650793650805
+Supplement Table S15,"('resnet18', 'own', 2, 1)",3,44.4,44.44444444444445
+Supplement Table S15,"('resnet18', 'own', 2, 1)",4,34.7,34.72222222222222
+Supplement Table S15,"('resnet18', 'own', 2, 1)",5,86.3,86.328125
+Supplement Table S15,"('resnet18', 'own', 4, 1)",0,35.0,35.04109977324263
+Supplement Table S15,"('resnet18', 'own', 4, 1)",1,42.6,42.630385487528336
+Supplement Table S15,"('resnet18', 'own', 4, 1)",2,34.6,34.56632653061224
+Supplement Table S15,"('resnet18', 'own', 4, 1)",3,35.0,35.00566893424036
+Supplement Table S15,"('resnet18', 'own', 4, 1)",4,29.6,29.59892290249433
+Supplement Table S15,"('resnet18', 'own', 4, 1)",5,82.2,82.19747340425533
+Supplement Table S15,"('resnet18', 'own', 8, 1)",0,10.4,10.36364924757781
+Supplement Table S15,"('resnet18', 'own', 8, 1)",1,18.0,18.010945734160018
+Supplement Table S15,"('resnet18', 'own', 8, 1)",2,11.1,11.13203760525188
+Supplement Table S15,"('resnet18', 'own', 8, 1)",3,10.8,10.81211777640349
+Supplement Table S15,"('resnet18', 'own', 8, 1)",4,11.9,11.94404801547658
+Supplement Table S15,"('resnet18', 'own', 8, 1)",5,57.5,57.540838779619705
+Supplement Table S15,"('resnet18', 'own', 1, 2)",0,73.1,73.09523809523809
+Supplement Table S15,"('resnet18', 'own', 1, 2)",1,77.3,77.3015873015873
+Supplement Table S15,"('resnet18', 'own', 1, 2)",2,72.5,72.46031746031747
+Supplement Table S15,"('resnet18', 'own', 1, 2)",3,72.7,72.69841269841271
+Supplement Table S15,"('resnet18', 'own', 1, 2)",4,48.8,48.80952380952381
+Supplement Table S15,"('resnet18', 'own', 1, 2)",5,94.6,94.55852156057493
+Supplement Table S15,"('resnet18', 'own', 2, 2)",0,52.6,52.619047619047606
+Supplement Table S15,"('resnet18', 'own', 2, 2)",1,58.8,58.84920634920634
+Supplement Table S15,"('resnet18', 'own', 2, 2)",2,51.7,51.70634920634921
+Supplement Table S15,"('resnet18', 'own', 2, 2)",3,52.5,52.539682539682545
+Supplement Table S15,"('resnet18', 'own', 2, 2)",4,40.0,39.96031746031746
+Supplement Table S15,"('resnet18', 'own', 2, 2)",5,89.4,89.41335131490223
+Supplement Table S15,"('resnet18', 'own', 4, 2)",0,40.4,40.4109977324263
+Supplement Table S15,"('resnet18', 'own', 4, 2)",1,46.8,46.78004535147393
+Supplement Table S15,"('resnet18', 'own', 4, 2)",2,39.7,39.65986394557823
+Supplement Table S15,"('resnet18', 'own', 4, 2)",3,40.2,40.16439909297052
+Supplement Table S15,"('resnet18', 'own', 4, 2)",4,32.2,32.171201814058946
+Supplement Table S15,"('resnet18', 'own', 4, 2)",5,86.4,86.38511875908868
+Supplement Table S15,"('resnet18', 'own', 8, 2)",0,11.2,11.16769738198309
+Supplement Table S15,"('resnet18', 'own', 8, 2)",1,17.4,17.43772365200936
+Supplement Table S15,"('resnet18', 'own', 8, 2)",2,11.7,11.680976430976429
+Supplement Table S15,"('resnet18', 'own', 8, 2)",3,11.3,11.34392393320965
+Supplement Table S15,"('resnet18', 'own', 8, 2)",4,12.1,12.10701005343862
+Supplement Table S15,"('resnet18', 'own', 8, 2)",5,64.0,64.04332127775307
+Supplement Table S15,"('resnet18', 'own', 1, 3)",0,77.7,77.73809523809524
+Supplement Table S15,"('resnet18', 'own', 1, 3)",1,82.1,82.08333333333334
+Supplement Table S15,"('resnet18', 'own', 1, 3)",2,77.2,77.20238095238095
+Supplement Table S15,"('resnet18', 'own', 1, 3)",3,77.9,77.85714285714288
+Supplement Table S15,"('resnet18', 'own', 1, 3)",4,52.6,52.55952380952381
+Supplement Table S15,"('resnet18', 'own', 1, 3)",5,94.7,94.70630891950688
+Supplement Table S15,"('resnet18', 'own', 2, 3)",0,55.9,55.892857142857146
+Supplement Table S15,"('resnet18', 'own', 2, 3)",1,61.6,61.577380952380956
+Supplement Table S15,"('resnet18', 'own', 2, 3)",2,55.1,55.11904761904761
+Supplement Table S15,"('resnet18', 'own', 2, 3)",3,55.8,55.80357142857143
+Supplement Table S15,"('resnet18', 'own', 2, 3)",4,42.2,42.20238095238094
+Supplement Table S15,"('resnet18', 'own', 2, 3)",5,90.8,90.76848719188013
+Supplement Table S15,"('resnet18', 'own', 4, 3)",0,43.1,43.05697278911565
+Supplement Table S15,"('resnet18', 'own', 4, 3)",1,48.7,48.67984693877552
+Supplement Table S15,"('resnet18', 'own', 4, 3)",2,42.2,42.16624149659863
+Supplement Table S15,"('resnet18', 'own', 4, 3)",3,42.8,42.79761904761904
+Supplement Table S15,"('resnet18', 'own', 4, 3)",4,33.7,33.70110544217687
+Supplement Table S15,"('resnet18', 'own', 4, 3)",5,88.4,88.44927726101575
+Supplement Table S15,"('resnet18', 'own', 8, 3)",0,11.7,11.66083024118738
+Supplement Table S15,"('resnet18', 'own', 8, 3)",1,17.9,17.8726744485673
+Supplement Table S15,"('resnet18', 'own', 8, 3)",2,12.2,12.185844413522979
+Supplement Table S15,"('resnet18', 'own', 8, 3)",3,11.7,11.685064935064931
+Supplement Table S15,"('resnet18', 'own', 8, 3)",4,12.5,12.53407802514945
+Supplement Table S15,"('resnet18', 'own', 8, 3)",5,65.2,65.24390221924581
+Supplement Table S15,"('resnet18', 'own', 1, 6)",0,83.3,83.33333333333334
+Supplement Table S15,"('resnet18', 'own', 1, 6)",1,85.7,85.71428571428571
+Supplement Table S15,"('resnet18', 'own', 1, 6)",2,81.0,80.95238095238095
+Supplement Table S15,"('resnet18', 'own', 1, 6)",3,83.3,83.33333333333334
+Supplement Table S15,"('resnet18', 'own', 1, 6)",4,54.8,54.761904761904766
+Supplement Table S15,"('resnet18', 'own', 1, 6)",5,97.2,97.22222222222223
+Supplement Table S15,"('resnet18', 'own', 2, 6)",0,60.1,60.11904761904761
+Supplement Table S15,"('resnet18', 'own', 2, 6)",1,65.5,65.47619047619048
+Supplement Table S15,"('resnet18', 'own', 2, 6)",2,58.9,58.92857142857143
+Supplement Table S15,"('resnet18', 'own', 2, 6)",3,58.9,58.92857142857143
+Supplement Table S15,"('resnet18', 'own', 2, 6)",4,45.2,45.23809523809524
+Supplement Table S15,"('resnet18', 'own', 2, 6)",5,91.8,91.81818181818181
+Supplement Table S15,"('resnet18', 'own', 4, 6)",0,47.4,47.44897959183674
+Supplement Table S15,"('resnet18', 'own', 4, 6)",1,51.7,51.65816326530612
+Supplement Table S15,"('resnet18', 'own', 4, 6)",2,46.0,45.9608843537415
+Supplement Table S15,"('resnet18', 'own', 4, 6)",3,46.6,46.5561224489796
+Supplement Table S15,"('resnet18', 'own', 4, 6)",4,35.8,35.79931972789115
+Supplement Table S15,"('resnet18', 'own', 4, 6)",5,91.9,91.85185185185185
+Supplement Table S15,"('resnet18', 'own', 8, 6)",0,12.3,12.283292104720669
+Supplement Table S15,"('resnet18', 'own', 8, 6)",1,18.8,18.76816635745207
+Supplement Table S15,"('resnet18', 'own', 8, 6)",2,12.7,12.70846217274788
+Supplement Table S15,"('resnet18', 'own', 8, 6)",3,12.0,11.96441455370026
+Supplement Table S15,"('resnet18', 'own', 8, 6)",4,13.1,13.10992578849721
+Supplement Table S15,"('resnet18', 'own', 8, 6)",5,65.4,65.44748096738537
+Supplement Table S15,"('efficientnet_b0', 'shared', 1, 5)",0,96.0,96.03174603174604
+Supplement Table S15,"('efficientnet_b0', 'shared', 1, 5)",1,96.8,96.82539682539684
+Supplement Table S15,"('efficientnet_b0', 'shared', 1, 5)",2,96.0,96.03174603174604
+Supplement Table S15,"('efficientnet_b0', 'shared', 1, 5)",3,96.0,96.03174603174604
+Supplement Table S15,"('efficientnet_b0', 'shared', 1, 5)",4,65.9,65.87301587301587
+Supplement Table S15,"('efficientnet_b0', 'shared', 1, 5)",5,99.2,99.18032786885244
+Supplement Table S15,"('efficientnet_b0', 'shared', 2, 5)",0,74.8,74.8015873015873
+Supplement Table S15,"('efficientnet_b0', 'shared', 2, 5)",1,82.5,82.53968253968254
+Supplement Table S15,"('efficientnet_b0', 'shared', 2, 5)",2,74.8,74.80158730158729
+Supplement Table S15,"('efficientnet_b0', 'shared', 2, 5)",3,75.2,75.1984126984127
+Supplement Table S15,"('efficientnet_b0', 'shared', 2, 5)",4,54.2,54.166666666666664
+Supplement Table S15,"('efficientnet_b0', 'shared', 2, 5)",5,90.6,90.62499999999999
+Supplement Table S15,"('efficientnet_b0', 'shared', 4, 5)",0,64.0,63.988095238095234
+Supplement Table S15,"('efficientnet_b0', 'shared', 4, 5)",1,70.8,70.83333333333334
+Supplement Table S15,"('efficientnet_b0', 'shared', 4, 5)",2,63.7,63.69047619047619
+Supplement Table S15,"('efficientnet_b0', 'shared', 4, 5)",3,63.7,63.69047619047619
+Supplement Table S15,"('efficientnet_b0', 'shared', 4, 5)",4,45.4,45.43650793650793
+Supplement Table S15,"('efficientnet_b0', 'shared', 4, 5)",5,90.3,90.3361344537815
+Supplement Table S15,"('efficientnet_b0', 'shared', 8, 5)",0,16.7,16.69616243043625
+Supplement Table S15,"('efficientnet_b0', 'shared', 8, 5)",1,24.4,24.422648414900962
+Supplement Table S15,"('efficientnet_b0', 'shared', 8, 5)",2,17.0,17.046550812739518
+Supplement Table S15,"('efficientnet_b0', 'shared', 8, 5)",3,17.0,17.046550812739518
+Supplement Table S15,"('efficientnet_b0', 'shared', 8, 5)",4,16.2,16.18763123504104
+Supplement Table S15,"('efficientnet_b0', 'shared', 8, 5)",5,68.4,68.36343932400649
+Supplement Table S15,"('efficientnet_b0', 'own', 1, 1)",0,51.4,51.388888888888886
+Supplement Table S15,"('efficientnet_b0', 'own', 1, 1)",1,60.3,60.317460317460316
+Supplement Table S15,"('efficientnet_b0', 'own', 1, 1)",2,51.0,50.9920634920635
+Supplement Table S15,"('efficientnet_b0', 'own', 1, 1)",3,51.8,51.78571428571429
+Supplement Table S15,"('efficientnet_b0', 'own', 1, 1)",4,36.7,36.706349206349195
+Supplement Table S15,"('efficientnet_b0', 'own', 1, 1)",5,85.2,85.19736842105263
+Supplement Table S15,"('efficientnet_b0', 'own', 2, 1)",0,40.7,40.67460317460317
+Supplement Table S15,"('efficientnet_b0', 'own', 2, 1)",1,49.9,49.90079365079365
+Supplement Table S15,"('efficientnet_b0', 'own', 2, 1)",2,39.9,39.88095238095237
+Supplement Table S15,"('efficientnet_b0', 'own', 2, 1)",3,40.6,40.57539682539682
+Supplement Table S15,"('efficientnet_b0', 'own', 2, 1)",4,33.5,33.53174603174603
+Supplement Table S15,"('efficientnet_b0', 'own', 2, 1)",5,81.5,81.51093439363815
+Supplement Table S15,"('efficientnet_b0', 'own', 4, 1)",0,33.0,33.028628117913826
+Supplement Table S15,"('efficientnet_b0', 'own', 4, 1)",1,41.9,41.87925170068026
+Supplement Table S15,"('efficientnet_b0', 'own', 4, 1)",2,33.1,33.12783446712018
+Supplement Table S15,"('efficientnet_b0', 'own', 4, 1)",3,33.8,33.82227891156463
+Supplement Table S15,"('efficientnet_b0', 'own', 4, 1)",4,27.8,27.8202947845805
+Supplement Table S15,"('efficientnet_b0', 'own', 4, 1)",5,78.9,78.86632825719121
+Supplement Table S15,"('efficientnet_b0', 'own', 8, 1)",0,12.9,12.86287786287786
+Supplement Table S15,"('efficientnet_b0', 'own', 8, 1)",1,18.3,18.28820319891748
+Supplement Table S15,"('efficientnet_b0', 'own', 8, 1)",2,13.5,13.52753892932464
+Supplement Table S15,"('efficientnet_b0', 'own', 8, 1)",3,13.3,13.34555325626754
+Supplement Table S15,"('efficientnet_b0', 'own', 8, 1)",4,12.5,12.536592045520608
+Supplement Table S15,"('efficientnet_b0', 'own', 8, 1)",5,70.3,70.33428994073756
+Supplement Table S15,"('efficientnet_b0', 'own', 1, 2)",0,62.4,62.38095238095238
+Supplement Table S15,"('efficientnet_b0', 'own', 1, 2)",1,69.4,69.44444444444446
+Supplement Table S15,"('efficientnet_b0', 'own', 1, 2)",2,61.8,61.825396825396815
+Supplement Table S15,"('efficientnet_b0', 'own', 1, 2)",3,63.4,63.41269841269842
+Supplement Table S15,"('efficientnet_b0', 'own', 1, 2)",4,41.7,41.66666666666667
+Supplement Table S15,"('efficientnet_b0', 'own', 1, 2)",5,89.8,89.82857142857141
+Supplement Table S15,"('efficientnet_b0', 'own', 2, 2)",0,49.6,49.60317460317459
+Supplement Table S15,"('efficientnet_b0', 'own', 2, 2)",1,58.4,58.412698412698404
+Supplement Table S15,"('efficientnet_b0', 'own', 2, 2)",2,48.6,48.6111111111111
+Supplement Table S15,"('efficientnet_b0', 'own', 2, 2)",3,49.3,49.28571428571429
+Supplement Table S15,"('efficientnet_b0', 'own', 2, 2)",4,39.2,39.16666666666666
+Supplement Table S15,"('efficientnet_b0', 'own', 2, 2)",5,84.9,84.91847826086955
+Supplement Table S15,"('efficientnet_b0', 'own', 4, 2)",0,39.8,39.77040816326531
+Supplement Table S15,"('efficientnet_b0', 'own', 4, 2)",1,48.5,48.46938775510204
+Supplement Table S15,"('efficientnet_b0', 'own', 4, 2)",2,40.4,40.36848072562358
+Supplement Table S15,"('efficientnet_b0', 'own', 4, 2)",3,40.8,40.82482993197278
+Supplement Table S15,"('efficientnet_b0', 'own', 4, 2)",4,32.1,32.11167800453515
+Supplement Table S15,"('efficientnet_b0', 'own', 4, 2)",5,82.1,82.05263157894737
+Supplement Table S15,"('efficientnet_b0', 'own', 8, 2)",0,14.4,14.41991077705363
+Supplement Table S15,"('efficientnet_b0', 'own', 8, 2)",1,20.0,19.976298833441692
+Supplement Table S15,"('efficientnet_b0', 'own', 8, 2)",2,14.9,14.85796941154084
+Supplement Table S15,"('efficientnet_b0', 'own', 8, 2)",3,14.9,14.868585779300059
+Supplement Table S15,"('efficientnet_b0', 'own', 8, 2)",4,13.7,13.690774172917031
+Supplement Table S15,"('efficientnet_b0', 'own', 8, 2)",5,72.2,72.18509743613623
+Supplement Table S15,"('efficientnet_b0', 'own', 1, 3)",0,67.4,67.44047619047619
+Supplement Table S15,"('efficientnet_b0', 'own', 1, 3)",1,73.2,73.21428571428571
+Supplement Table S15,"('efficientnet_b0', 'own', 1, 3)",2,66.5,66.54761904761905
+Supplement Table S15,"('efficientnet_b0', 'own', 1, 3)",3,67.6,67.55952380952381
+Supplement Table S15,"('efficientnet_b0', 'own', 1, 3)",4,44.4,44.404761904761905
+Supplement Table S15,"('efficientnet_b0', 'own', 1, 3)",5,92.1,92.11382113821138
+Supplement Table S15,"('efficientnet_b0', 'own', 2, 3)",0,54.1,54.10714285714286
+Supplement Table S15,"('efficientnet_b0', 'own', 2, 3)",1,61.8,61.84523809523809
+Supplement Table S15,"('efficientnet_b0', 'own', 2, 3)",2,52.7,52.73809523809524
+Supplement Table S15,"('efficientnet_b0', 'own', 2, 3)",3,53.9,53.92857142857142
+Supplement Table S15,"('efficientnet_b0', 'own', 2, 3)",4,41.7,41.66666666666667
+Supplement Table S15,"('efficientnet_b0', 'own', 2, 3)",5,87.5,87.48796920115498
+Supplement Table S15,"('efficientnet_b0', 'own', 4, 3)",0,43.6,43.550170068027214
+Supplement Table S15,"('efficientnet_b0', 'own', 4, 3)",1,52.1,52.0812074829932
+Supplement Table S15,"('efficientnet_b0', 'own', 4, 3)",2,44.0,43.99447278911564
+Supplement Table S15,"('efficientnet_b0', 'own', 4, 3)",3,45.0,44.96811224489796
+Supplement Table S15,"('efficientnet_b0', 'own', 4, 3)",4,34.7,34.65561224489796
+Supplement Table S15,"('efficientnet_b0', 'own', 4, 3)",5,83.6,83.6197395812074
+Supplement Table S15,"('efficientnet_b0', 'own', 8, 3)",0,15.8,15.83024465613751
+Supplement Table S15,"('efficientnet_b0', 'own', 8, 3)",1,21.6,21.616763692656548
+Supplement Table S15,"('efficientnet_b0', 'own', 8, 3)",2,16.3,16.2881468729683
+Supplement Table S15,"('efficientnet_b0', 'own', 8, 3)",3,16.1,16.09085507746221
+Supplement Table S15,"('efficientnet_b0', 'own', 8, 3)",4,14.6,14.645405685584251
+Supplement Table S15,"('efficientnet_b0', 'own', 8, 3)",5,73.2,73.23133509349144
+Supplement Table S15,"('efficientnet_b0', 'own', 1, 6)",0,70.2,70.23809523809523
+Supplement Table S15,"('efficientnet_b0', 'own', 1, 6)",1,75.0,75.0
+Supplement Table S15,"('efficientnet_b0', 'own', 1, 6)",2,69.0,69.04761904761905
+Supplement Table S15,"('efficientnet_b0', 'own', 1, 6)",3,70.2,70.23809523809523
+Supplement Table S15,"('efficientnet_b0', 'own', 1, 6)",4,45.2,45.23809523809524
+Supplement Table S15,"('efficientnet_b0', 'own', 1, 6)",5,93.7,93.65079365079364
+Supplement Table S15,"('efficientnet_b0', 'own', 2, 6)",0,57.1,57.14285714285714
+Supplement Table S15,"('efficientnet_b0', 'own', 2, 6)",1,64.3,64.28571428571429
+Supplement Table S15,"('efficientnet_b0', 'own', 2, 6)",2,57.1,57.14285714285714
+Supplement Table S15,"('efficientnet_b0', 'own', 2, 6)",3,58.3,58.333333333333336
+Supplement Table S15,"('efficientnet_b0', 'own', 2, 6)",4,43.5,43.45238095238095
+Supplement Table S15,"('efficientnet_b0', 'own', 2, 6)",5,88.9,88.88888888888887
+Supplement Table S15,"('efficientnet_b0', 'own', 4, 6)",0,49.2,49.23469387755103
+Supplement Table S15,"('efficientnet_b0', 'own', 4, 6)",1,57.6,57.56802721088435
+Supplement Table S15,"('efficientnet_b0', 'own', 4, 6)",2,48.9,48.89455782312925
+Supplement Table S15,"('efficientnet_b0', 'own', 4, 6)",3,50.1,50.12755102040817
+Supplement Table S15,"('efficientnet_b0', 'own', 4, 6)",4,38.2,38.18027210884353
+Supplement Table S15,"('efficientnet_b0', 'own', 4, 6)",5,85.5,85.52437223042837
+Supplement Table S15,"('efficientnet_b0', 'own', 8, 6)",0,17.6,17.56545042259328
+Supplement Table S15,"('efficientnet_b0', 'own', 8, 6)",1,23.1,23.08905380333951
+Supplement Table S15,"('efficientnet_b0', 'own', 8, 6)",2,17.8,17.781900639043492
+Supplement Table S15,"('efficientnet_b0', 'own', 8, 6)",3,17.9,17.93071016285302
+Supplement Table S15,"('efficientnet_b0', 'own', 8, 6)",4,16.1,16.08122036693465
+Supplement Table S15,"('efficientnet_b0', 'own', 8, 6)",5,76.1,76.07696084996208
+Supplement Table S15,"('vit_b_16', 'shared', 1, 5)",0,96.4,96.42857142857144
+Supplement Table S15,"('vit_b_16', 'shared', 1, 5)",1,96.4,96.42857142857144
+Supplement Table S15,"('vit_b_16', 'shared', 1, 5)",2,96.4,96.42857142857144
+Supplement Table S15,"('vit_b_16', 'shared', 1, 5)",3,96.4,96.42857142857144
+Supplement Table S15,"('vit_b_16', 'shared', 1, 5)",4,65.9,65.87301587301587
+Supplement Table S15,"('vit_b_16', 'shared', 1, 5)",5,100.0,100.0
+Supplement Table S15,"('vit_b_16', 'shared', 2, 5)",0,86.1,86.1111111111111
+Supplement Table S15,"('vit_b_16', 'shared', 2, 5)",1,89.7,89.6825396825397
+Supplement Table S15,"('vit_b_16', 'shared', 2, 5)",2,85.1,85.1190476190476
+Supplement Table S15,"('vit_b_16', 'shared', 2, 5)",3,86.1,86.1111111111111
+Supplement Table S15,"('vit_b_16', 'shared', 2, 5)",4,58.1,58.134920634920626
+Supplement Table S15,"('vit_b_16', 'shared', 2, 5)",5,96.0,96.01769911504422
+Supplement Table S15,"('vit_b_16', 'shared', 4, 5)",0,65.1,65.07936507936508
+Supplement Table S15,"('vit_b_16', 'shared', 4, 5)",1,72.4,72.42063492063492
+Supplement Table S15,"('vit_b_16', 'shared', 4, 5)",2,64.9,64.88095238095238
+Supplement Table S15,"('vit_b_16', 'shared', 4, 5)",3,65.0,64.98015873015873
+Supplement Table S15,"('vit_b_16', 'shared', 4, 5)",4,45.9,45.932539682539684
+Supplement Table S15,"('vit_b_16', 'shared', 4, 5)",5,89.9,89.86301369863014
+Supplement Table S15,"('vit_b_16', 'shared', 8, 5)",0,27.7,27.65860473596366
+Supplement Table S15,"('vit_b_16', 'shared', 8, 5)",1,42.8,42.827677684291935
+Supplement Table S15,"('vit_b_16', 'shared', 8, 5)",2,28.3,28.31083371266072
+Supplement Table S15,"('vit_b_16', 'shared', 8, 5)",3,28.0,27.9636114904385
+Supplement Table S15,"('vit_b_16', 'shared', 8, 5)",4,27.1,27.10211309829718
+Supplement Table S15,"('vit_b_16', 'shared', 8, 5)",5,64.6,64.58114525810049
+Supplement Table S15,"('vit_b_16', 'own', 1, 1)",0,68.1,68.05555555555556
+Supplement Table S15,"('vit_b_16', 'own', 1, 1)",1,73.8,73.80952380952381
+Supplement Table S15,"('vit_b_16', 'own', 1, 1)",2,68.3,68.25396825396825
+Supplement Table S15,"('vit_b_16', 'own', 1, 1)",3,69.2,69.24603174603176
+Supplement Table S15,"('vit_b_16', 'own', 1, 1)",4,45.8,45.83333333333333
+Supplement Table S15,"('vit_b_16', 'own', 1, 1)",5,92.2,92.20430107526882
+Supplement Table S15,"('vit_b_16', 'own', 2, 1)",0,48.7,48.71031746031746
+Supplement Table S15,"('vit_b_16', 'own', 2, 1)",1,56.8,56.8452380952381
+Supplement Table S15,"('vit_b_16', 'own', 2, 1)",2,48.5,48.51190476190476
+Supplement Table S15,"('vit_b_16', 'own', 2, 1)",3,48.8,48.8095238095238
+Supplement Table S15,"('vit_b_16', 'own', 2, 1)",4,38.9,38.88888888888889
+Supplement Table S15,"('vit_b_16', 'own', 2, 1)",5,85.7,85.68935427574169
+Supplement Table S15,"('vit_b_16', 'own', 4, 1)",0,37.5,37.5
+Supplement Table S15,"('vit_b_16', 'own', 4, 1)",1,46.0,46.01048752834467
+Supplement Table S15,"('vit_b_16', 'own', 4, 1)",2,37.1,37.09608843537414
+Supplement Table S15,"('vit_b_16', 'own', 4, 1)",3,37.4,37.393707482993186
+Supplement Table S15,"('vit_b_16', 'own', 4, 1)",4,31.2,31.17913832199546
+Supplement Table S15,"('vit_b_16', 'own', 4, 1)",5,81.5,81.50315724626522
+Supplement Table S15,"('vit_b_16', 'own', 8, 1)",0,17.4,17.412726162726162
+Supplement Table S15,"('vit_b_16', 'own', 8, 1)",1,26.2,26.22259684759684
+Supplement Table S15,"('vit_b_16', 'own', 8, 1)",2,18.3,18.30094508665937
+Supplement Table S15,"('vit_b_16', 'own', 8, 1)",3,18.1,18.051931534074388
+Supplement Table S15,"('vit_b_16', 'own', 8, 1)",4,16.7,16.69807870700728
+Supplement Table S15,"('vit_b_16', 'own', 8, 1)",5,66.4,66.40351550201994
+Supplement Table S15,"('vit_b_16', 'own', 1, 2)",0,76.4,76.42857142857143
+Supplement Table S15,"('vit_b_16', 'own', 1, 2)",1,81.4,81.42857142857144
+Supplement Table S15,"('vit_b_16', 'own', 1, 2)",2,76.8,76.82539682539682
+Supplement Table S15,"('vit_b_16', 'own', 1, 2)",3,77.2,77.22222222222224
+Supplement Table S15,"('vit_b_16', 'own', 1, 2)",4,50.2,50.23809523809524
+Supplement Table S15,"('vit_b_16', 'own', 1, 2)",5,93.9,93.85964912280701
+Supplement Table S15,"('vit_b_16', 'own', 2, 2)",0,55.4,55.43650793650793
+Supplement Table S15,"('vit_b_16', 'own', 2, 2)",1,62.9,62.89682539682539
+Supplement Table S15,"('vit_b_16', 'own', 2, 2)",2,54.5,54.48412698412698
+Supplement Table S15,"('vit_b_16', 'own', 2, 2)",3,55.1,55.07936507936508
+Supplement Table S15,"('vit_b_16', 'own', 2, 2)",4,43.3,43.33333333333333
+Supplement Table S15,"('vit_b_16', 'own', 2, 2)",5,88.1,88.13880126182964
+Supplement Table S15,"('vit_b_16', 'own', 4, 2)",0,42.0,42.01814058956916
+Supplement Table S15,"('vit_b_16', 'own', 4, 2)",1,50.7,50.69160997732427
+Supplement Table S15,"('vit_b_16', 'own', 4, 2)",2,42.1,42.063492063492056
+Supplement Table S15,"('vit_b_16', 'own', 4, 2)",3,42.3,42.338435374149654
+Supplement Table S15,"('vit_b_16', 'own', 4, 2)",4,34.7,34.70804988662131
+Supplement Table S15,"('vit_b_16', 'own', 4, 2)",5,82.9,82.88973384030417
+Supplement Table S15,"('vit_b_16', 'own', 8, 2)",0,19.3,19.251494537208817
+Supplement Table S15,"('vit_b_16', 'own', 8, 2)",1,29.4,29.441471227185517
+Supplement Table S15,"('vit_b_16', 'own', 8, 2)",2,19.7,19.67841351769922
+Supplement Table S15,"('vit_b_16', 'own', 8, 2)",3,19.3,19.30652614581186
+Supplement Table S15,"('vit_b_16', 'own', 8, 2)",4,18.6,18.625219357362212
+Supplement Table S15,"('vit_b_16', 'own', 8, 2)",5,65.4,65.38903707852911
+Supplement Table S15,"('vit_b_16', 'own', 1, 3)",0,80.0,79.99999999999999
+Supplement Table S15,"('vit_b_16', 'own', 1, 3)",1,84.8,84.82142857142857
+Supplement Table S15,"('vit_b_16', 'own', 1, 3)",2,79.3,79.3452380952381
+Supplement Table S15,"('vit_b_16', 'own', 1, 3)",3,79.6,79.64285714285715
+Supplement Table S15,"('vit_b_16', 'own', 1, 3)",4,52.4,52.38095238095239
+Supplement Table S15,"('vit_b_16', 'own', 1, 3)",5,94.3,94.31578947368419
+Supplement Table S15,"('vit_b_16', 'own', 2, 3)",0,57.6,57.55952380952382
+Supplement Table S15,"('vit_b_16', 'own', 2, 3)",1,65.1,65.11904761904762
+Supplement Table S15,"('vit_b_16', 'own', 2, 3)",2,57.1,57.113095238095234
+Supplement Table S15,"('vit_b_16', 'own', 2, 3)",3,57.9,57.91666666666666
+Supplement Table S15,"('vit_b_16', 'own', 2, 3)",4,44.9,44.94047619047619
+Supplement Table S15,"('vit_b_16', 'own', 2, 3)",5,88.4,88.39122486288849
+Supplement Table S15,"('vit_b_16', 'own', 4, 3)",0,44.9,44.857568027210895
+Supplement Table S15,"('vit_b_16', 'own', 4, 3)",1,53.6,53.609693877551024
+Supplement Table S15,"('vit_b_16', 'own', 4, 3)",2,44.8,44.77040816326531
+Supplement Table S15,"('vit_b_16', 'own', 4, 3)",3,44.9,44.8703231292517
+Supplement Table S15,"('vit_b_16', 'own', 4, 3)",4,36.3,36.29251700680272
+Supplement Table S15,"('vit_b_16', 'own', 4, 3)",5,83.7,83.67435958442383
+Supplement Table S15,"('vit_b_16', 'own', 8, 3)",0,20.7,20.66262556887557
+Supplement Table S15,"('vit_b_16', 'own', 8, 3)",1,31.6,31.589811973740538
+Supplement Table S15,"('vit_b_16', 'own', 8, 3)",2,20.8,20.7731321258107
+Supplement Table S15,"('vit_b_16', 'own', 8, 3)",3,20.4,20.38839037946181
+Supplement Table S15,"('vit_b_16', 'own', 8, 3)",4,19.9,19.85561412793555
+Supplement Table S15,"('vit_b_16', 'own', 8, 3)",5,65.4,65.40914389123829
+Supplement Table S15,"('vit_b_16', 'own', 1, 6)",0,83.3,83.33333333333334
+Supplement Table S15,"('vit_b_16', 'own', 1, 6)",1,85.7,85.71428571428571
+Supplement Table S15,"('vit_b_16', 'own', 1, 6)",2,82.1,82.14285714285714
+Supplement Table S15,"('vit_b_16', 'own', 1, 6)",3,83.3,83.33333333333334
+Supplement Table S15,"('vit_b_16', 'own', 1, 6)",4,53.6,53.57142857142857
+Supplement Table S15,"('vit_b_16', 'own', 1, 6)",5,97.2,97.22222222222223
+Supplement Table S15,"('vit_b_16', 'own', 2, 6)",0,61.3,61.30952380952381
+Supplement Table S15,"('vit_b_16', 'own', 2, 6)",1,68.5,68.45238095238095
+Supplement Table S15,"('vit_b_16', 'own', 2, 6)",2,61.3,61.30952380952381
+Supplement Table S15,"('vit_b_16', 'own', 2, 6)",3,60.7,60.71428571428571
+Supplement Table S15,"('vit_b_16', 'own', 2, 6)",4,47.6,47.61904761904761
+Supplement Table S15,"('vit_b_16', 'own', 2, 6)",5,89.6,89.56521739130436
+Supplement Table S15,"('vit_b_16', 'own', 4, 6)",0,48.3,48.256802721088434
+Supplement Table S15,"('vit_b_16', 'own', 4, 6)",1,57.1,57.05782312925171
+Supplement Table S15,"('vit_b_16', 'own', 4, 6)",2,48.0,47.95918367346938
+Supplement Table S15,"('vit_b_16', 'own', 4, 6)",3,48.0,47.95918367346938
+Supplement Table S15,"('vit_b_16', 'own', 4, 6)",4,39.1,39.1156462585034
+Supplement Table S15,"('vit_b_16', 'own', 4, 6)",5,84.6,84.57526080476899
+Supplement Table S15,"('vit_b_16', 'own', 8, 6)",0,23.8,23.848631527202947
+Supplement Table S15,"('vit_b_16', 'own', 8, 6)",1,34.8,34.81842562199705
+Supplement Table S15,"('vit_b_16', 'own', 8, 6)",2,23.2,23.202373023801588
+Supplement Table S15,"('vit_b_16', 'own', 8, 6)",3,24.0,24.045240473811898
+Supplement Table S15,"('vit_b_16', 'own', 8, 6)",4,22.1,22.086177711177708
+Supplement Table S15,"('vit_b_16', 'own', 8, 6)",5,68.5,68.494284566779
+Supplement Table S15,"('stroke_cnn', 'shared', 1, 5)",0,91.7,91.66666666666666
+Supplement Table S15,"('stroke_cnn', 'shared', 1, 5)",1,94.4,94.44444444444444
+Supplement Table S15,"('stroke_cnn', 'shared', 1, 5)",2,90.9,90.87301587301589
+Supplement Table S15,"('stroke_cnn', 'shared', 1, 5)",3,91.7,91.66666666666666
+Supplement Table S15,"('stroke_cnn', 'shared', 1, 5)",4,64.7,64.68253968253967
+Supplement Table S15,"('stroke_cnn', 'shared', 1, 5)",5,97.1,97.05882352941177
+Supplement Table S15,"('stroke_cnn', 'shared', 2, 5)",0,67.3,67.26190476190477
+Supplement Table S15,"('stroke_cnn', 'shared', 2, 5)",1,75.2,75.19841269841271
+Supplement Table S15,"('stroke_cnn', 'shared', 2, 5)",2,67.1,67.06349206349206
+Supplement Table S15,"('stroke_cnn', 'shared', 2, 5)",3,67.9,67.85714285714286
+Supplement Table S15,"('stroke_cnn', 'shared', 2, 5)",4,48.2,48.21428571428571
+Supplement Table S15,"('stroke_cnn', 'shared', 2, 5)",5,89.4,89.44591029023746
+Supplement Table S15,"('stroke_cnn', 'shared', 4, 5)",0,15.9,15.87301587301587
+Supplement Table S15,"('stroke_cnn', 'shared', 4, 5)",1,24.0,24.00793650793651
+Supplement Table S15,"('stroke_cnn', 'shared', 4, 5)",2,16.6,16.56746031746032
+Supplement Table S15,"('stroke_cnn', 'shared', 4, 5)",3,16.5,16.46825396825396
+Supplement Table S15,"('stroke_cnn', 'shared', 4, 5)",4,14.4,14.384920634920631
+Supplement Table S15,"('stroke_cnn', 'shared', 4, 5)",5,66.1,66.11570247933882
+Supplement Table S15,"('stroke_cnn', 'shared', 8, 5)",0,4.1,4.1192201518288405
+Supplement Table S15,"('stroke_cnn', 'shared', 8, 5)",1,5.7,5.70973378558947
+Supplement Table S15,"('stroke_cnn', 'shared', 8, 5)",2,2.5,2.48231538992408
+Supplement Table S15,"('stroke_cnn', 'shared', 8, 5)",3,2.5,2.48231538992408
+Supplement Table S15,"('stroke_cnn', 'shared', 8, 5)",4,2.5,2.53297395122094
+Supplement Table S15,"('stroke_cnn', 'shared', 8, 5)",5,72.1,72.14382152500957
+Supplement Table S15,"('stroke_cnn', 'own', 1, 1)",0,58.7,58.73015873015872
+Supplement Table S15,"('stroke_cnn', 'own', 1, 1)",1,70.8,70.83333333333333
+Supplement Table S15,"('stroke_cnn', 'own', 1, 1)",2,59.9,59.92063492063492
+Supplement Table S15,"('stroke_cnn', 'own', 1, 1)",3,59.7,59.72222222222222
+Supplement Table S15,"('stroke_cnn', 'own', 1, 1)",4,43.8,43.84920634920634
+Supplement Table S15,"('stroke_cnn', 'own', 1, 1)",5,82.9,82.91316526610643
+Supplement Table S15,"('stroke_cnn', 'own', 2, 1)",0,42.3,42.26190476190475
+Supplement Table S15,"('stroke_cnn', 'own', 2, 1)",1,52.5,52.48015873015872
+Supplement Table S15,"('stroke_cnn', 'own', 2, 1)",2,40.9,40.87301587301586
+Supplement Table S15,"('stroke_cnn', 'own', 2, 1)",3,41.8,41.76587301587301
+Supplement Table S15,"('stroke_cnn', 'own', 2, 1)",4,33.3,33.33333333333333
+Supplement Table S15,"('stroke_cnn', 'own', 2, 1)",5,80.5,80.52930056710774
+Supplement Table S15,"('stroke_cnn', 'own', 4, 1)",0,10.1,10.069444444444441
+Supplement Table S15,"('stroke_cnn', 'own', 4, 1)",1,15.5,15.476190476190471
+Supplement Table S15,"('stroke_cnn', 'own', 4, 1)",2,9.7,9.72222222222222
+Supplement Table S15,"('stroke_cnn', 'own', 4, 1)",3,9.9,9.87103174603174
+Supplement Table S15,"('stroke_cnn', 'own', 4, 1)",4,7.9,7.9365079365079305
+Supplement Table S15,"('stroke_cnn', 'own', 4, 1)",5,65.1,65.06410256410255
+Supplement Table S15,"('stroke_cnn', 'own', 8, 1)",0,3.6,3.61796107331821
+Supplement Table S15,"('stroke_cnn', 'own', 8, 1)",1,6.5,6.54695502909788
+Supplement Table S15,"('stroke_cnn', 'own', 8, 1)",2,3.1,3.09794537473108
+Supplement Table S15,"('stroke_cnn', 'own', 8, 1)",3,3.1,3.1492019884877003
+Supplement Table S15,"('stroke_cnn', 'own', 8, 1)",4,2.9,2.8763845281702403
+Supplement Table S15,"('stroke_cnn', 'own', 8, 1)",5,55.3,55.26173705544358
+Supplement Table S15,"('stroke_cnn', 'own', 1, 2)",0,67.5,67.46031746031746
+Supplement Table S15,"('stroke_cnn', 'own', 1, 2)",1,77.9,77.93650793650794
+Supplement Table S15,"('stroke_cnn', 'own', 1, 2)",2,66.8,66.82539682539682
+Supplement Table S15,"('stroke_cnn', 'own', 1, 2)",3,67.2,67.22222222222223
+Supplement Table S15,"('stroke_cnn', 'own', 1, 2)",4,48.9,48.888888888888886
+Supplement Table S15,"('stroke_cnn', 'own', 1, 2)",5,86.6,86.5580448065173
+Supplement Table S15,"('stroke_cnn', 'own', 2, 2)",0,49.0,49.0079365079365
+Supplement Table S15,"('stroke_cnn', 'own', 2, 2)",1,58.0,57.97619047619048
+Supplement Table S15,"('stroke_cnn', 'own', 2, 2)",2,46.9,46.94444444444445
+Supplement Table S15,"('stroke_cnn', 'own', 2, 2)",3,48.2,48.21428571428572
+Supplement Table S15,"('stroke_cnn', 'own', 2, 2)",4,37.3,37.301587301587304
+Supplement Table S15,"('stroke_cnn', 'own', 2, 2)",5,84.5,84.53114305270361
+Supplement Table S15,"('stroke_cnn', 'own', 4, 2)",0,10.1,10.138888888888891
+Supplement Table S15,"('stroke_cnn', 'own', 4, 2)",1,15.9,15.91269841269841
+Supplement Table S15,"('stroke_cnn', 'own', 4, 2)",2,10.3,10.2579365079365
+Supplement Table S15,"('stroke_cnn', 'own', 4, 2)",3,10.4,10.357142857142849
+Supplement Table S15,"('stroke_cnn', 'own', 4, 2)",4,8.3,8.25396825396825
+Supplement Table S15,"('stroke_cnn', 'own', 4, 2)",5,63.7,63.715710723192046
+Supplement Table S15,"('stroke_cnn', 'own', 8, 2)",0,3.7,3.71919879062736
+Supplement Table S15,"('stroke_cnn', 'own', 8, 2)",1,6.2,6.2292575149718
+Supplement Table S15,"('stroke_cnn', 'own', 8, 2)",2,2.3,2.3324321181464
+Supplement Table S15,"('stroke_cnn', 'own', 8, 2)",3,2.5,2.46073899645328
+Supplement Table S15,"('stroke_cnn', 'own', 8, 2)",4,2.2,2.21404587476016
+Supplement Table S15,"('stroke_cnn', 'own', 8, 2)",5,59.7,59.70533055807048
+Supplement Table S15,"('stroke_cnn', 'own', 1, 3)",0,70.6,70.5952380952381
+Supplement Table S15,"('stroke_cnn', 'own', 1, 3)",1,81.1,81.07142857142858
+Supplement Table S15,"('stroke_cnn', 'own', 1, 3)",2,70.1,70.05952380952381
+Supplement Table S15,"('stroke_cnn', 'own', 1, 3)",3,71.1,71.13095238095238
+Supplement Table S15,"('stroke_cnn', 'own', 1, 3)",4,50.1,50.11904761904763
+Supplement Table S15,"('stroke_cnn', 'own', 1, 3)",5,87.1,87.07782672540381
+Supplement Table S15,"('stroke_cnn', 'own', 2, 3)",0,52.5,52.500000000000014
+Supplement Table S15,"('stroke_cnn', 'own', 2, 3)",1,60.4,60.35714285714286
+Supplement Table S15,"('stroke_cnn', 'own', 2, 3)",2,50.2,50.20833333333334
+Supplement Table S15,"('stroke_cnn', 'own', 2, 3)",3,51.2,51.19047619047619
+Supplement Table S15,"('stroke_cnn', 'own', 2, 3)",4,38.8,38.809523809523796
+Supplement Table S15,"('stroke_cnn', 'own', 2, 3)",5,87.0,86.98224852071007
+Supplement Table S15,"('stroke_cnn', 'own', 4, 3)",0,10.5,10.49107142857142
+Supplement Table S15,"('stroke_cnn', 'own', 4, 3)",1,15.9,15.92261904761904
+Supplement Table S15,"('stroke_cnn', 'own', 4, 3)",2,10.1,10.07440476190476
+Supplement Table S15,"('stroke_cnn', 'own', 4, 3)",3,10.2,10.22321428571428
+Supplement Table S15,"('stroke_cnn', 'own', 4, 3)",4,8.2,8.16964285714285
+Supplement Table S15,"('stroke_cnn', 'own', 4, 3)",5,65.9,65.8878504672897
+Supplement Table S15,"('stroke_cnn', 'own', 8, 3)",0,3.7,3.7455357142857104
+Supplement Table S15,"('stroke_cnn', 'own', 8, 3)",1,6.0,5.96504338915053
+Supplement Table S15,"('stroke_cnn', 'own', 8, 3)",2,2.3,2.29235347985348
+Supplement Table S15,"('stroke_cnn', 'own', 8, 3)",3,2.4,2.39602411477411
+Supplement Table S15,"('stroke_cnn', 'own', 8, 3)",4,2.2,2.18868284493284
+Supplement Table S15,"('stroke_cnn', 'own', 8, 3)",5,62.8,62.79142446974061
+Supplement Table S15,"('stroke_cnn', 'own', 1, 6)",0,71.4,71.42857142857143
+Supplement Table S15,"('stroke_cnn', 'own', 1, 6)",1,83.3,83.33333333333334
+Supplement Table S15,"('stroke_cnn', 'own', 1, 6)",2,72.6,72.61904761904762
+Supplement Table S15,"('stroke_cnn', 'own', 1, 6)",3,72.6,72.61904761904762
+Supplement Table S15,"('stroke_cnn', 'own', 1, 6)",4,50.0,50.0
+Supplement Table S15,"('stroke_cnn', 'own', 1, 6)",5,85.7,85.71428571428571
+Supplement Table S15,"('stroke_cnn', 'own', 2, 6)",0,54.2,54.166666666666664
+Supplement Table S15,"('stroke_cnn', 'own', 2, 6)",1,61.9,61.904761904761905
+Supplement Table S15,"('stroke_cnn', 'own', 2, 6)",2,51.8,51.78571428571429
+Supplement Table S15,"('stroke_cnn', 'own', 2, 6)",3,54.2,54.166666666666664
+Supplement Table S15,"('stroke_cnn', 'own', 2, 6)",4,39.9,39.88095238095238
+Supplement Table S15,"('stroke_cnn', 'own', 2, 6)",5,87.5,87.49999999999999
+Supplement Table S15,"('stroke_cnn', 'own', 4, 6)",0,10.7,10.71428571428571
+Supplement Table S15,"('stroke_cnn', 'own', 4, 6)",1,15.5,15.476190476190471
+Supplement Table S15,"('stroke_cnn', 'own', 4, 6)",2,10.7,10.71428571428571
+Supplement Table S15,"('stroke_cnn', 'own', 4, 6)",3,11.0,11.011904761904761
+Supplement Table S15,"('stroke_cnn', 'own', 4, 6)",4,8.3,8.33333333333333
+Supplement Table S15,"('stroke_cnn', 'own', 4, 6)",5,69.2,69.23076923076921
+Supplement Table S15,"('stroke_cnn', 'own', 8, 6)",0,3.9,3.8903061224489797
+Supplement Table S15,"('stroke_cnn', 'own', 8, 6)",1,5.1,5.10062358276644
+Supplement Table S15,"('stroke_cnn', 'own', 8, 6)",2,2.0,1.97562358276644
+Supplement Table S15,"('stroke_cnn', 'own', 8, 6)",3,2.0,1.97562358276644
+Supplement Table S15,"('stroke_cnn', 'own', 8, 6)",4,1.8,1.82681405895691
+Supplement Table S15,"('stroke_cnn', 'own', 8, 6)",5,76.3,76.27118644067798
+Main Table 2,"('resnet18', 1, 1)",2:0,-0.79,-0.7936507936507899
+Main Table 2,"('resnet18', 1, 1)",2:1,-3.77,-3.76984126984127
+Main Table 2,"('resnet18', 1, 1)",2:2,+1.79,1.78571428571428
+Main Table 2,"('resnet18', 1, 1)",3:0,-0.20,-0.19841269841269
+Main Table 2,"('resnet18', 1, 1)",3:1,-2.18,-2.18253968253968
+Main Table 2,"('resnet18', 1, 1)",3:2,+1.59,1.5873015873015799
+Main Table 2,"('resnet18', 1, 1)",4:0,+0.60,0.59523809523809
+Main Table 2,"('resnet18', 1, 1)",4:1,-0.99,-0.9920634920634899
+Main Table 2,"('resnet18', 1, 1)",4:2,+2.38,2.38095238095238
+Main Table 2,"('resnet18', 1, 1)",5,1.000,1.0
+Main Table 2,"('resnet18', 1, 1)",6,1.000,1.0
+Main Table 2,"('vit_b_16', 1, 1)",2:0,+0.20,0.19841269841269
+Main Table 2,"('vit_b_16', 1, 1)",2:1,-2.58,-2.5793650793650698
+Main Table 2,"('vit_b_16', 1, 1)",2:2,+2.78,2.77777777777777
+Main Table 2,"('vit_b_16', 1, 1)",3:0,+1.19,1.19047619047619
+Main Table 2,"('vit_b_16', 1, 1)",3:1,-0.40,-0.39682539682539003
+Main Table 2,"('vit_b_16', 1, 1)",3:2,+2.78,2.77777777777777
+Main Table 2,"('vit_b_16', 1, 1)",4:0,+0.99,0.9920634920634899
+Main Table 2,"('vit_b_16', 1, 1)",4:1,-0.60,-0.59523809523809
+Main Table 2,"('vit_b_16', 1, 1)",4:2,+2.78,2.77777777777777
+Main Table 2,"('vit_b_16', 1, 1)",5,1.000,1.0
+Main Table 2,"('vit_b_16', 1, 1)",6,1.000,1.0
+Main Table 2,"('resnet18', 4, 6)",2:0,-1.49,-1.4880952380952301
+Main Table 2,"('resnet18', 4, 6)",2:1,-3.87,-3.86904761904761
+Main Table 2,"('resnet18', 4, 6)",2:2,+0.89,0.89285714285714
+Main Table 2,"('resnet18', 4, 6)",3:0,-0.89,-0.89285714285714
+Main Table 2,"('resnet18', 4, 6)",3:1,-2.68,-2.67857142857142
+Main Table 2,"('resnet18', 4, 6)",3:2,+0.89,0.89285714285714
+Main Table 2,"('resnet18', 4, 6)",4:0,+0.60,0.59523809523809
+Main Table 2,"('resnet18', 4, 6)",4:1,-1.49,-1.4880952380952301
+Main Table 2,"('resnet18', 4, 6)",4:2,+2.98,2.97619047619047
+Main Table 2,"('resnet18', 4, 6)",5,1.000,1.0
+Main Table 2,"('resnet18', 4, 6)",6,1.000,1.0
+Main Table 2,"('vit_b_16', 4, 6)",2:0,-0.30,-0.29761904761904
+Main Table 2,"('vit_b_16', 4, 6)",2:1,-3.57,-3.57142857142857
+Main Table 2,"('vit_b_16', 4, 6)",2:2,+2.68,2.67857142857142
+Main Table 2,"('vit_b_16', 4, 6)",3:0,-0.30,-0.29761904761904
+Main Table 2,"('vit_b_16', 4, 6)",3:1,-2.98,-2.97619047619047
+Main Table 2,"('vit_b_16', 4, 6)",3:2,+1.79,1.78571428571428
+Main Table 2,"('vit_b_16', 4, 6)",4:0,+0.00,0.0
+Main Table 2,"('vit_b_16', 4, 6)",4:1,-1.49,-1.4880952380952301
+Main Table 2,"('vit_b_16', 4, 6)",4:2,+1.19,1.19047619047619
+Main Table 2,"('vit_b_16', 4, 6)",5,1.000,1.0
+Main Table 2,"('vit_b_16', 4, 6)",6,1.000,1.0

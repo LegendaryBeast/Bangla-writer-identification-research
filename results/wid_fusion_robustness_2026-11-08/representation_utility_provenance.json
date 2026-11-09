@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "seed": 20361108,
+  "draws": 10000,
+  "writers": 42,
+  "settings_per_representation": 20,
+  "scope": "Conditional paired writer bootstrap; fixed gallery and predictions; marginal exploratory intervals.",
+  "inputs": {
+    "results/wid_revision_2026-11-08/checks_identification_writer.csv": "de11a126018ce6562f377bc685b1f21b329d6ef34b06fd954a5e4f3b595b9483",
+    "results/wid_fusion_robustness_2026-11-08/nested_writer_outcomes.csv": "5441281c2c8059a37718958d34f318d0fcd2c729b8ec8afc3622fda275ae25ce"
+  },
+  "checks": [
+    "Identical 5040 writer/setting keys",
+    "Baseline and fixed comparators match",
+    "All 42 writers and all 20 settings retained per representation",
+    "Nested gains reconstruct independently from setting summaries"
+  ]
+}

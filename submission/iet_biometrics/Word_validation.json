@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "method": "Pandoc conversion with native Word mathematics; every decimal table value checked against the Markdown source; structural counts verified.",
+  "all_pages_visually_reviewed": false,
+  "visual_review_note": "No Word/LibreOffice renderer was available in this environment; open the DOCX files and check pagination, figure sizing and table widths before upload.",
+  "documents": [
+    {
+      "file": "submission/iet_biometrics/Manuscript.docx",
+      "paragraphs": 164,
+      "tables": 6,
+      "images": 8,
+      "native_math_nodes": 108,
+      "line_numbering": true,
+      "table_decimal_values_checked": 107,
+      "sha256": "2915f5f2c0de482aac3c42ed5a1cba60d368d22cf001030c53eef211145b66a0"
+    },
+    {
+      "file": "submission/iet_biometrics/Supporting_information.docx",
+      "paragraphs": 162,
+      "tables": 25,
+      "images": 7,
+      "native_math_nodes": 157,
+      "line_numbering": false,
+      "table_decimal_values_checked": 1591,
+      "sha256": "d955aeeae7e5cba2a4a57458fb8a6523e9ce6630b8677fd769a68d091cfd0c0b"
+    },
+    {
+      "file": "submission/iet_biometrics/Cover_letter.docx",
+      "paragraphs": 18,
+      "tables": 0,
+      "images": 0,
+      "native_math_nodes": 0,
+      "line_numbering": false,
+      "table_decimal_values_checked": 0,
+      "sha256": "9387fe602e52d59def36c068c56dbe015a84843c0a34fbebc9dc819c37edb3b3"
+    }
+  ],
+  "source_sha256": {
+    "paper/iet_biometrics/manuscript.md": "f87b404742011773abb17d0a624c333ca79cd79081335f8da2edfe1b41358ab2",
+    "paper/iet_biometrics/supporting_information.md": "255d965c61d25ec44b971a88375a00c7fac00aa906c4cbe6ca327dccbae8df58",
+    "paper/iet_biometrics/cover_letter.md": "98d538d3d33e544fe777ea5d16de873663879f1829369b42f636d9cce9d13f6e",
+    "paper/iet_biometrics/refs.bib": "5111365d179ebb663a022a353fc039bb5a6909e8994065ac1bf05d831ef23a81",
+    "paper/iet_biometrics/ieee.csl": "b4c7619fc16c45a31e4cc3271eab94ffe83192d3b4c7fc729470a3b459448de3"
+  },
+  "review_date": "2026-11-09"
+}

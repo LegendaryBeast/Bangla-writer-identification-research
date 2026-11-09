@@ -1,0 +1,7 @@
+# CSAFE integration completed — 8 November 2026
+
+The current title and methodological framing are retained. BanglaHand remains the primary analysis and CSAFE is presented as external validation with within-dataset refitting. The original PRL inputs and Figures 1–6 are unchanged.
+
+Main additions: Methods 3.8; Results 4.8; Table 6; Figure 7; Supporting Section S13, Tables S16–S19 and Figure S6. The Abstract, Introduction, Discussion, Conclusions, availability statement, ethics statement and cover letter incorporate the extension. All primary and sensitivity findings are retained, including the adjusted predictor's failure. No primary Holm-adjusted fusion gain is claimed; nonsignificance is not treated as equivalence.
+
+Final outputs: main PDF 13 pages, supporting PDF 17 pages, editable Word versions 15/19 pages, one-page cover letter. The main paper has 7 figures, 6 tables and 25 references. Word validation checks 1,446 table decimal values against the canonical sources and preserves native equations. The calibration equation was visually repaired and re-rendered. Isolated builds from packaged sources match every page's extracted text in both delivered LaTeX PDFs. ZIP CRCs and all manifested SHA-256 digests pass. The CSAFE archive includes frozen features and complete code/results without raw images or checkpoint binaries. No journal submission or new GitHub release was made by this integration.

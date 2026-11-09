@@ -1,0 +1,46 @@
+{
+  "status": "pass",
+  "temperature_matches_helper_exactly": true,
+  "baseline_seed_matches_main": [
+    {
+      "method": "none",
+      "rows": 5040,
+      "maximum_error": 1.1102230246251565e-16
+    },
+    {
+      "method": "known",
+      "rows": 5040,
+      "maximum_error": 1.1102230246251565e-16
+    },
+    {
+      "method": "fixed",
+      "rows": 5040,
+      "maximum_error": 1.1102230246251565e-16
+    },
+    {
+      "method": "filter",
+      "rows": 5040,
+      "maximum_error": 1.1102230246251565e-16
+    }
+  ],
+  "multiplier_one_matches_fixed": true,
+  "calibration_raw_score_checks": [
+    {
+      "seed": 2032,
+      "maximum_raw_score_change": 1.7763568394002505e-15
+    },
+    {
+      "seed": 2033,
+      "maximum_raw_score_change": 1.7763568394002505e-15
+    },
+    {
+      "seed": 2034,
+      "maximum_raw_score_change": 1.7763568394002505e-15
+    }
+  ],
+  "settings": 120,
+  "writer_temperatures": 5040,
+  "grid_rows": 156240,
+  "seed_writer_rows": 80640,
+  "multiplier_writer_rows": 15120
+}

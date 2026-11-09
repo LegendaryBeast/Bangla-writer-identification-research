@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "decisions_reconstructed": 664680,
+  "exact_boundary_ties": 0,
+  "writer_rows": 10080,
+  "writers": 42,
+  "settings": 120,
+  "bootstrap_draws": 10000,
+  "bootstrap_seed": 20361109,
+  "input_sha256": {
+    "results/wid_handedness_2026-10-29/features/units.csv": "5e47aa2a033ffc94de6a995151e0c7cf204e2cf148f6918eb7faae66ed0bafc8",
+    "results/wid_handedness_2026-10-29/features/unit_features.npz": "efe7c0b3cc9f40eefebbcc2fc0a24c5a5353769d414222c722bb5ddca25bf355",
+    "results/wid_handedness_2026-10-29/handedness_lowo.csv.gz": "ad922408b2138cc1759c9f4b38dc6ff53b90436ad7bf779eae9b4d3085ec0396",
+    "results/wid_fusion_robustness_2026-11-08/nested_selected_parameters.csv": "e5d0ac8fe71297d54f9f6cec82edcdd168ec145a9551ca4d3f0e75fd4e93e379",
+    "results/wid_fusion_robustness_2026-11-08/nested_writer_outcomes.csv": "5441281c2c8059a37718958d34f318d0fcd2c729b8ec8afc3622fda275ae25ce",
+    "code/revised_protocol.py": "18c6e99dcb434f0d4424db0226c52b0431fec23e29a1095e10088396bc525a66",
+    "code/run_margin_diagnostic.py": "fcdadc91e387952ecf5c34e0eeb3fb85697129d8bc12050a45422f5c3aa27c3f"
+  },
+  "checks": [
+    "All direct fusion decisions match margin identity including tie precedence",
+    "All writer-level top-1 values match independently generated nested/fixed results",
+    "Gain equals rescued minus damaged for every individual decision"
+  ],
+  "scope": "Descriptive, conditional on the same gallery, predictions and parameters; no new datasets or models."
+}

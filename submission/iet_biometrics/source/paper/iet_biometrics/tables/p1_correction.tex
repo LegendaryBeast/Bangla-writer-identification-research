@@ -1,0 +1,12 @@
+\begin{table}[ht]
+\caption{CSAFE adjusted HC-183 handedness prediction before and after the numerical correction. Accuracy in \% with conditional 95\% writer-bootstrap intervals. The raw-score AUC is unchanged in substance; only the calibration collapse is removed. All other CSAFE models and every primary result are unaffected.}\label{tab:correction}
+\centering\footnotesize
+\begin{tabular}{lrrrrr}\toprule
+ & \multicolumn{2}{c}{Original} & \multicolumn{3}{c}{Corrected}\\\cmidrule(lr){2-3}\cmidrule(lr){4-6}
+Query & Accuracy & Cal. AUC & Accuracy & Cal. AUC & Raw AUC\\\midrule
+S2 same & 34.38 [25.00, 43.75] & 0.501 & 68.75 [59.38, 78.12] & 0.711 & 0.727 \\
+S2 different & 34.38 [25.00, 43.75] & 0.495 & 61.46 [51.04, 70.83] & 0.676 & 0.692 \\
+S3 different & 35.42 [26.04, 44.79] & 0.530 & 64.58 [55.21, 73.96] & 0.699 & 0.725 \\
+\bottomrule
+\end{tabular}
+\end{table}

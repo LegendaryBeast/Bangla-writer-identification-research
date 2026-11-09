@@ -1,0 +1,51 @@
+{
+  "counts": {
+    "Figure": 8,
+    "Table": 6,
+    "Equation": 7
+  },
+  "equation_numbers": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7"
+  ],
+  "labels": {
+    "sec:related": "2",
+    "sec:protocol": "3",
+    "fig:protocol": "1",
+    "tab:related": "1",
+    "eq:fusion": "1",
+    "tab:representations": "2",
+    "tab:mainnesting": "3",
+    "sec:nested": "3.5",
+    "sec:identity": "3.6",
+    "eq:exact": "2",
+    "eq:approx": "3",
+    "eq:bounds": "4",
+    "eq:randompartition": "5",
+    "eq:decomposition": "6",
+    "sec:statistics": "3.7",
+    "sec:csafemethods": "3.8",
+    "sec:results": "4",
+    "tab:main": "4",
+    "fig:performance": "2",
+    "fig:precision": "3",
+    "sec:mechanism": "4.4",
+    "fig:representation": "4",
+    "eq:decisionmargin": "7",
+    "sec:csafeexternal": "4.9",
+    "fig:mechanism": "5",
+    "tab:maincalibration": "5",
+    "fig:mainlabels": "6",
+    "fig:mainmargins": "7",
+    "sec:discussion": "5",
+    "sec:limitations": "6",
+    "tab:csafemain": "6",
+    "fig:csafeutility": "8",
+    "sec:conclusions": "7"
+  }
+}

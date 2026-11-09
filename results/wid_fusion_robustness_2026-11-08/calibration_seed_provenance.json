@@ -1,0 +1,30 @@
+{
+  "seeds": [
+    2031,
+    2032,
+    2033,
+    2034
+  ],
+  "input_sha256": {
+    "results/wid_handedness_2026-10-29/features/units.csv": "5e47aa2a033ffc94de6a995151e0c7cf204e2cf148f6918eb7faae66ed0bafc8",
+    "results/wid_handedness_2026-10-29/features/unit_features.npz": "efe7c0b3cc9f40eefebbcc2fc0a24c5a5353769d414222c722bb5ddca25bf355",
+    "results/wid_handedness_2026-10-29/handedness_lowo.csv.gz": "ad922408b2138cc1759c9f4b38dc6ff53b90436ad7bf779eae9b4d3085ec0396",
+    "/Users/tanzimhasanprappo/Desktop/Writer-Identifications/code/run_wid_handedness.py": "a8c78865b5da672ce14faea0fb0101351f4ec46f0aea8cd7b75f1646ccb76fc0"
+  },
+  "raw_score_checks": [
+    {
+      "seed": 2032,
+      "maximum_raw_score_change": 1.7763568394002505e-15
+    },
+    {
+      "seed": 2033,
+      "maximum_raw_score_change": 1.7763568394002505e-15
+    },
+    {
+      "seed": 2034,
+      "maximum_raw_score_change": 1.7763568394002505e-15
+    }
+  ],
+  "interpretation": "Only inner grouped calibration partitions vary; full outer SVM decision scores are invariant. Seed replicates are not independent writers or independent validations.",
+  "full_outer_model": "Linear HC183 SVM C=.1, training shared units of other41writers; inner5writer-group folds for Platt scaling as in original analysis."
+}

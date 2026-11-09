@@ -1,0 +1,175 @@
+#!/usr/bin/env python3
+"""LaTeX blocks for the revision sections of the supporting information.
+
+Writes paper/iet_biometrics/tables/p1_*.tex from saved outputs only. The blocks are
+inserted verbatim into supporting_information.tex so that the Markdown/Word export
+(which does not resolve \\input) receives the same content.
+"""
+from pathlib import Path
+
+import numpy as np
+import pandas as pd
+
+ROOT = Path(__file__).resolve().parents[1]
+P1 = ROOT / 'results/p1_revision_2026-11-09'
+TAB = ROOT / 'paper/iet_biometrics/tables'
+NAMES = {'stroke': 'STROKE', 'hc183': 'HC-183', 'resnet18': 'ResNet-18', 'efficientnet_b0': 'EffNet-B0',
+         'vit_b_16': 'ViT-B/16', 'stroke_cnn': 'Stroke-CNN'}
+COND = {'S2_LND_r01': 'Same', 'S2_WOZ_r01': 'Different', 'S3_WOZ_r01': 'S3 different'}
+
+
+def f(x, d=2, sign=True):
+    return f'{x:+.{d}f}' if sign else f'{x:.{d}f}'
+
+
+def ci(lo, hi, d=2):
+    return f'[{lo:+.{d}f}, {hi:+.{d}f}]'
+
+
+def designated():
+    fx = pd.read_csv(ROOT / 'results/wid_revision_2026-11-08/id_paired_tests.csv')
+    fx = fx[fx.primary == True]  # noqa: E712
+    ns = pd.read_csv(ROOT / 'results/wid_fusion_robustness_2026-11-08/nested_paired_tests.csv')
+    ns = ns[ns.primary]
+    rows = []
+    for (n, k, lab) in ((1, 1, 'Paragraph, $k=1$'), (4, 6, 'Quarter, $k=6$')):
+        for rep in ('resnet18', 'vit_b_16'):
+            a = fx[(fx.rep == rep) & (fx.n == n) & (fx.k == k)].iloc[0]
+            b = ns[(ns.rep == rep) & (ns.n == n) & (ns.k == k) & (ns.contrast == 'nested_minus_none')].iloc[0]
+            c = ns[(ns.rep == rep) & (ns.n == n) & (ns.k == k) & (ns.contrast == 'nested_minus_fixed')].iloc[0]
+            rows.append(' & '.join([lab, NAMES[rep], f(100 * a.diff_top1) + ' ' + ci(100 * a.ci_lo, 100 * a.ci_hi),
+                                    f'{a.p_holm:.3f}', f(100 * b.estimate) + ' ' + ci(100 * b.ci_lo, 100 * b.ci_hi),
+                                    f(100 * c.estimate) + ' ' + ci(100 * c.ci_lo, 100 * c.ci_hi),
+                                    f'{b.p_holm:.3f}', f'{c.p_holm:.3f}']) + r' \\')
+    return '\n'.join([r'\begin{table}[ht]', r'\caption{Four designated BanglaHand settings (self-chosen queries). Entries are paired top-1 differences in percentage points with conditional 95\% writer-bootstrap intervals. Fixed and Nested are differences from no fusion. Holm adjustment covers the four fixed-fusion comparisons and, separately, the eight learned-weight comparisons (four settings, two comparators).}\label{tab:designated}',
+                      r'\centering\footnotesize\setlength{\tabcolsep}{2.2pt}', r'\begin{tabular}{llrrrrrr}\toprule',
+                      r' & & & Holm $p$ & & & \multicolumn{2}{c}{Holm $p$, nested vs}\\\cmidrule(lr){7-8}',
+                      r'Query & Features & Fixed [95\% CI] & fixed & Nested [95\% CI] & Nested$-$fixed [95\% CI] & None & Fixed\\\midrule']
+                     + rows + [r'\bottomrule', r'\end{tabular}', r'\end{table}'])
+
+
+def precision():
+    P = pd.read_csv(P1 / 'precision_equivalence.csv')
+    label = {'all 120 settings': 'All 120 settings',
+             'resnet18 own n=1 k=1': 'ResNet-18, paragraph, $k=1$', 'vit_b_16 own n=1 k=1': 'ViT-B/16, paragraph, $k=1$',
+             'resnet18 own n=4 k=6': 'ResNet-18, quarter, $k=6$', 'vit_b_16 own n=4 k=6': 'ViT-B/16, quarter, $k=6$',
+             'resnet18 S2_LND_r01': 'ResNet-18, same prompt', 'vit_b_16 S2_LND_r01': 'ViT-B/16, same prompt',
+             'resnet18 S2_WOZ_r01': 'ResNet-18, different prompt', 'vit_b_16 S2_WOZ_r01': 'ViT-B/16, different prompt'}
+    rows, last = [], None
+    for r in P.itertuples():
+        if r.dataset != last:
+            if last is not None:
+                rows.append(r'\midrule')
+            rows.append(r'\multicolumn{8}{l}{\emph{' + ('BanglaHand, 42 writers' if r.dataset == 'BanglaHand' else 'CSAFE, 96 writers, session 2') + r'}}\\')
+            last = r.dataset
+        kind = 'Fixed' if r.contrast.startswith('fixed') else 'Nested'
+        eq = 'none changed' if r.degenerate else f'{r.smallest_equivalence_margin_pts:.2f}'
+        mde = '--' if r.degenerate else f'{r.mde80_pts:.2f}'
+        share = '--' if r.degenerate or r.oracle_gain_pts <= 0 else f'{100 * max(r.excludable_gain_share_of_oracle, 0):.0f}\\%'
+        rows.append(' & '.join([label[r.setting], kind, f(r.estimate_pts), ci(r.ci90_lo, r.ci90_hi), eq, mde,
+                                f(r.oracle_gain_pts), share]) + r' \\')
+    return '\n'.join([r'\begin{table}[ht]', r'\caption{Post hoc precision of the primary fusion contrasts. $\Delta^*$ is the smallest symmetric margin for which the 90\% conditional writer-bootstrap interval lies inside $(-\Delta^*,\Delta^*)$, i.e.\ two one-sided tests at $\alpha=.05$. MDE$_{80}$ is the minimum detectable effect at 80\% power, $2.80\times$ the bootstrap standard error. The last column is the 90\% upper bound as a share of the known-hand gain in the same setting. All values are percentage points except the share. ``None changed'' marks a contrast in which no writer decision changed, so the interval is degenerate.}\label{tab:precision}',
+                      r'\centering\footnotesize\setlength{\tabcolsep}{3.5pt}', r'\begin{tabular}{llrrrrrr}\toprule',
+                      r'Setting & Fusion & Change & 90\% CI & $\Delta^*$ & MDE$_{80}$ & Known gain & Upper/known\\\midrule']
+                     + rows + [r'\bottomrule', r'\end{tabular}', r'\end{table}'])
+
+
+def decomposition():
+    S = pd.read_csv(P1 / 'mechanism_bangla_settings.csv')
+    J = pd.read_csv(P1 / 'mechanism_bangla_j1_by_rep.csv').set_index('rep')
+    g = S.groupby('rep')[['gap_total_pts', 'j=1_gap_pts', 'j=2_gap_pts', 'j=3_gap_pts', 'j>=4_gap_pts']].mean()
+    rows = []
+    for rep in NAMES:
+        r, j = g.loc[rep], J.loc[rep]
+        rows.append(' & '.join([NAMES[rep], f(r.gap_total_pts), f(r['j=1_gap_pts']), f(r['j=2_gap_pts']), f(r['j=3_gap_pts']),
+                                f(r['j>=4_gap_pts']), f'{100 * j.j1_queries_weight_share:.1f}',
+                                f'{100 * j.j1_opposite_hand_share:.1f} [{100 * j.ci95_lo:.1f}, {100 * j.ci95_hi:.1f}]']) + r' \\')
+    m = S[['gap_total_pts', 'j=1_gap_pts', 'j=2_gap_pts', 'j=3_gap_pts', 'j>=4_gap_pts']].mean()
+    rows.append(r'\midrule')
+    rows.append(' & '.join(['All settings', f(m.gap_total_pts), f(m['j=1_gap_pts']), f(m['j=2_gap_pts']), f(m['j=3_gap_pts']),
+                            f(m['j>=4_gap_pts']), '', '']) + r' \\')
+    C = pd.read_csv(P1 / 'mechanism_csafe_settings.csv')
+    C = C[C.condition != 'S3_WOZ_r01']
+    cp = pd.read_csv(P1 / 'mechanism_csafe_j1_pooled.csv')
+    neural = cp[cp.reps.str.startswith('neural')].iloc[0]
+    allr = cp[cp.reps == 'all four'].iloc[0]
+    cm = C[['gap_total_pts', 'j=1_gap_pts', 'j=2_gap_pts', 'j=3_gap_pts', 'j>=4_gap_pts']].mean()
+    cn = C[C.rep.isin(['resnet18', 'vit_b_16'])][['gap_total_pts', 'j=1_gap_pts', 'j=2_gap_pts', 'j=3_gap_pts', 'j>=4_gap_pts']].mean()
+    rows.append(r'\midrule')
+    rows.append(' & '.join(['CSAFE, ResNet-18 and ViT-B/16', f(cn.gap_total_pts), f(cn['j=1_gap_pts']), f(cn['j=2_gap_pts']),
+                            f(cn['j=3_gap_pts']), f(cn['j>=4_gap_pts']), '',
+                            f'{100 * neural.j1_opposite_hand_share:.1f} [{100 * neural.ci95_lo:.1f}, {100 * neural.ci95_hi:.1f}]']) + r' \\')
+    rows.append(' & '.join(['CSAFE, all four', f(cm.gap_total_pts), f(cm['j=1_gap_pts']), f(cm['j=2_gap_pts']),
+                            f(cm['j=3_gap_pts']), f(cm['j>=4_gap_pts']), '',
+                            f'{100 * allr.j1_opposite_hand_share:.1f} [{100 * allr.ci95_lo:.1f}, {100 * allr.ci95_hi:.1f}]']) + r' \\')
+    return '\n'.join([r'\begin{table}[ht]', r'\caption{Decomposition of the known-hand minus random-partition gap by the number $j$ of impostors outranking the true writer (Eq.~\ref{eq:supdecomp}), in percentage points averaged over settings. The $j=1$ share is the writer-weighted fraction of queries with exactly one outranking impostor; the last column is the fraction of those impostors with the opposite hand, with conditional 95\% writer-bootstrap intervals. Random references: 51.2\% (BanglaHand) and 50.5\% (CSAFE). CSAFE rows average the two session-2 conditions; their $j=1$ shares pool decisions across conditions and representations.}\label{tab:decomposition}',
+                      r'\centering\footnotesize\setlength{\tabcolsep}{3pt}', r'\begin{tabular}{lrrrrrrr}\toprule',
+                      r'Representation & Gap & $j=1$ & $j=2$ & $j=3$ & $j\geq4$ & $j=1$ share, \% & Opposite hand at $j=1$, \%\\\midrule']
+                     + rows + [r'\bottomrule', r'\end{tabular}', r'\end{table}'])
+
+
+def correction():
+    old = pd.read_csv(ROOT / 'results/csafe_replication_2026-11-08/handedness_conditional_intervals.csv')
+    new = pd.read_csv(P1 / 'csafe_corrected/handedness_conditional_intervals.csv')
+    so = pd.read_csv(ROOT / 'results/csafe_replication_2026-11-08/id_summary.csv')
+    sn = pd.read_csv(P1 / 'csafe_corrected/id_summary.csv')
+    rows = []
+    for cond in COND:
+        o = old[(old.condition == cond) & (old.hand_model == 'hc183_adj')].iloc[0]
+        n = new[(new.condition == cond) & (new.hand_model == 'hc183_adj')].iloc[0]
+        def acc(x):
+            return f'{100 * x.accuracy:.2f} [{100 * x.ci_lo:.2f}, {100 * x.ci_hi:.2f}]'
+        rows.append(' & '.join([COND[cond].replace('Same', 'S2 same').replace('Different', 'S2 different'), acc(o), f'{o.calibrated_auc:.3f}',
+                                acc(n), f'{n.calibrated_auc:.3f}', f'{n.raw_auc:.3f}']) + r' \\')
+    return '\n'.join([r'\begin{table}[ht]', r'\caption{CSAFE adjusted HC-183 handedness prediction before and after the numerical correction. Accuracy in \% with conditional 95\% writer-bootstrap intervals. The raw-score AUC is unchanged in substance; only the calibration collapse is removed. All other CSAFE models and every primary result are unaffected.}\label{tab:correction}',
+                      r'\centering\footnotesize', r'\begin{tabular}{lrrrrr}\toprule',
+                      r' & \multicolumn{2}{c}{Original} & \multicolumn{3}{c}{Corrected}\\\cmidrule(lr){2-3}\cmidrule(lr){4-6}',
+                      r'Query & Accuracy & Cal. AUC & Accuracy & Cal. AUC & Raw AUC\\\midrule']
+                     + rows + [r'\bottomrule', r'\end{tabular}', r'\end{table}'])
+
+
+def by_hand():
+    D = pd.read_csv(P1 / 'csafe_by_query_hand.csv')
+    rows = []
+    for r in D.itertuples():
+        rows.append(' & '.join([COND[r.condition], NAMES[r.rep], r.query_hand, f'{r.identity_top1:.2f}', f(r.known_gain),
+                                f(r.fixed_change), f(r.nested_change), f(r.filter_change), f'{r.hand_recall:.1f}']) + r' \\')
+    return '\n'.join([r'\begin{table}[ht]', r'\caption{CSAFE session-2 results split by query hand in the balanced 96-writer gallery (48 writers per hand; one writer is 2.08 points). Changes are percentage points from identity-only ranking with the primary HC-183 predictor; recall is the handedness accuracy for that hand. Descriptive only.}\label{tab:csafebyhand}',
+                      r'\centering\footnotesize\setlength{\tabcolsep}{4pt}', r'\begin{tabular}{lllrrrrrr}\toprule',
+                      r'Prompt & ID features & Query hand & Identity, \% & Known & Fixed & Nested & Filter & Recall, \%\\\midrule']
+                     + rows + [r'\bottomrule', r'\end{tabular}', r'\end{table}'])
+
+
+def csafe_rows():
+    """Corrected rows for Tables S17 (handedness) and S19 (complete identification)."""
+    H = pd.read_csv(P1 / 'csafe_corrected/handedness_conditional_intervals.csv')
+    S = pd.read_csv(P1 / 'csafe_corrected/id_summary.csv')
+    S = S[(S.cohort == 'full_balanced')]
+    q = {'S2_LND_r01': 'S2/LND', 'S2_WOZ_r01': 'S2/WOZ', 'S3_WOZ_r01': 'S3/WOZ'}
+    hand = {}
+    for r in H[H.hand_model == 'hc183_adj'].itertuples():
+        hand[q[r.condition]] = (f'{q[r.condition]} & HC-183 adj. & {100 * r.accuracy:.2f} & [{100 * r.ci_lo:.2f}, {100 * r.ci_hi:.2f}] & '
+                                f'{r.nll:.3f} & {r.brier:.3f} & {r.raw_auc:.3f} & {r.calibrated_auc:.3f} \\\\')
+    full = {}
+    reps = {'resnet18': 'ResNet-18', 'vit_b_16': 'ViT-B/16', 'hc183': 'HC-183', 'stroke': 'STROKE'}
+    for cond in q:
+        for rep in reps:
+            s = S[(S.condition == cond) & (S.rep == rep) & (S.hand_model == 'hc183_adj')].set_index('method').top1 * 100
+            full[(q[cond], reps[rep])] = (f'{q[cond]} & HC-183 adj. & {reps[rep]} & {s.identity_only:.2f} & {s.oracle_known_hand:.2f} & '
+                                          f'{s.predicted_hard_filter:.2f} & {s.fixed_fusion_lambda1:.2f} & {s.nested_fusion:.2f} \\\\')
+    return hand, full
+
+
+def main():
+    TAB.mkdir(exist_ok=True)
+    for name, fn in (('designated', designated), ('precision', precision), ('decomposition', decomposition),
+                     ('correction', correction), ('csafe_by_hand', by_hand)):
+        (TAB / f'p1_{name}.tex').write_text(fn() + '\n')
+    hand, full = csafe_rows()
+    (TAB / 'p1_csafe_hand_rows.tex').write_text('\n'.join(hand.values()) + '\n')
+    (TAB / 'p1_csafe_full_rows.tex').write_text('\n'.join(full.values()) + '\n')
+    print('written', sorted(p.name for p in TAB.glob('p1_*')))
+
+
+if __name__ == '__main__':
+    main()

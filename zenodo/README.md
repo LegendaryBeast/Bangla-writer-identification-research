@@ -1,3 +1,5 @@
+> Historical packaging notes for the 2026-10-29 analysis. The revised, authoritative materials are generated in `submission/revised/` by `code/build_revision_package.py`; see the root README. The old archive and its results are preserved for provenance. No Zenodo DOI is claimed for the revised work.
+
 # Zenodo upload: code and results
 
 File to upload: `wid-handedness-code-results-v1.0.0.zip` (122 MB, 43 files, `SHA256SUMS.txt` inside).

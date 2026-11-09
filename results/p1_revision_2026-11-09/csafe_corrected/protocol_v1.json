@@ -1,0 +1,76 @@
+{
+  "version": "1.0",
+  "frozen_at_utc": "2026-11-08T15:06:20.392564+00:00",
+  "status": "Specified before any CSAFE handedness or identification outcomes; extension of the existing study, not a public preregistration.",
+  "dataset": "CSAFE Handwriting Database v2, DOI 10.25380/iastate.10062203.v2",
+  "eligibility": "Original binary left/right survey labels; required source pages available; original feature-validity rules. Ambidextrous and missing handedness excluded before outcomes. No exclusion based on classifier performance.",
+  "cohort": {
+    "selection": "All 48 left-handed writers and 48 right-handed writers sampled without replacement from sorted IDs using numpy default_rng(20261108).",
+    "counts_before_quality_audit": {
+      "left": 48,
+      "right": 48
+    },
+    "quality_failure_policy": "Stop before evaluation and record missing/invalid required pages; no silent exclusion or result-driven replacement."
+  },
+  "acquisition": {
+    "gallery": "Session 1, LND prompt, repetition 1 only; full page excluding provider-removed printed header.",
+    "attribute_training": "Session 1, LND and WOZ prompts, repetitions 1,2,3: six long-text pages per other writer. All pages of held-out writers excluded from attribute fitting and calibration. Short PHR pages not used.",
+    "query_conditions": [
+      "S2_LND_r01: session 2, same prompt as gallery",
+      "S2_WOZ_r01: session 2, different prompt from gallery",
+      "S3_WOZ_r01: session 3, different prompt from gallery"
+    ],
+    "interpretation": "Independent-dataset replication with within-dataset refitting. Different physical pages and capture sessions; no claim of cross-dataset transfer of a Bangla-trained classifier."
+  },
+  "features": {
+    "query_size": "n=1 whole page; k=1 identity reference",
+    "identity_representations": [
+      "resnet18",
+      "vit_b_16",
+      "hc183",
+      "stroke"
+    ],
+    "deep_features": "Same frozen torchvision ImageNet1K_V1 checkpoints and tile extraction as original; no fine-tuning.",
+    "attribute_models": {
+      "primary": "hc183 linear SVM C=0.1",
+      "sensitivity": [
+        "stroke linear SVM C=0.1",
+        "hc183 adjusted for ink density and seven intensity summaries using fold-local residualization"
+      ]
+    },
+    "validity": "Shared original whole-image ink/STROKE finite-feature thresholds, applied before any performance analysis."
+  },
+  "fitting": {
+    "identity_scaling": "StandardScaler fitted only on selected gallery LND reference page for each enrolled writer; L2 normalization and cosine similarity.",
+    "calibration": "Five grouped writer folds for out-of-fold Platt logistic calibration; all preprocessing refitted inside each fold.",
+    "outer_test": "Each query writer excluded from all auxiliary training/calibration pages and from temperature/weight targets.",
+    "development": "Five writer folds regenerated inside each outer writer exclusion; each development attribute fit has its own five-fold grouped calibration and excludes the whole development validation fold.",
+    "temperature": "31 ID-only NLL grid values, logspace(-3,0), selected on other query writers for that query condition.",
+    "fusion_weight_grid": [
+      0,
+      0.1,
+      0.2,
+      0.3,
+      0.5,
+      0.7,
+      1,
+      1.5,
+      2,
+      3,
+      5
+    ],
+    "fusion_selection": "NLL over other development query writers with fresh nested probabilities; fixed fusion has weight 1. Known gallery handedness is permitted metadata."
+  },
+  "comparators": [
+    "identity_only",
+    "oracle_known_hand",
+    "predicted_hard_filter",
+    "fixed_fusion_lambda1",
+    "nested_fusion",
+    "exact_known_balanced_random_partition_expectation"
+  ],
+  "gallery_sensitivity": "20 seeded balanced 21/21 galleries from the selected 96-writer pool. Each refits its own primary HC183 auxiliary models. Evaluate both session-2 conditions; no independent-replication claim for overlapping galleries. The first is the designated size-matched descriptive gallery.",
+  "primary_tests": "Eight: fixed/nested versus identity only for ResNet18 and ViT in the full 96-writer gallery, primary HC183 handedness, both session-2 conditions. Holm correction across all eight. All other representations, attribute-model variants, session-3 outcomes and subsamples are secondary descriptive analyses.",
+  "uncertainty": "10000 hand-stratified conditional writer-bootstrap draws and 9999 sign flips. Intervals retain fitted models and enrolled gallery. Report class-specific accuracy, attribute balanced accuracy, NLL/Brier, raw-score discrimination, temperature/weight selections, rescue/damage and filtering identity. Do not imply full-population or full-refitting uncertainty.",
+  "reporting": "Retain all outcomes irrespective of whether handedness or identification accuracy improves. No external dataset selection on achieved accuracy. No manuscript changes or uploads before the experiment audit is complete."
+}

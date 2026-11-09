@@ -1,0 +1,16 @@
+{
+  "corrected_rows": {
+    "id_summary.csv": 60,
+    "paired_tests.csv": 48,
+    "handedness_summary.csv": 3,
+    "diagnostics.csv": 12,
+    "writer_outcomes.csv.gz": 5760,
+    "selected_parameters.csv": 1152,
+    "lambda_loss_profiles.csv.gz": 12672
+  },
+  "source": "results/csafe_replication_2026-11-08",
+  "correction": "results/p1_revision_2026-11-09/csafe_adjusted_fix",
+  "scope": "full_balanced cohort, hc183_adj sensitivity model only; primary and sub-gallery rows unchanged",
+  "timing": "post hoc implementation correction after CSAFE performance tables were inspected",
+  "adjusted_paired_test_p_values": "from the corrected rerun (descriptive, outside the primary family)"
+}

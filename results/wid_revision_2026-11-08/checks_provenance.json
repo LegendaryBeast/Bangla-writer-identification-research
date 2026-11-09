@@ -1,0 +1,35 @@
+{
+  "seed": 20261108,
+  "parameters": {
+    "run": "results/wid_handedness_2026-10-29",
+    "out": "results/wid_revision_2026-11-08",
+    "handedness": null,
+    "partitions": 2000,
+    "bootstrap": 10000,
+    "permutations": 9999,
+    "both_controls": true,
+    "jobs": 6,
+    "pseudo": 20,
+    "random": 100
+  },
+  "seconds": 723.34,
+  "input_sha256": {
+    "results/wid_handedness_2026-10-29/features/units.csv": "5e47aa2a033ffc94de6a995151e0c7cf204e2cf148f6918eb7faae66ed0bafc8",
+    "results/wid_handedness_2026-10-29/features/unit_features.npz": "efe7c0b3cc9f40eefebbcc2fc0a24c5a5353769d414222c722bb5ddca25bf355",
+    "results/wid_handedness_2026-10-29/handedness_lowo.csv.gz": "ad922408b2138cc1759c9f4b38dc6ff53b90436ad7bf779eae9b4d3085ec0396",
+    "/Users/tanzimhasanprappo/Desktop/Writer-Identifications/code/run_revision_checks.py": "0d2b0260738237b497dfb8141401ac1f4e58dd7653c9253ee4323622ff0aa96f",
+    "/Users/tanzimhasanprappo/Desktop/Writer-Identifications/code/revised_protocol.py": "18c6e99dcb434f0d4424db0226c52b0431fec23e29a1095e10088396bc525a66",
+    "/Users/tanzimhasanprappo/Desktop/Writer-Identifications/code/run_wid_handedness.py": "a8c78865b5da672ce14faea0fb0101351f4ec46f0aea8cd7b75f1646ccb76fc0",
+    "/Users/tanzimhasanprappo/Desktop/Writer-Identifications/code/run_both_control.py": "385c8ae8d63744f1233e515a3dcc0b63dbd1f6137a39a8b2d73994d25d08f9cd"
+  },
+  "python": "3.13.9",
+  "numpy": "2.3.5",
+  "pandas": "2.3.2",
+  "scipy": "1.16.3",
+  "sklearn": "1.7.2",
+  "weighting": "Equal writer weight within setting, equal setting weight across the 120 settings.",
+  "inference": "Post-review exploratory analyses. Stratified writer bootstrap/sign flips conditional on the enrolled gallery, fitted evidence and selected-reference score protocol. Gallery composition and fitting are not resampled.",
+  "random_partition": "Uniform 21/21 writer partitions; query membership and gallery memberships supplied as oracle labels. Draw quantiles measure partition variability, not sampling confidence.",
+  "both_scenario": "Exploratory descriptor agreement. Gallery writer-cross-fitted predictors can include the querywriter in their training cohort; no attribution to handedness specifically is established.",
+  "serialization_note": "Unavailable multiplicity-adjusted values are JSON null; statistical CSV values are unchanged."
+}

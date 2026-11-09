@@ -1,0 +1,14 @@
+[
+  {
+    "file": "submission/revised/wid-submission-source-2026-11-08-v1.2.0.zip",
+    "files": 34,
+    "bytes": 791076,
+    "sha256": "dd0e6266405d6287ea694e340ef03cac28822fed88b2753bc98b4e66d48cf543"
+  },
+  {
+    "file": "submission/revised/wid-reproducibility-2026-11-08-v1.2.0.zip",
+    "files": 182,
+    "bytes": 152935597,
+    "sha256": "84f1c74e1d7b4c5faadc67645f2908f74cd1b15712f9f1559b5f1edfb77c7b5c"
+  }
+]
