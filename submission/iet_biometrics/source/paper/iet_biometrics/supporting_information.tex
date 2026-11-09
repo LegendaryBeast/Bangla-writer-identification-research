@@ -21,7 +21,7 @@
 \begin{document}
 \maketitle
 \vspace{-12pt}
-This document accompanies the IET Biometrics manuscript. The authoritative numerical outputs are in \path{results/wid_revision_2026-11-08/}. Identification uses selected-reference normalization and equal writer weights. The primary BanglaHand analyses are retrospective and were not preregistered. Section S13 documents the separately specified CSAFE extension. Sections S14--S16 report the post hoc revision analyses: the precision of the fusion contrasts, the decomposition of the random-partition gap, and the numerical correction of the CSAFE adjusted sensitivity model. Section S17 retains the methodological comparison of cited approaches. Revision outputs are in \path{results/p1_revision_2026-11-09/}.
+This document accompanies the IET Biometrics manuscript. The authoritative numerical outputs are in \path{results/wid_revision_2026-11-08/}. Identification uses selected-reference normalization and equal writer weights. The primary BanglaHand analyses are retrospective and were not preregistered. Section S13 documents the separately specified CSAFE extension. Sections S14--S16 report the post hoc revision analyses: the precision of the fusion contrasts, the decomposition of the random-partition gap, and the numerical correction of the CSAFE adjusted sensitivity model. Section S17 retains the methodological comparison of cited approaches, and Section S18 reports the SIFT-VLAD matcher and gender extensions on CSAFE. Revision outputs are in \path{results/p1_revision_2026-11-09/}.
 
 \section{Data units, exclusion and weighting}
 BanglaHand provides 336 photographs from 42 writers, 21 in each handedness group, with eight paragraphs per writer. Paragraphs 1--6 use shared prompts; 7--8 are self-chosen texts. The released metadata links every photograph to a pseudonymous writer and condition. All analyses use the released photographs.
@@ -857,6 +857,98 @@ Companion preprint (2026) & Y & Y & -- & -- & -- & -- & -- & -- & BanglaHand\\
 Present study & Y & Y & $\Delta$ID & Y & Y & Y & Y & Y & BanglaHand; CSAFE\\\bottomrule
 \end{tabularx}
 \end{table}
+
+
+\FloatBarrier
+\section{SIFT-VLAD matcher and gender as a second attribute}
+\label{sec:supextensions}
+These two CSAFE extensions were added after an internal review. Their protocol (\path{results/p2_extensions_2026-11-09/protocol.json}) was written before any SIFT-VLAD feature or gender outcome was computed. It fixes the descriptor pipeline, the codebook pages, the attribute definition, the estimand and the 16-contrast primary family. They are nevertheless post hoc relative to the original CSAFE design.
+
+\textbf{Matcher.} Grayscale pages are resized to 1,600 pixels width. OpenCV 5.0 SIFT detects up to 4,000 keypoints per page, and the descriptors are converted to RootSIFT (L1 normalization followed by an elementwise square root). The codebook pages are the session-1 LND and WOZ repetition-2 pages of every writer: 192 pages that are never gallery or query pages. From them, 300 random descriptors per page fit a 64-component PCA and a 100-cluster mini-batch $k$-means (seed 20261109). Each page's VLAD sums residuals per cluster and applies intra-normalization, signed square root and global $L_2$ normalization. PCA whitening to 128 dimensions, fitted on the codebook-page VLADs, and a final $L_2$ normalization give the feature. No label is used. Identity matching then applies the same gallery-only standardization, normalization and cosine similarity as every other representation.
+
+\textbf{Attribute.} Gender comes from the CSAFE survey: 63 of the 96 selected writers are female (label 1) and 33 male. The HC-183 linear SVM, outer-writer exclusion, development folds and Platt calibration are identical to the handedness model. The refitted handedness model reproduces the archived logits to $10^{-9}$. For unequal groups, a known random partition with the same group sizes rescues a query outranked by $j$ impostors with probability $\binom{H}{j}/\binom{N-1}{j}$, where $H$ is the size of the query's opposite group. The estimand weights writers equally, which equals hand balance in this 48/48 cohort, and the bootstrap stratifies by hand as in Section S13.
+
+\textbf{Results.} Table~\ref{tab:p2attr} gives attribute prediction, Table~\ref{tab:p2ident} all identification results and Table~\ref{tab:p2tests} the primary family. Pooling ResNet-18, ViT-B/16 and SIFT-VLAD over both session-2 conditions, sole outranking impostors have the opposite gender in 13 of 44 decisions (29.5\%; 95\% interval 16.3--45.0\%), against 46.2\% for a random impostor. For SIFT-VLAD with handedness, none of the 4 such decisions involves an opposite-hand impostor.
+
+\begin{table}[ht]
+\caption{Writer-held-out attribute prediction on CSAFE with the primary HC-183 model. Handedness: 48 left (label 1) and 48 right. Gender: 63 female (label 1) and 33 male. Recall is given for label 1 / label 0; AUC uses calibrated scores; NLL and Brier are losses.}\label{tab:p2attr}
+\centering\footnotesize
+\begin{tabular}{llrrrrrr}\toprule
+Attribute & Query & Accuracy, \% & Balanced, \% & Recall, \% & AUC & NLL & Brier\\\midrule
+Handedness & S2 same & 67.7 & 67.7 & 72.9 / 62.5 & 0.711 & 0.636 & 0.221 \\
+Handedness & S2 different & 58.3 & 58.3 & 52.1 / 64.6 & 0.641 & 0.682 & 0.239 \\
+Handedness & S3 different & 65.6 & 65.6 & 72.9 / 58.3 & 0.702 & 0.645 & 0.225 \\
+Gender & S2 same & 64.6 & 57.1 & 81.0 / 33.3 & 0.632 & 0.649 & 0.226 \\
+Gender & S2 different & 63.5 & 54.9 & 82.5 / 27.3 & 0.684 & 0.627 & 0.218 \\
+Gender & S3 different & 68.8 & 58.2 & 92.1 / 24.2 & 0.646 & 0.619 & 0.214 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\caption{The 16 pre-specified primary extension contrasts (fixed or nested fusion minus identity-only ranking, percentage points), with conditional 95\% writer-bootstrap intervals, the smallest equivalence margin supported by the 90\% interval, the number of writer decisions changed, and Holm-adjusted sign-flip $p$-values across all 16.}\label{tab:p2tests}
+\centering\footnotesize\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{lllrrrrrr}\toprule
+Attribute & ID features & Query & Fusion & Change & 95\% CI & $\Delta^*$ & Changed & Holm $p$\\\midrule
+Handedness & SIFT-VLAD & S2 same & Fixed & +0.00 & [+0.00, +0.00] & none changed & 0 & 1.000 \\
+Handedness & SIFT-VLAD & S2 same & Nested & +0.00 & [+0.00, +0.00] & none changed & 0 & 1.000 \\
+Handedness & SIFT-VLAD & S2 different & Fixed & -1.04 & [-3.12, +0.00] & 3.12 & 1 & 1.000 \\
+Handedness & SIFT-VLAD & S2 different & Nested & -1.04 & [-3.12, +0.00] & 3.12 & 1 & 1.000 \\
+Gender & ResNet-18 & S2 same & Fixed & -1.04 & [-6.25, +3.12] & 5.21 & 5 & 1.000 \\
+Gender & ResNet-18 & S2 same & Nested & +1.04 & [-2.08, +5.21] & 4.17 & 3 & 1.000 \\
+Gender & ResNet-18 & S2 different & Fixed & -4.17 & [-10.42, +1.04] & 9.38 & 8 & 1.000 \\
+Gender & ResNet-18 & S2 different & Nested & -1.04 & [-5.21, +2.08] & 4.17 & 3 & 1.000 \\
+Gender & ViT-B/16 & S2 same & Fixed & -2.08 & [-6.25, +2.08] & 5.21 & 4 & 1.000 \\
+Gender & ViT-B/16 & S2 same & Nested & +0.00 & [+0.00, +0.00] & none changed & 0 & 1.000 \\
+Gender & ViT-B/16 & S2 different & Fixed & +0.00 & [-5.21, +5.21] & 4.17 & 6 & 1.000 \\
+Gender & ViT-B/16 & S2 different & Nested & +0.00 & [+0.00, +0.00] & none changed & 0 & 1.000 \\
+Gender & SIFT-VLAD & S2 same & Fixed & -1.04 & [-3.12, +0.00] & 3.12 & 1 & 1.000 \\
+Gender & SIFT-VLAD & S2 same & Nested & -1.04 & [-3.12, +0.00] & 3.12 & 1 & 1.000 \\
+Gender & SIFT-VLAD & S2 different & Fixed & +0.00 & [+0.00, +0.00] & none changed & 0 & 1.000 \\
+Gender & SIFT-VLAD & S2 different & Nested & +0.00 & [+0.00, +0.00] & none changed & 0 & 1.000 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{longtable}{lllrrrrrr}
+\caption{CSAFE top-1 identification (\%) with SIFT-VLAD added as a handwriting-specific matcher and gender as a second attribute. Random: exact expectation of a known random partition with the same group sizes as the attribute. Filter, Fixed and Nested use the predicted attribute.}\label{tab:p2ident}\\
+\toprule Attribute & Query & ID features & ID & Known & Random & Filter & Fixed & Nested\\\midrule
+\endfirsthead
+\toprule Attribute & Query & ID features & ID & Known & Random & Filter & Fixed & Nested\\\midrule
+\endhead
+Handedness & S2 same & ResNet-18 & 61.46 & 68.75 & 68.18 & 43.75 & 62.50 & 62.50 \\
+Handedness & S2 same & ViT-B/16 & 64.58 & 67.71 & 71.75 & 39.58 & 62.50 & 62.50 \\
+Handedness & S2 same & SIFT-VLAD & 92.71 & 92.71 & 94.29 & 61.46 & 92.71 & 92.71 \\
+Handedness & S2 same & HC-183 & 44.79 & 48.96 & 51.99 & 32.29 & 40.62 & 39.58 \\
+Handedness & S2 same & STROKE & 70.83 & 73.96 & 75.14 & 48.96 & 71.88 & 71.88 \\
+Handedness & S2 different & ResNet-18 & 54.17 & 60.42 & 61.25 & 31.25 & 48.96 & 54.17 \\
+Handedness & S2 different & ViT-B/16 & 55.21 & 61.46 & 64.47 & 34.38 & 54.17 & 54.17 \\
+Handedness & S2 different & SIFT-VLAD & 95.83 & 95.83 & 96.36 & 54.17 & 94.79 & 94.79 \\
+Handedness & S2 different & HC-183 & 22.92 & 33.33 & 31.23 & 19.79 & 22.92 & 23.96 \\
+Handedness & S2 different & STROKE & 67.71 & 69.79 & 72.06 & 39.58 & 65.62 & 67.71 \\
+Handedness & S3 different & ResNet-18 & 46.88 & 56.25 & 54.41 & 35.42 & 50.00 & 50.00 \\
+Handedness & S3 different & ViT-B/16 & 58.33 & 60.42 & 64.88 & 36.46 & 55.21 & 55.21 \\
+Handedness & S3 different & SIFT-VLAD & 90.62 & 93.75 & 93.78 & 61.46 & 91.67 & 90.62 \\
+Handedness & S3 different & HC-183 & 23.96 & 34.38 & 30.55 & 23.96 & 25.00 & 23.96 \\
+Handedness & S3 different & STROKE & 53.12 & 59.38 & 60.38 & 40.62 & 54.17 & 54.17 \\
+\midrule
+Gender & S2 same & ResNet-18 & 61.46 & 66.67 & 66.73 & 42.71 & 60.42 & 62.50 \\
+Gender & S2 same & ViT-B/16 & 64.58 & 70.83 & 70.98 & 42.71 & 62.50 & 64.58 \\
+Gender & S2 same & SIFT-VLAD & 92.71 & 92.71 & 94.12 & 60.42 & 91.67 & 91.67 \\
+Gender & S2 same & HC-183 & 44.79 & 54.17 & 50.81 & 35.42 & 40.62 & 44.79 \\
+Gender & S2 same & STROKE & 70.83 & 72.92 & 74.72 & 48.96 & 67.71 & 70.83 \\
+Gender & S2 different & ResNet-18 & 54.17 & 59.38 & 60.63 & 33.33 & 50.00 & 53.12 \\
+Gender & S2 different & ViT-B/16 & 55.21 & 62.50 & 64.16 & 39.58 & 55.21 & 55.21 \\
+Gender & S2 different & SIFT-VLAD & 95.83 & 95.83 & 96.20 & 61.46 & 95.83 & 95.83 \\
+Gender & S2 different & HC-183 & 22.92 & 33.33 & 31.56 & 22.92 & 22.92 & 23.96 \\
+Gender & S2 different & STROKE & 67.71 & 69.79 & 71.65 & 44.79 & 60.42 & 66.67 \\
+Gender & S3 different & ResNet-18 & 46.88 & 52.08 & 53.91 & 31.25 & 43.75 & 46.88 \\
+Gender & S3 different & ViT-B/16 & 58.33 & 62.50 & 63.26 & 37.50 & 54.17 & 59.38 \\
+Gender & S3 different & SIFT-VLAD & 90.62 & 93.75 & 92.97 & 64.58 & 91.67 & 90.62 \\
+Gender & S3 different & HC-183 & 23.96 & 31.25 & 30.93 & 20.83 & 20.83 & 25.00 \\
+Gender & S3 different & STROKE & 53.12 & 58.33 & 59.74 & 40.62 & 50.00 & 52.08 \\
+\bottomrule
+\end{longtable}
 
 
 \end{document}

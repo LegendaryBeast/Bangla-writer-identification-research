@@ -1,7 +1,7 @@
 {
   "counts": {
     "Figure": 7,
-    "Table": 25,
+    "Table": 28,
     "Equation": 4
   },
   "equation_numbers": [
@@ -49,6 +49,10 @@
     "sec:supcorrection": "S16",
     "tab:correction": "S24",
     "sec:supcoverage": "S17",
-    "tab:coverage": "S25"
+    "tab:coverage": "S25",
+    "sec:supextensions": "S18",
+    "tab:p2ident": "S28",
+    "tab:p2attr": "S26",
+    "tab:p2tests": "S27"
   }
 }

@@ -5,28 +5,28 @@
   "pdfs": [
     {
       "file": "submission/iet_biometrics/Manuscript.pdf",
-      "pages": 12,
-      "sha256": "ede3a4c192e448eb9c377a8d385fb88409154ef2e8824b8a70b4dac138852295"
+      "pages": 14,
+      "sha256": "5657b2b210e65740760553f2ed98ebe330c015424089f9be7fae6f460e9d3651"
     },
     {
       "file": "submission/iet_biometrics/Supporting_information.pdf",
-      "pages": 21,
-      "sha256": "06549b7fc532555a80be2901d738df19859332e04195698ab0ed53d6a88b1289"
+      "pages": 23,
+      "sha256": "890a30155452b292221a74faff4361f36bdc4396b80d6bdc5089a4b6cb452f83"
     },
     {
       "file": "submission/iet_biometrics/Cover_letter.pdf",
       "pages": 2,
-      "sha256": "998781283d31a7e0257f5cf330df5be60c7eb5bdbf0f46c40ec5fddacf9d19e0"
+      "sha256": "64acf4487493237c630a58a3778de7aeb1e3389a9fa4eff4707e52324df01b75"
     }
   ],
-  "main_figures": 8,
+  "main_figures": 9,
   "main_tables": 6,
   "main_equations": 7,
-  "main_references": 32,
-  "abstract_words": 249,
-  "supplementary_tables": 25,
+  "main_references": 52,
+  "abstract_words": 282,
+  "supplementary_tables": 28,
   "supplementary_figures": 7,
-  "revision": "Title, abstract, introduction, results and discussion revised; post hoc precision and error-clustering analyses; numerically corrected CSAFE adjusted sensitivity model; six new verified references; Figures 1, 3, 5 new and Figures 6, 8 restyled; former Table 4, Table 6, Table 8 and Figure 5 moved to the supporting information.",
+  "revision": "Title, abstract, introduction, results and discussion revised; post hoc precision and error-clustering analyses; numerically corrected CSAFE adjusted sensitivity model; 26 new verified references; SIFT-VLAD matcher and gender attribute on CSAFE (Figure 9, S18); Figures 1, 3, 5 new and Figures 6, 8 restyled; former Table 4, Table 6, Table 8 and Figure 5 moved to the supporting information.",
   "previous_package_snapshot": "submission/iet_biometrics/previous/2026-11-09-pre-revision",
   "pdf_visual_review": "Every page of the main PDF rendered and reviewed after the final build.",
   "guide": "https://ietresearch.onlinelibrary.wiley.com/page/journal/ietbm/homepage/author-guidelines",

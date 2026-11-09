@@ -335,12 +335,72 @@ def csafe_figure():
     save(fig, 'csafe_identification_utility')
 
 
+# --------------------------------------------------------------------------- Figure 9 (extensions)
+def extensions_figure():
+    P2 = ROOT / 'results/p2_extensions_2026-11-09'
+    M = pd.read_csv(P2 / 'mechanism.csv'); M = M[M.condition != 'S3_WOZ_r01']
+    T = pd.read_csv(P2 / 'paired_tests.csv'); T = T[T.primary]
+    I = pd.read_csv(P2 / 'identification_summary.csv')
+    J = pd.read_csv(P1 / 'mechanism_bangla_j1_by_rep.csv').set_index('rep')
+    C = pd.read_csv(P1 / 'mechanism_csafe_j1_pooled.csv').iloc[0]
+    G = pd.read_csv(P2 / 'mechanism_pooled_j1.csv').set_index('attribute')
+    fig = plt.figure(figsize=(7.15, 2.75))
+    a = fig.add_axes([.155, .2, .175, .66]); b = fig.add_axes([.49, .2, .155, .66]); c = fig.add_axes([.815, .2, .175, .66])
+    reps = [('resnet18', 'ResNet-18'), ('vit_b_16', 'ViT-B/16'), ('sift_vlad', 'SIFT-VLAD')]
+    rows = [(att, r, f'{lab} · {"gender" if att == "gender" else "hand"}') for att in ('handedness', 'gender') for r, lab in reps]
+    y = np.arange(len(rows))
+    for i, (att, r, lab) in enumerate(rows):
+        m = M[(M.attribute == att) & (M.rep == r)][['known_gain', 'random_gain']].mean()
+        base = I[(I.attribute == att) & (I.rep == r) & (I.condition != 'S3_WOZ_r01') & (I.method == 'identity_only')].top1.mean()
+        a.barh(i - .19, m.known_gain, height=.36, color=METHOD['oracle'])
+        a.barh(i + .19, m.random_gain, height=.36, color=METHOD['random'])
+    a.set_yticks(y, [lab for *_, lab in rows]); a.invert_yaxis(); a.tick_params(axis='y', length=0)
+    a.set_xlim(0, 9.8); a.set_xticks([0, 2, 4, 6, 8]); a.set_xlabel('Oracle gain, session 2 (points)'); a.grid(axis='x', color=GRID, lw=.5); a.set_axisbelow(True)
+    a.axhline(2.5, color='#D1D5DB', lw=.7)
+    a.legend(handles=[Patch(fc=METHOD['oracle'], label='known attribute'), Patch(fc=METHOD['random'], label='random partition')],
+             frameon=False, fontsize=6.6, loc='lower right', handlelength=1, borderaxespad=.2)
+    panel(a, 'a', 'Oracle opportunity', x=-.85)
+    pts = [('BH · ResNet-18 · hand', 100 * J.loc['resnet18', 'j1_opposite_hand_share'], 100 * J.loc['resnet18', 'ci95_lo'], 100 * J.loc['resnet18', 'ci95_hi'], 51.2, '#009E73'),
+           ('BH · ViT-B/16 · hand', 100 * J.loc['vit_b_16', 'j1_opposite_hand_share'], 100 * J.loc['vit_b_16', 'ci95_lo'], 100 * J.loc['vit_b_16', 'ci95_hi'], 51.2, '#CC79A7'),
+           ('CSAFE · neural · hand', 100 * C.j1_opposite_hand_share, 100 * C.ci95_lo, 100 * C.ci95_hi, 50.5, '#4338CA'),
+           ('CSAFE · gender', 100 * G.loc['gender', 'share'], 100 * G.loc['gender', 'ci95_lo'], 100 * G.loc['gender', 'ci95_hi'],
+            100 * G.loc['gender', 'reference'], '#B45309')]
+    for i, (lab, v, lo, hi, ref, col) in enumerate(pts):
+        b.plot([ref, ref], [i - .32, i + .32], color='#6B7280', lw=.9, ls=(0, (2, 1.5)))
+        b.plot([lo, hi], [i, i], color=col, lw=1.4)
+        b.plot([v], [i], 'o', ms=4.6, color=col, mec='white', mew=.5)
+    b.set_yticks(range(len(pts)), [p[0] for p in pts]); b.set_ylim(len(pts) - .5, -.6); b.tick_params(axis='y', length=0)
+    b.set_xlim(10, 65); b.set_xlabel('Sole outranking impostor in\nopposite group (%)'); b.grid(axis='x', color=GRID, lw=.5)
+    panel(b, 'b', 'Within-group errors', x=-1.1)
+    order = [('handedness', 'sift_vlad'), ('gender', 'resnet18'), ('gender', 'vit_b_16'), ('gender', 'sift_vlad')]
+    labels, yy = [], []
+    k = 0
+    for att, r in order:
+        for cond in ('S2_LND_r01', 'S2_WOZ_r01'):
+            for meth, off, col in (('fixed', -.15, METHOD['fixed']), ('nested', .15, METHOD['nested'])):
+                t = T[(T.attribute == att) & (T.rep == r) & (T.condition == cond) & (T.method == meth)].iloc[0]
+                c.plot([t.ci95_lo, t.ci95_hi], [k + off] * 2, color=col, lw=.9)
+                c.plot([t.ci90_lo, t.ci90_hi], [k + off] * 2, color=col, lw=3, alpha=.55, solid_capstyle='butt')
+                c.plot([t.delta_pts], [k + off], 'o', ms=3.6, color=col, mec='white', mew=.4)
+            labels.append(f"{dict(reps)[r]} · {'gender' if att == 'gender' else 'hand'} · {'same' if 'LND' in cond else 'diff.'}")
+            k += 1
+    c.axvline(0, color='#6B7280', lw=.8)
+    c.set_yticks(range(k), labels, fontsize=6.6); c.set_ylim(k - .5, -.5); c.tick_params(axis='y', length=0)
+    c.set_xlim(-11, 7); c.set_xlabel('Change (points)'); c.grid(axis='x', color=GRID, lw=.5)
+    c.legend(handles=[Line2D([], [], color=METHOD['fixed'], marker='o', lw=2.5, label='fixed'),
+                      Line2D([], [], color=METHOD['nested'], marker='o', lw=2.5, label='nested')],
+             frameon=False, fontsize=6.6, loc='upper left', handlelength=1.4, borderaxespad=.2)
+    panel(c, 'c', 'Primary fusion contrasts', x=-.95)
+    save(fig, 'extensions')
+
+
 def main():
     protocol_figure()
     precision_figure()
     mechanism_figure()
     label_controls_figure()
     csafe_figure()
+    extensions_figure()
     print('wrote', [p.name for p in OUT.glob('*') if p.stem in ('protocol', 'precision', 'mechanism')])
 
 

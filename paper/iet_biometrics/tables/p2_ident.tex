@@ -1,0 +1,39 @@
+\begin{longtable}{lllrrrrrr}
+\caption{CSAFE top-1 identification (\%) with SIFT-VLAD added as a handwriting-specific matcher and gender as a second attribute. Random: exact expectation of a known random partition with the same group sizes as the attribute. Filter, Fixed and Nested use the predicted attribute.}\label{tab:p2ident}\\
+\toprule Attribute & Query & ID features & ID & Known & Random & Filter & Fixed & Nested\\\midrule
+\endfirsthead
+\toprule Attribute & Query & ID features & ID & Known & Random & Filter & Fixed & Nested\\\midrule
+\endhead
+Handedness & S2 same & ResNet-18 & 61.46 & 68.75 & 68.18 & 43.75 & 62.50 & 62.50 \\
+Handedness & S2 same & ViT-B/16 & 64.58 & 67.71 & 71.75 & 39.58 & 62.50 & 62.50 \\
+Handedness & S2 same & SIFT-VLAD & 92.71 & 92.71 & 94.29 & 61.46 & 92.71 & 92.71 \\
+Handedness & S2 same & HC-183 & 44.79 & 48.96 & 51.99 & 32.29 & 40.62 & 39.58 \\
+Handedness & S2 same & STROKE & 70.83 & 73.96 & 75.14 & 48.96 & 71.88 & 71.88 \\
+Handedness & S2 different & ResNet-18 & 54.17 & 60.42 & 61.25 & 31.25 & 48.96 & 54.17 \\
+Handedness & S2 different & ViT-B/16 & 55.21 & 61.46 & 64.47 & 34.38 & 54.17 & 54.17 \\
+Handedness & S2 different & SIFT-VLAD & 95.83 & 95.83 & 96.36 & 54.17 & 94.79 & 94.79 \\
+Handedness & S2 different & HC-183 & 22.92 & 33.33 & 31.23 & 19.79 & 22.92 & 23.96 \\
+Handedness & S2 different & STROKE & 67.71 & 69.79 & 72.06 & 39.58 & 65.62 & 67.71 \\
+Handedness & S3 different & ResNet-18 & 46.88 & 56.25 & 54.41 & 35.42 & 50.00 & 50.00 \\
+Handedness & S3 different & ViT-B/16 & 58.33 & 60.42 & 64.88 & 36.46 & 55.21 & 55.21 \\
+Handedness & S3 different & SIFT-VLAD & 90.62 & 93.75 & 93.78 & 61.46 & 91.67 & 90.62 \\
+Handedness & S3 different & HC-183 & 23.96 & 34.38 & 30.55 & 23.96 & 25.00 & 23.96 \\
+Handedness & S3 different & STROKE & 53.12 & 59.38 & 60.38 & 40.62 & 54.17 & 54.17 \\
+\midrule
+Gender & S2 same & ResNet-18 & 61.46 & 66.67 & 66.73 & 42.71 & 60.42 & 62.50 \\
+Gender & S2 same & ViT-B/16 & 64.58 & 70.83 & 70.98 & 42.71 & 62.50 & 64.58 \\
+Gender & S2 same & SIFT-VLAD & 92.71 & 92.71 & 94.12 & 60.42 & 91.67 & 91.67 \\
+Gender & S2 same & HC-183 & 44.79 & 54.17 & 50.81 & 35.42 & 40.62 & 44.79 \\
+Gender & S2 same & STROKE & 70.83 & 72.92 & 74.72 & 48.96 & 67.71 & 70.83 \\
+Gender & S2 different & ResNet-18 & 54.17 & 59.38 & 60.63 & 33.33 & 50.00 & 53.12 \\
+Gender & S2 different & ViT-B/16 & 55.21 & 62.50 & 64.16 & 39.58 & 55.21 & 55.21 \\
+Gender & S2 different & SIFT-VLAD & 95.83 & 95.83 & 96.20 & 61.46 & 95.83 & 95.83 \\
+Gender & S2 different & HC-183 & 22.92 & 33.33 & 31.56 & 22.92 & 22.92 & 23.96 \\
+Gender & S2 different & STROKE & 67.71 & 69.79 & 71.65 & 44.79 & 60.42 & 66.67 \\
+Gender & S3 different & ResNet-18 & 46.88 & 52.08 & 53.91 & 31.25 & 43.75 & 46.88 \\
+Gender & S3 different & ViT-B/16 & 58.33 & 62.50 & 63.26 & 37.50 & 54.17 & 59.38 \\
+Gender & S3 different & SIFT-VLAD & 90.62 & 93.75 & 92.97 & 64.58 & 91.67 & 90.62 \\
+Gender & S3 different & HC-183 & 23.96 & 31.25 & 30.93 & 20.83 & 20.83 & 25.00 \\
+Gender & S3 different & STROKE & 53.12 & 58.33 & 59.74 & 40.62 & 50.00 & 52.08 \\
+\bottomrule
+\end{longtable}

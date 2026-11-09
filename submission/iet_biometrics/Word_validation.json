@@ -6,23 +6,23 @@
   "documents": [
     {
       "file": "submission/iet_biometrics/Manuscript.docx",
-      "paragraphs": 164,
+      "paragraphs": 191,
       "tables": 6,
-      "images": 8,
-      "native_math_nodes": 108,
+      "images": 9,
+      "native_math_nodes": 113,
       "line_numbering": true,
       "table_decimal_values_checked": 107,
-      "sha256": "2915f5f2c0de482aac3c42ed5a1cba60d368d22cf001030c53eef211145b66a0"
+      "sha256": "0bbdfb0b70efccedda487ecc09602e4c0812b17bb38fdb7d062a138c6c13eccc"
     },
     {
       "file": "submission/iet_biometrics/Supporting_information.docx",
-      "paragraphs": 162,
-      "tables": 25,
+      "paragraphs": 172,
+      "tables": 28,
       "images": 7,
-      "native_math_nodes": 157,
+      "native_math_nodes": 167,
       "line_numbering": false,
-      "table_decimal_values_checked": 1591,
-      "sha256": "d955aeeae7e5cba2a4a57458fb8a6523e9ce6630b8677fd769a68d091cfd0c0b"
+      "table_decimal_values_checked": 1887,
+      "sha256": "ecb075d2a9fe32eaf20f1e5d00c00dca38f9461d66f04a88141dd7b1e84d43b3"
     },
     {
       "file": "submission/iet_biometrics/Cover_letter.docx",
@@ -32,14 +32,14 @@
       "native_math_nodes": 0,
       "line_numbering": false,
       "table_decimal_values_checked": 0,
-      "sha256": "9387fe602e52d59def36c068c56dbe015a84843c0a34fbebc9dc819c37edb3b3"
+      "sha256": "e1c567ab670292d050f175c7632573cf0bdb206fa20c21bb1d0e0ecaf9b20b08"
     }
   ],
   "source_sha256": {
-    "paper/iet_biometrics/manuscript.md": "f87b404742011773abb17d0a624c333ca79cd79081335f8da2edfe1b41358ab2",
-    "paper/iet_biometrics/supporting_information.md": "255d965c61d25ec44b971a88375a00c7fac00aa906c4cbe6ca327dccbae8df58",
-    "paper/iet_biometrics/cover_letter.md": "98d538d3d33e544fe777ea5d16de873663879f1829369b42f636d9cce9d13f6e",
-    "paper/iet_biometrics/refs.bib": "5111365d179ebb663a022a353fc039bb5a6909e8994065ac1bf05d831ef23a81",
+    "paper/iet_biometrics/manuscript.md": "7fe40e4c8adf5fa5f61714fab3afd00273ac4d20c720ad93bbc8118d42b4414a",
+    "paper/iet_biometrics/supporting_information.md": "838c90c988c783bb6d43d56e880a7f84ff8ba7ebf79b8dbfeb27a48a3197efd4",
+    "paper/iet_biometrics/cover_letter.md": "35e300a8bbf8c594e5beabae78f1fa757d0e74f6414b13b535fe685d24bb8f54",
+    "paper/iet_biometrics/refs.bib": "6d811563372fa7d6bb958c6a357c1accfd9bfb856bf04d869919a97c852dea48",
     "paper/iet_biometrics/ieee.csl": "b4c7619fc16c45a31e4cc3271eab94ffe83192d3b4c7fc729470a3b459448de3"
   },
   "review_date": "2026-11-09"

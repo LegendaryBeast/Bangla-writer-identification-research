@@ -160,11 +160,57 @@ def csafe_rows():
     return hand, full
 
 
+def p2_tables():
+    P2 = ROOT / 'results/p2_extensions_2026-11-09'
+    A = pd.read_csv(P2 / 'attribute_summary.csv')
+    I = pd.read_csv(P2 / 'identification_summary.csv')
+    M = pd.read_csv(P2 / 'mechanism.csv')
+    T = pd.read_csv(P2 / 'paired_tests.csv')
+    RN = dict(NAMES, sift_vlad='SIFT-VLAD')
+    CN = {'S2_LND_r01': 'S2 same', 'S2_WOZ_r01': 'S2 different', 'S3_WOZ_r01': 'S3 different'}
+    rows = [' & '.join([r.attribute.capitalize(), CN[r.condition], f'{100*r.accuracy:.1f}', f'{100*r.balanced_accuracy:.1f}',
+                        f'{100*r.recall_1:.1f} / {100*r.recall_0:.1f}', f'{r.auc:.3f}', f'{r.nll:.3f}', f'{r.brier:.3f}']) + r' \\' for r in A.itertuples()]
+    attr = '\n'.join([r'\begin{table}[ht]', r'\caption{Writer-held-out attribute prediction on CSAFE with the primary HC-183 model. Handedness: 48 left (label 1) and 48 right. Gender: 63 female (label 1) and 33 male. Recall is given for label 1 / label 0; AUC uses calibrated scores; NLL and Brier are losses.}\label{tab:p2attr}',
+                      r'\centering\footnotesize', r'\begin{tabular}{llrrrrrr}\toprule',
+                      r'Attribute & Query & Accuracy, \% & Balanced, \% & Recall, \% & AUC & NLL & Brier\\\midrule'] + rows + [r'\bottomrule', r'\end{tabular}', r'\end{table}'])
+    piv = I.pivot_table(index=['attribute', 'condition', 'rep'], columns='method', values='top1')
+    mm = M.set_index(['attribute', 'condition', 'rep'])
+    rows, last = [], None
+    for att in ('handedness', 'gender'):
+        for cond in CN:
+            for rep in ('resnet18', 'vit_b_16', 'sift_vlad', 'hc183', 'stroke'):
+                r = piv.loc[(att, cond, rep)]
+                rand = r.identity_only + mm.loc[(att, cond, rep), 'random_gain']
+                if last is not None and att != last:
+                    rows.append(r'\midrule')
+                last = att
+                rows.append(' & '.join([att.capitalize(), CN[cond], RN[rep], f'{r.identity_only:.2f}', f'{r.known:.2f}', f'{rand:.2f}',
+                                        f'{r.hard_filter:.2f}', f'{r.fixed:.2f}', f'{r.nested:.2f}']) + r' \\')
+    ident = '\n'.join([r'\begin{longtable}{lllrrrrrr}', r'\caption{CSAFE top-1 identification (\%) with SIFT-VLAD added as a handwriting-specific matcher and gender as a second attribute. Random: exact expectation of a known random partition with the same group sizes as the attribute. Filter, Fixed and Nested use the predicted attribute.}\label{tab:p2ident}\\',
+                       r'\toprule Attribute & Query & ID features & ID & Known & Random & Filter & Fixed & Nested\\\midrule', r'\endfirsthead',
+                       r'\toprule Attribute & Query & ID features & ID & Known & Random & Filter & Fixed & Nested\\\midrule', r'\endhead'] + rows + [r'\bottomrule', r'\end{longtable}'])
+    P = T[T.primary].copy()
+    order = {('handedness', 'sift_vlad'): 0, ('gender', 'resnet18'): 1, ('gender', 'vit_b_16'): 2, ('gender', 'sift_vlad'): 3}
+    P['o'] = [order[(a, r)] for a, r in zip(P.attribute, P.rep)]
+    P = P.sort_values(['o', 'condition', 'method'])
+    rows = []
+    for r in P.itertuples():
+        eq = 'none changed' if r.n_changed == 0 else f'{r.smallest_equivalence_margin:.2f}'
+        rows.append(' & '.join([r.attribute.capitalize(), RN[r.rep], CN[r.condition], r.method.capitalize(), f(r.delta_pts),
+                                ci(r.ci95_lo, r.ci95_hi), eq, str(r.n_changed), f'{r.p_holm:.3f}']) + r' \\')
+    tests = '\n'.join([r'\begin{table}[ht]', r'\caption{The 16 pre-specified primary extension contrasts (fixed or nested fusion minus identity-only ranking, percentage points), with conditional 95\% writer-bootstrap intervals, the smallest equivalence margin supported by the 90\% interval, the number of writer decisions changed, and Holm-adjusted sign-flip $p$-values across all 16.}\label{tab:p2tests}',
+                       r'\centering\footnotesize\setlength{\tabcolsep}{3.5pt}', r'\begin{tabular}{lllrrrrrr}\toprule',
+                       r'Attribute & ID features & Query & Fusion & Change & 95\% CI & $\Delta^*$ & Changed & Holm $p$\\\midrule'] + rows + [r'\bottomrule', r'\end{tabular}', r'\end{table}'])
+    return attr, ident, tests
+
+
 def main():
     TAB.mkdir(exist_ok=True)
     for name, fn in (('designated', designated), ('precision', precision), ('decomposition', decomposition),
                      ('correction', correction), ('csafe_by_hand', by_hand)):
         (TAB / f'p1_{name}.tex').write_text(fn() + '\n')
+    for name, block in zip(('p2_attr', 'p2_ident', 'p2_tests'), p2_tables()):
+        (TAB / f'{name}.tex').write_text(block + '\n')
     hand, full = csafe_rows()
     (TAB / 'p1_csafe_hand_rows.tex').write_text('\n'.join(hand.values()) + '\n')
     (TAB / 'p1_csafe_full_rows.tex').write_text('\n'.join(full.values()) + '\n')

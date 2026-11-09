@@ -1,0 +1,14 @@
+\begin{table}[ht]
+\caption{Writer-held-out attribute prediction on CSAFE with the primary HC-183 model. Handedness: 48 left (label 1) and 48 right. Gender: 63 female (label 1) and 33 male. Recall is given for label 1 / label 0; AUC uses calibrated scores; NLL and Brier are losses.}\label{tab:p2attr}
+\centering\footnotesize
+\begin{tabular}{llrrrrrr}\toprule
+Attribute & Query & Accuracy, \% & Balanced, \% & Recall, \% & AUC & NLL & Brier\\\midrule
+Handedness & S2 same & 67.7 & 67.7 & 72.9 / 62.5 & 0.711 & 0.636 & 0.221 \\
+Handedness & S2 different & 58.3 & 58.3 & 52.1 / 64.6 & 0.641 & 0.682 & 0.239 \\
+Handedness & S3 different & 65.6 & 65.6 & 72.9 / 58.3 & 0.702 & 0.645 & 0.225 \\
+Gender & S2 same & 64.6 & 57.1 & 81.0 / 33.3 & 0.632 & 0.649 & 0.226 \\
+Gender & S2 different & 63.5 & 54.9 & 82.5 / 27.3 & 0.684 & 0.627 & 0.218 \\
+Gender & S3 different & 68.8 & 58.2 & 92.1 / 24.2 & 0.646 & 0.619 & 0.214 \\
+\bottomrule
+\end{tabular}
+\end{table}

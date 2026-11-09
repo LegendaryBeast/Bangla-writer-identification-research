@@ -1,0 +1,26 @@
+{
+  "written_at": "2026-11-09T14:56:26Z",
+  "status": "Specified before any SIFT-VLAD feature or gender-attribute outcome was computed or inspected.",
+  "cohort": "Existing CSAFE 96-writer balanced-handedness cohort, same pages and roles as csafe_replication_2026-11-08.",
+  "matcher": {
+    "name": "SIFT-VLAD",
+    "image": "grayscale page resized to width 1600 px (INTER_AREA)",
+    "keypoints": "OpenCV SIFT, nfeatures=4000, default contrast/edge thresholds",
+    "descriptor": "RootSIFT (L1 normalisation then elementwise square root)",
+    "codebook_pages": "session-1 LND repetition 2 and WOZ repetition 2 of every writer (never gallery or query pages; unsupervised, no labels)",
+    "pca": "64 components fitted on 300 random descriptors per codebook page, seed 20261109",
+    "kmeans": "MiniBatchKMeans, 100 clusters, seed 20261109",
+    "vlad": "residual sums, intra-normalisation, signed square root, global L2",
+    "whitening": "PCA whitening to 128 dimensions fitted on codebook-page VLADs, then L2",
+    "matching": "identical to the other representations: gallery-reference standardisation, L2, cosine"
+  },
+  "attributes": {
+    "handedness": "existing primary HC-183 writer-held-out predictor (refitted, must reproduce archived logits)",
+    "gender": "survey field 'gender' (female 63, male 33); HC-183 linear SVM C=0.1 with the identical outer/development/calibration hierarchy; label 1 = female"
+  },
+  "random_partition": "exact expectation C(H_opp, j)/C(N-1, j) with H_opp the size of the query's opposite attribute group",
+  "estimand": "equal writer weights (equivalently hand-balanced in this 48/48 cohort); hand-stratified writer bootstrap 10,000 draws, 9,999 sign flips",
+  "primary_family": "16 contrasts with Holm correction: (a) handedness with SIFT-VLAD identity, fixed and nested vs identity, session-2 same and different prompt (4); (b) gender with ResNet-18, ViT-B/16 and SIFT-VLAD identity, fixed and nested vs identity, both session-2 conditions (12)",
+  "secondary": "session 3, HC-183 and STROKE identity features, hard filter, known attribute, random partition, precision (90% CI, smallest equivalence margin), j=1 opposite-group share",
+  "scope": "post hoc extension added in response to an internal review; reported as such"
+}
