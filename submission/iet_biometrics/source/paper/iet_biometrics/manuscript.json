@@ -1919,28 +1919,49 @@
         },
         {
           "t": "Str",
-          "c": "Attribute"
+          "c": "In"
         },
         {
           "t": "Space"
         },
         {
           "t": "Str",
-          "c": "accuracy,"
+          "c": "these"
         },
         {
           "t": "Space"
         },
         {
           "t": "Str",
-          "c": "and"
+          "c": "cohorts,"
         },
         {
           "t": "Space"
         },
         {
           "t": "Str",
-          "c": "even"
+          "c": "neither"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "attribute"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "accuracy"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "nor"
         },
         {
           "t": "Space"
@@ -1961,35 +1982,14 @@
         },
         {
           "t": "Str",
-          "c": "attribute,"
+          "c": "attribute"
         },
         {
           "t": "Space"
         },
         {
           "t": "Str",
-          "c": "therefore"
-        },
-        {
-          "t": "Space"
-        },
-        {
-          "t": "Str",
-          "c": "does"
-        },
-        {
-          "t": "Space"
-        },
-        {
-          "t": "Str",
-          "c": "not"
-        },
-        {
-          "t": "Space"
-        },
-        {
-          "t": "Str",
-          "c": "establish"
+          "c": "established"
         },
         {
           "t": "Space"
@@ -2094,7 +2094,21 @@
         },
         {
           "t": "Str",
-          "c": "applies"
+          "c": "can"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "be"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "applied"
         },
         {
           "t": "Space"
@@ -3888,14 +3902,7 @@
                 "c": [
                   {
                     "t": "Str",
-                    "c": "A"
-                  },
-                  {
-                    "t": "Space"
-                  },
-                  {
-                    "t": "Str",
-                    "c": "reusable"
+                    "c": "An"
                   },
                   {
                     "t": "Space"
@@ -4184,7 +4191,28 @@
                   },
                   {
                     "t": "Str",
-                    "c": "that"
+                    "c": "that,"
+                  },
+                  {
+                    "t": "Space"
+                  },
+                  {
+                    "t": "Str",
+                    "c": "in"
+                  },
+                  {
+                    "t": "Space"
+                  },
+                  {
+                    "t": "Str",
+                    "c": "these"
+                  },
+                  {
+                    "t": "Space"
+                  },
+                  {
+                    "t": "Str",
+                    "c": "cohorts,"
                   },
                   {
                     "t": "Space"
@@ -4226,7 +4254,21 @@
                   },
                   {
                     "t": "Str",
-                    "c": "handedness-specific."
+                    "c": "specific"
+                  },
+                  {
+                    "t": "Space"
+                  },
+                  {
+                    "t": "Str",
+                    "c": "to"
+                  },
+                  {
+                    "t": "Space"
+                  },
+                  {
+                    "t": "Str",
+                    "c": "handedness."
                   }
                 ]
               },
@@ -4305,7 +4347,28 @@
               },
               {
                 "t": "Str",
-                "c": "because"
+                "c": "which"
+              },
+              {
+                "t": "Space"
+              },
+              {
+                "t": "Str",
+                "c": "is"
+              },
+              {
+                "t": "Space"
+              },
+              {
+                "t": "Str",
+                "c": "consistent"
+              },
+              {
+                "t": "Space"
+              },
+              {
+                "t": "Str",
+                "c": "with"
               },
               {
                 "t": "Space"
@@ -4361,7 +4424,7 @@
               },
               {
                 "t": "Str",
-                "c": "tend"
+                "c": "tending"
               },
               {
                 "t": "Space"
@@ -4410,7 +4473,7 @@
                   },
                   {
                     "t": "Str",
-                    "c": "precise"
+                    "c": "bounded"
                   },
                   {
                     "t": "Space"
@@ -4454,7 +4517,14 @@
               },
               {
                 "t": "Str",
-                "c": "Across"
+                "c": "Averaged"
+              },
+              {
+                "t": "Space"
+              },
+              {
+                "t": "Str",
+                "c": "over"
               },
               {
                 "t": "Space"
@@ -4509,6 +4579,13 @@
                 "t": "Space"
               },
               {
+                "t": "Str",
+                "c": "about"
+              },
+              {
+                "t": "Space"
+              },
+              {
                 "t": "Math",
                 "c": [
                   {
@@ -4544,6 +4621,67 @@
               {
                 "t": "Str",
                 "c": "ranking,"
+              },
+              {
+                "t": "Space"
+              },
+              {
+                "t": "Str",
+                "c": "individual"
+              },
+              {
+                "t": "Space"
+              },
+              {
+                "t": "Str",
+                "c": "settings"
+              },
+              {
+                "t": "Space"
+              },
+              {
+                "t": "Str",
+                "c": "retain"
+              },
+              {
+                "t": "Space"
+              },
+              {
+                "t": "Str",
+                "c": "about"
+              },
+              {
+                "t": "Space"
+              },
+              {
+                "t": "Math",
+                "c": [
+                  {
+                    "t": "InlineMath"
+                  },
+                  "\\pm2"
+                ]
+              },
+              {
+                "t": "Space"
+              },
+              {
+                "t": "Str",
+                "c": "points"
+              },
+              {
+                "t": "Space"
+              },
+              {
+                "t": "Str",
+                "c": "of"
+              },
+              {
+                "t": "Space"
+              },
+              {
+                "t": "Str",
+                "c": "uncertainty,"
               },
               {
                 "t": "Space"
@@ -33855,6 +33993,388 @@
         {
           "t": "Str",
           "c": "points."
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "Rank-based"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "endpoints"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "agree."
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "Across"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "settings,"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "fixed"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "fusion"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "changes"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "top-5"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "accuracy"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "by"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Math",
+          "c": [
+            {
+              "t": "InlineMath"
+            },
+            "+0.03"
+          ]
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "points"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "("
+        },
+        {
+          "t": "Math",
+          "c": [
+            {
+              "t": "InlineMath"
+            },
+            "-1.45"
+          ]
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "to"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Math",
+          "c": [
+            {
+              "t": "InlineMath"
+            },
+            "+1.34"
+          ]
+        },
+        {
+          "t": "Str",
+          "c": "),"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "and"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "nested"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "fusion"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "changes"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "the"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "mean"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "reciprocal"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "rank"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "by"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Math",
+          "c": [
+            {
+              "t": "InlineMath"
+            },
+            "+0.001"
+          ]
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "("
+        },
+        {
+          "t": "Math",
+          "c": [
+            {
+              "t": "InlineMath"
+            },
+            "-0.008"
+          ]
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "to"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Math",
+          "c": [
+            {
+              "t": "InlineMath"
+            },
+            "+0.009"
+          ]
+        },
+        {
+          "t": "Str",
+          "c": "),"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "whereas"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "known"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "handedness"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "raises"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "top-5"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "accuracy"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "by"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "8.0"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "points"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "and"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "hard"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "filtering"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "lowers"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "it"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "by"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "20.4"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "(Supporting"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "Table"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "S30)."
         }
       ]
     },
@@ -34538,7 +35058,7 @@
       "c": [
         2,
         [
-          "representation-specific-utility",
+          "how-accurate-would-the-attribute-need-to-be",
           [],
           []
         ],
@@ -34552,14 +35072,56 @@
           },
           {
             "t": "Str",
-            "c": "Representation-specific"
+            "c": "How"
           },
           {
             "t": "Space"
           },
           {
             "t": "Str",
-            "c": "utility"
+            "c": "accurate"
+          },
+          {
+            "t": "Space"
+          },
+          {
+            "t": "Str",
+            "c": "would"
+          },
+          {
+            "t": "Space"
+          },
+          {
+            "t": "Str",
+            "c": "the"
+          },
+          {
+            "t": "Space"
+          },
+          {
+            "t": "Str",
+            "c": "attribute"
+          },
+          {
+            "t": "Space"
+          },
+          {
+            "t": "Str",
+            "c": "need"
+          },
+          {
+            "t": "Space"
+          },
+          {
+            "t": "Str",
+            "c": "to"
+          },
+          {
+            "t": "Space"
+          },
+          {
+            "t": "Str",
+            "c": "be?"
           }
         ]
       ]
@@ -34569,14 +35131,14 @@
       "c": [
         {
           "t": "Str",
-          "c": "Figure 4"
+          "c": "To"
         },
         {
           "t": "Space"
         },
         {
           "t": "Str",
-          "c": "averages"
+          "c": "separate"
         },
         {
           "t": "Space"
@@ -34590,14 +35152,7 @@
         },
         {
           "t": "Str",
-          "c": "20"
-        },
-        {
-          "t": "Space"
-        },
-        {
-          "t": "Str",
-          "c": "settings"
+          "c": "effect"
         },
         {
           "t": "Space"
@@ -34611,35 +35166,14 @@
         },
         {
           "t": "Str",
-          "c": "each"
+          "c": "predictor"
         },
         {
           "t": "Space"
         },
         {
           "t": "Str",
-          "c": "representation."
-        },
-        {
-          "t": "Space"
-        },
-        {
-          "t": "Str",
-          "c": "Nested-fusion"
-        },
-        {
-          "t": "Space"
-        },
-        {
-          "t": "Str",
-          "c": "changes"
-        },
-        {
-          "t": "Space"
-        },
-        {
-          "t": "Str",
-          "c": "range"
+          "c": "accuracy"
         },
         {
           "t": "Space"
@@ -34652,46 +35186,141 @@
           "t": "Space"
         },
         {
-          "t": "Math",
-          "c": [
-            {
-              "t": "InlineMath"
-            },
-            "-0.64"
-          ]
+          "t": "Str",
+          "c": "that"
         },
         {
           "t": "Space"
         },
         {
           "t": "Str",
-          "c": "to"
-        },
-        {
-          "t": "Space"
-        },
-        {
-          "t": "Math",
-          "c": [
-            {
-              "t": "InlineMath"
-            },
-            "+0.42"
-          ]
+          "c": "of"
         },
         {
           "t": "Space"
         },
         {
           "t": "Str",
-          "c": "points,"
+          "c": "redundancy,"
         },
         {
           "t": "Space"
         },
         {
           "t": "Str",
-          "c": "and"
+          "c": "we"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "fused"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "synthetic"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "calibrated"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "attribute"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "evidence"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "that"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "is"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "independent"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "of"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "the"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "identity"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "scores"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "given"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "the"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "attribute,"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "sweeping"
         },
         {
           "t": "Space"
@@ -34705,28 +35334,7 @@
         },
         {
           "t": "Str",
-          "c": "improvement"
-        },
-        {
-          "t": "Space"
-        },
-        {
-          "t": "Str",
-          "c": "over"
-        },
-        {
-          "t": "Space"
-        },
-        {
-          "t": "Str",
-          "c": "fixed"
-        },
-        {
-          "t": "Space"
-        },
-        {
-          "t": "Str",
-          "c": "fusion"
+          "c": "accuracy"
         },
         {
           "t": "Space"
@@ -34739,12 +35347,432 @@
           "t": "Space"
         },
         {
+          "t": "Str",
+          "c": "50%"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "to"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "100%"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "(200"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "draws"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "per"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "accuracy;"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "Fig. 4)."
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "Because"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "such"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "evidence"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "carries"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "no"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "redundancy"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "with"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "the"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "matcher,"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "the"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "resulting"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "curve"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "is"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "an"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "optimistic"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "reference."
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "On"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "BanglaHand,"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "independent"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "evidence"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "would"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "need"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "a"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "median"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "69%"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "accuracy"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "(range"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "54–91%"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "across"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "matchers"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "and"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "settings)"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "to"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "gain"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "one"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "point,"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "and"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "85%"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "(80–91%)"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "to"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "recover"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "half"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "the"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "oracle"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "gain."
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "At"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "the"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "achieved"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "65–67%,"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "it"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "would"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "gain"
+        },
+        {
+          "t": "Space"
+        },
+        {
           "t": "Math",
           "c": [
             {
               "t": "InlineMath"
             },
-            "+0.18"
+            "-0.6"
           ]
         },
         {
@@ -34763,7 +35791,7 @@
             {
               "t": "InlineMath"
             },
-            "+1.08"
+            "+3.0"
           ]
         },
         {
@@ -34771,7 +35799,30 @@
         },
         {
           "t": "Str",
-          "c": "points."
+          "c": "points"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "(mean"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Math",
+          "c": [
+            {
+              "t": "InlineMath"
+            },
+            "+0.75"
+          ]
+        },
+        {
+          "t": "Str",
+          "c": ")."
         },
         {
           "t": "Space"
@@ -34779,6 +35830,328 @@
         {
           "t": "Str",
           "c": "The"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "real"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "predictor"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "falls"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "below"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "that"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "reference"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "in"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "22"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "of"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "24"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "settings,"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "by"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "1.2"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "points"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "on"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "average,"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "which"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "estimates"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "the"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "joint"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "cost"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "of"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "redundancy"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "and"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "imperfect"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "calibration."
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "On"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "CSAFE,"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "one"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "point"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "requires"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "67–95%"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "and"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "half"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "the"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "oracle"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "gain"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "83–96%;"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "SIFT-VLAD"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "gains"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "nothing"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "at"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "any"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "accuracy"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "because"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "its"
         },
         {
           "t": "Space"
@@ -34799,14 +36172,77 @@
         },
         {
           "t": "Str",
-          "c": "differs"
+          "c": "is"
         },
         {
           "t": "Space"
         },
         {
           "t": "Str",
-          "c": "widely,"
+          "c": "zero"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "(Supporting"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "Table"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "S29)."
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "The"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "absent"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "gain"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "is"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "therefore"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "expected"
         },
         {
           "t": "Space"
@@ -34820,91 +36256,49 @@
         },
         {
           "t": "Str",
-          "c": "2.6"
+          "c": "the"
         },
         {
           "t": "Space"
         },
         {
           "t": "Str",
-          "c": "points"
+          "c": "achieved"
         },
         {
           "t": "Space"
         },
         {
           "t": "Str",
-          "c": "for"
+          "c": "accuracy"
         },
         {
           "t": "Space"
         },
         {
           "t": "Str",
-          "c": "STROKE"
+          "c": "alone,"
         },
         {
           "t": "Space"
         },
         {
           "t": "Str",
-          "c": "to"
+          "c": "and"
         },
         {
           "t": "Space"
         },
         {
           "t": "Str",
-          "c": "7.6"
+          "c": "redundancy"
         },
         {
           "t": "Space"
         },
         {
           "t": "Str",
-          "c": "points"
-        },
-        {
-          "t": "Space"
-        },
-        {
-          "t": "Str",
-          "c": "for"
-        },
-        {
-          "t": "Space"
-        },
-        {
-          "t": "Str",
-          "c": "HC-183,"
-        },
-        {
-          "t": "Space"
-        },
-        {
-          "t": "Str",
-          "c": "but"
-        },
-        {
-          "t": "Space"
-        },
-        {
-          "t": "Str",
-          "c": "no"
-        },
-        {
-          "t": "Space"
-        },
-        {
-          "t": "Str",
-          "c": "representation"
-        },
-        {
-          "t": "Space"
-        },
-        {
-          "t": "Str",
-          "c": "converts"
+          "c": "makes"
         },
         {
           "t": "Space"
@@ -34918,112 +36312,70 @@
         },
         {
           "t": "Str",
-          "c": "into"
+          "c": "slightly"
         },
         {
           "t": "Space"
         },
         {
           "t": "Str",
-          "c": "a"
+          "c": "worse."
         },
         {
           "t": "Space"
         },
         {
           "t": "Str",
-          "c": "fusion"
+          "c": "Representation-level"
         },
         {
           "t": "Space"
         },
         {
           "t": "Str",
-          "c": "gain."
+          "c": "summaries"
         },
         {
           "t": "Space"
         },
         {
           "t": "Str",
-          "c": "These"
+          "c": "are"
         },
         {
           "t": "Space"
         },
         {
           "t": "Str",
-          "c": "marginal"
+          "c": "given"
         },
         {
           "t": "Space"
         },
         {
           "t": "Str",
-          "c": "exploratory"
+          "c": "in"
         },
         {
           "t": "Space"
         },
         {
           "t": "Str",
-          "c": "intervals"
+          "c": "Supporting"
         },
         {
           "t": "Space"
         },
         {
           "t": "Str",
-          "c": "do"
+          "c": "Figure"
         },
         {
           "t": "Space"
         },
         {
           "t": "Str",
-          "c": "not"
-        },
-        {
-          "t": "Space"
-        },
-        {
-          "t": "Str",
-          "c": "justify"
-        },
-        {
-          "t": "Space"
-        },
-        {
-          "t": "Str",
-          "c": "selecting"
-        },
-        {
-          "t": "Space"
-        },
-        {
-          "t": "Str",
-          "c": "a"
-        },
-        {
-          "t": "Space"
-        },
-        {
-          "t": "Str",
-          "c": "representation"
-        },
-        {
-          "t": "Space"
-        },
-        {
-          "t": "Str",
-          "c": "after"
-        },
-        {
-          "t": "Space"
-        },
-        {
-          "t": "Str",
-          "c": "inspection."
+          "c": "S8."
         }
       ]
     },
@@ -35055,140 +36407,84 @@
                 },
                 {
                   "t": "Str",
-                  "c": "Representation-specific"
+                  "c": "Accuracy"
                 },
                 {
                   "t": "Space"
                 },
                 {
                   "t": "Str",
-                  "c": "utility,"
+                  "c": "needed"
                 },
                 {
                   "t": "Space"
                 },
                 {
                   "t": "Str",
-                  "c": "averaging"
+                  "c": "for"
                 },
                 {
                   "t": "Space"
                 },
                 {
                   "t": "Str",
-                  "c": "20"
+                  "c": "predicted-attribute"
                 },
                 {
                   "t": "Space"
                 },
                 {
                   "t": "Str",
-                  "c": "settings"
+                  "c": "fusion"
                 },
                 {
                   "t": "Space"
                 },
                 {
                   "t": "Str",
-                  "c": "and"
+                  "c": "to"
                 },
                 {
                   "t": "Space"
                 },
                 {
                   "t": "Str",
-                  "c": "all"
+                  "c": "help."
                 },
                 {
                   "t": "Space"
                 },
                 {
                   "t": "Str",
-                  "c": "42"
+                  "c": "Lines:"
                 },
                 {
                   "t": "Space"
                 },
                 {
                   "t": "Str",
-                  "c": "writers"
+                  "c": "mean"
                 },
                 {
                   "t": "Space"
                 },
                 {
                   "t": "Str",
-                  "c": "equally."
+                  "c": "top-1"
                 },
                 {
                   "t": "Space"
                 },
                 {
                   "t": "Str",
-                  "c": "(a)"
+                  "c": "gain"
                 },
                 {
                   "t": "Space"
                 },
                 {
                   "t": "Str",
-                  "c": "Top-1"
-                },
-                {
-                  "t": "Space"
-                },
-                {
-                  "t": "Str",
-                  "c": "changes"
-                },
-                {
-                  "t": "Space"
-                },
-                {
-                  "t": "Str",
-                  "c": "from"
-                },
-                {
-                  "t": "Space"
-                },
-                {
-                  "t": "Str",
-                  "c": "identification"
-                },
-                {
-                  "t": "Space"
-                },
-                {
-                  "t": "Str",
-                  "c": "without"
-                },
-                {
-                  "t": "Space"
-                },
-                {
-                  "t": "Str",
-                  "c": "handedness."
-                },
-                {
-                  "t": "Space"
-                },
-                {
-                  "t": "Str",
-                  "c": "(b)"
-                },
-                {
-                  "t": "Space"
-                },
-                {
-                  "t": "Str",
-                  "c": "Nested"
-                },
-                {
-                  "t": "Space"
-                },
-                {
-                  "t": "Str",
-                  "c": "minus"
+                  "c": "of"
                 },
                 {
                   "t": "Space"
@@ -35209,7 +36505,112 @@
                 },
                 {
                   "t": "Str",
-                  "c": "on"
+                  "c": "with"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "synthetic"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "calibrated"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "handedness"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "evidence"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "that"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "is"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "independent"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "of"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "the"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "identity"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "scores"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "given"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "the"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "hand,"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "as"
                 },
                 {
                   "t": "Space"
@@ -35223,63 +36624,133 @@
                 },
                 {
                   "t": "Str",
-                  "c": "separate"
+                  "c": "function"
                 },
                 {
                   "t": "Space"
                 },
                 {
                   "t": "Str",
-                  "c": "scale."
+                  "c": "of"
                 },
                 {
                   "t": "Space"
                 },
                 {
                   "t": "Str",
-                  "c": "Bars"
+                  "c": "its"
                 },
                 {
                   "t": "Space"
                 },
                 {
                   "t": "Str",
-                  "c": "are"
+                  "c": "accuracy;"
                 },
                 {
                   "t": "Space"
                 },
                 {
                   "t": "Str",
-                  "c": "marginal"
+                  "c": "points:"
                 },
                 {
                   "t": "Space"
                 },
                 {
                   "t": "Str",
-                  "c": "conditional"
+                  "c": "the"
                 },
                 {
                   "t": "Space"
                 },
                 {
                   "t": "Str",
-                  "c": "95%"
+                  "c": "real"
                 },
                 {
                   "t": "Space"
                 },
                 {
                   "t": "Str",
-                  "c": "writer-bootstrap"
+                  "c": "HC-183"
                 },
                 {
                   "t": "Space"
                 },
                 {
                   "t": "Str",
-                  "c": "intervals"
+                  "c": "predictor"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "at"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "its"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "achieved"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "accuracy"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "(dashed"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "line)."
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "(a)"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "BanglaHand"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "self-chosen"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "paragraphs"
                 },
                 {
                   "t": "Space"
@@ -35293,28 +36764,362 @@
                 },
                 {
                   "t": "Str",
-                  "c": "shared"
+                  "c": "one"
                 },
                 {
                   "t": "Space"
                 },
                 {
                   "t": "Str",
-                  "c": "resampling"
+                  "c": "reference."
                 },
                 {
                   "t": "Space"
                 },
                 {
                   "t": "Str",
-                  "c": "across"
+                  "c": "(b)"
                 },
                 {
                   "t": "Space"
                 },
                 {
                   "t": "Str",
-                  "c": "contrasts."
+                  "c": "CSAFE"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "session-2"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "same-prompt"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "queries;"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "SIFT-VLAD"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "stays"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "at"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "zero."
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "(c)"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "Simulated"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "accuracy"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "at"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "which"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "the"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "mean"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "gain"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "first"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "reaches"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Math",
+                  "c": [
+                    {
+                      "t": "InlineMath"
+                    },
+                    "+1"
+                  ]
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "point"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "(circles)"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "and"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "half"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "of"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "the"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "oracle"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "gain"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "(diamonds):"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "medians"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "and"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "ranges"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "over"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "four"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "BanglaHand"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "settings"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "(BH)"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "or"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "two"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "CSAFE"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "conditions"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "(CS);"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "the"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "shaded"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "band"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "spans"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "the"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "achieved"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "accuracies."
                 }
               ]
             }
@@ -35339,7 +37144,7 @@
                   ],
                   [],
                   [
-                    "assets/representation_utility.png",
+                    "assets/sweep.png",
                     ""
                   ]
                 ]
@@ -36494,7 +38299,56 @@
         },
         {
           "t": "Str",
-          "c": "26.0–43.3%),"
+          "c": "26.0–43.3%;"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "1,139"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "query"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "units"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "from"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "all"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "42"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "writers),"
         },
         {
           "t": "Space"
@@ -36522,7 +38376,21 @@
         },
         {
           "t": "Str",
-          "c": "(27.7–46.4%)"
+          "c": "(27.7–46.4%;"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "1,213"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "units)"
         },
         {
           "t": "Space"
@@ -36557,7 +38425,21 @@
         },
         {
           "t": "Str",
-          "c": "(32.5–50.0%),"
+          "c": "(32.5–50.0%;"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "1,398"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "units),"
         },
         {
           "t": "Space"
@@ -44016,6 +45898,412 @@
         {
           "t": "Str",
           "c": "points."
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "On"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "rank-based"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "endpoints,"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "5"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "of"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "the"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "80"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "CSAFE"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "fusion"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "contrasts"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "(five"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "matchers,"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "two"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "attributes,"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "two"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "conditions,"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "two"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "rules,"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "top-5"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "and"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "MRR)"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "have"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "unadjusted"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "intervals"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "that"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "exclude"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "zero,"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "four"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "negative"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "and"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "one"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "positive."
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "Known"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "attributes"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "raise"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "top-5"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "accuracy"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "by"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "up"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "to"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "16"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "points"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "(not"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "at"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "all"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "for"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "SIFT-VLAD),"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "and"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "hard"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "filtering"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "lowers"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "it"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "by"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "12–42"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "points"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "(Supporting"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "Table"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "S30)."
         }
       ]
     },
@@ -44423,7 +46711,7 @@
         },
         {
           "t": "Str",
-          "c": "(27.0–54.1%,"
+          "c": "(27.0–54.1%;"
         },
         {
           "t": "Space"
@@ -44437,7 +46725,77 @@
         },
         {
           "t": "Str",
-          "c": "decisions)"
+          "c": "decisions:"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "18"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "for"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "ResNet-18"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "and"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "22"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "for"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "ViT-B/16;"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "Supporting"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "Table"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "S31)"
         },
         {
           "t": "Space"
@@ -51932,14 +54290,35 @@
         },
         {
           "t": "Str",
-          "c": "so"
+          "c": "suggesting"
         },
         {
           "t": "Space"
         },
         {
           "t": "Str",
-          "c": "stronger"
+          "c": "that,"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "at"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "least"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "for"
         },
         {
           "t": "Space"
@@ -51953,42 +54332,49 @@
         },
         {
           "t": "Str",
-          "c": "are"
+          "c": "of"
         },
         {
           "t": "Space"
         },
         {
           "t": "Str",
-          "c": "likely"
+          "c": "this"
         },
         {
           "t": "Space"
         },
         {
           "t": "Str",
-          "c": "to"
+          "c": "kind,"
         },
         {
           "t": "Space"
         },
         {
           "t": "Str",
-          "c": "make"
+          "c": "a"
         },
         {
           "t": "Space"
         },
         {
           "t": "Str",
-          "c": "auxiliary"
+          "c": "stronger"
         },
         {
           "t": "Space"
         },
         {
           "t": "Str",
-          "c": "attributes"
+          "c": "matcher"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "leaves"
         },
         {
           "t": "Space"
@@ -52002,21 +54388,35 @@
         },
         {
           "t": "Str",
-          "c": "useful,"
+          "c": "room"
         },
         {
           "t": "Space"
         },
         {
           "t": "Str",
-          "c": "not"
+          "c": "for"
         },
         {
           "t": "Space"
         },
         {
           "t": "Str",
-          "c": "more."
+          "c": "an"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "auxiliary"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "attribute."
         },
         {
           "t": "Space"
@@ -54329,7 +56729,21 @@
       "c": [
         {
           "t": "Str",
-          "c": "Correct"
+          "c": "In"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "BanglaHand,"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "correct"
         },
         {
           "t": "Space"
@@ -54343,14 +56757,7 @@
         },
         {
           "t": "Str",
-          "c": "improves"
-        },
-        {
-          "t": "Space"
-        },
-        {
-          "t": "Str",
-          "c": "Bangla"
+          "c": "improved"
         },
         {
           "t": "Space"
@@ -54364,14 +56771,14 @@
         },
         {
           "t": "Str",
-          "c": "identification,"
+          "c": "identification"
         },
         {
           "t": "Space"
         },
         {
           "t": "Str",
-          "c": "but"
+          "c": "by"
         },
         {
           "t": "Space"
@@ -54448,7 +56855,14 @@
         },
         {
           "t": "Str",
-          "c": "because"
+          "c": "consistent"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "with"
         },
         {
           "t": "Space"
@@ -54463,6 +56877,13 @@
         {
           "t": "Str",
           "c": "errors"
+        },
+        {
+          "t": "Space"
+        },
+        {
+          "t": "Str",
+          "c": "that"
         },
         {
           "t": "Space"

@@ -204,12 +204,68 @@ def p2_tables():
     return attr, ident, tests
 
 
+def p3_tables():
+    P3 = ROOT / 'results/p3_sweep_2026-11-09'
+    RN = dict(NAMES, sift_vlad='SIFT-VLAD')
+    S = pd.read_csv(P3 / 'sweep_summary.csv')
+    SET = {'own n=1 k=1': 'own, paragraph, $k=1$', 'own n=1 k=6': 'own, paragraph, $k=6$', 'own n=4 k=6': 'own, quarter, $k=6$',
+           'shared n=4 k=5': 'shared, quarter, $k=5$', 'S2_LND_r01': 'S2 same', 'S2_WOZ_r01': 'S2 different'}
+    def pc(x):
+        return '--' if pd.isna(x) else f'{100*x:.0f}'
+    rows, last = [], None
+    for r in S.itertuples():
+        if last is not None and r.dataset != last:
+            rows.append(r'\midrule')
+        last = r.dataset
+        rows.append(' & '.join([r.dataset, RN[r.rep], SET[r.setting], f'{r.oracle_gain:.1f}', f'{100*r.real_acc:.1f}', f(r.sim_gain_at_real),
+                                f(r.observed_fixed_gain), pc(r.acc_for_1pt), pc(r.acc_for_half_oracle)]) + r' \\')
+    sweep = '\n'.join([r'{\footnotesize\setlength{\tabcolsep}{2.6pt}', r'\begin{longtable}{lllrrrrrr}', r'\caption{Accuracy sweep with synthetic calibrated attribute evidence that is independent of the identity scores given the attribute (200 draws per accuracy, fixed fusion). Simulated: gain at the achieved accuracy of the real HC-183 predictor; Observed: fixed-fusion gain of the real predictor in the same setting. The last two columns give the simulated accuracy (\%) at which the mean gain first reaches $+1$ point and half the oracle gain; -- means never. Gains are percentage points.}\label{tab:sweep}\\',
+                       r'\toprule Data & ID features & Setting & Oracle & Achieved, \% & Simulated & Observed & $+1$ pt & Half\\\midrule', r'\endfirsthead',
+                       r'\toprule Data & ID features & Setting & Oracle & Achieved, \% & Simulated & Observed & $+1$ pt & Half\\\midrule', r'\endhead']
+                      + rows + [r'\bottomrule', r'\end{longtable}', '}'])
+    R = pd.read_csv(P3 / 'rank_endpoints.csv')
+    rows = []
+    B = R[R.dataset == 'BanglaHand']
+    for r in B.itertuples():
+        val = f(r.delta, 2) + ' ' + ci(r.ci_lo, r.ci_hi, 2) if r.metric == 'top5' else f(r.delta, 3) + ' ' + ci(r.ci_lo, r.ci_hi, 3)
+        setting = 'all 120 settings' if r.setting.startswith('all') else RN[r.rep] + ', ' + ('paragraph, $k=1$' if 'n=1' in r.setting else 'quarter, $k=6$')
+        rows.append(' & '.join(['BanglaHand', 'hand', setting, r.method.replace('_', ' '), 'top-5' if r.metric == 'top5' else 'MRR', val]) + r' \\')
+    rows.append(r'\midrule')
+    C = R[(R.dataset == 'CSAFE') & R.rep.isin(['resnet18', 'vit_b_16', 'sift_vlad'])]
+    for (att, rep, st, m), g in C.groupby(['attribute', 'rep', 'setting', 'method'], sort=True):
+        g = g.set_index('metric')
+        t5, mr = g.loc['top5'], g.loc['mrr']
+        rows.append(' & '.join(['CSAFE', att[:6] if att == 'gender' else 'hand', RN[rep] + ', ' + SET[st], m.replace('_', ' '),
+                                'top-5 / MRR', f(t5.delta, 2) + ' ' + ci(t5.ci_lo, t5.ci_hi, 1) + ' / ' + f(mr.delta, 3)]) + r' \\')
+    rank = '\n'.join([r'{\footnotesize\setlength{\tabcolsep}{3pt}', r'\begin{longtable}{llllll}', r'\caption{Rank-based endpoints: changes in top-5 accuracy (percentage points) and mean reciprocal rank (MRR) from identity-only ranking, with conditional 95\% hand-stratified writer-bootstrap intervals (CSAFE intervals shown for top-5). Unadjusted; descriptive.}\label{tab:rank}\\',
+                      r'\toprule Data & Attribute & Setting & Rule & Metric & Change [95\% CI]\\\midrule', r'\endfirsthead',
+                      r'\toprule Data & Attribute & Setting & Rule & Metric & Change [95\% CI]\\\midrule', r'\endhead']
+                     + rows + [r'\bottomrule', r'\end{longtable}', '}'])
+    K = pd.read_csv(P3 / 'cluster_counts.csv')
+    rows, last = [], None
+    for r in K.itertuples():
+        key = (r.dataset, r.attribute)
+        if last is not None and key != last:
+            rows.append(r'\midrule')
+        last = key
+        cival = '--' if pd.isna(r.ci_lo) else f'[{100*r.ci_lo:.1f}, {100*r.ci_hi:.1f}]'
+        rows.append(' & '.join([r.dataset, r.attribute, RN[r.rep], f'{int(r.decisions):,}', f'{int(r.units):,}', str(int(r.writers)),
+                                f'{100*r.share:.1f}', cival, f'{100*r.reference:.1f}']) + r' \\')
+    counts = '\n'.join([r'\begin{table}[ht]', r'\caption{Sample sizes behind the within-group clustering result: queries whose true writer is outranked by exactly one impostor. BanglaHand decisions are query-unit/reference-configuration pairs pooled over the 20 settings per representation (units: distinct query units); CSAFE decisions pool both session-2 conditions. Share: fraction of sole outranking impostors in the opposite group, with 95\% intervals (writer bootstrap for BanglaHand, decision bootstrap stratified by hand for CSAFE); Random: the expected share. CSAFE rows rest on few decisions and are descriptive.}\label{tab:counts}',
+                        r'\centering\footnotesize\setlength{\tabcolsep}{3.5pt}', r'\begin{tabular}{lllrrrrrr}\toprule',
+                        r'Data & Attribute & ID features & Decisions & Units & Writers & Share, \% & 95\% CI & Random, \%\\\midrule']
+                       + rows + [r'\bottomrule', r'\end{tabular}', r'\end{table}'])
+    return sweep, rank, counts
+
+
 def main():
     TAB.mkdir(exist_ok=True)
     for name, fn in (('designated', designated), ('precision', precision), ('decomposition', decomposition),
                      ('correction', correction), ('csafe_by_hand', by_hand)):
         (TAB / f'p1_{name}.tex').write_text(fn() + '\n')
     for name, block in zip(('p2_attr', 'p2_ident', 'p2_tests'), p2_tables()):
+        (TAB / f'{name}.tex').write_text(block + '\n')
+    for name, block in zip(('p3_sweep', 'p3_rank', 'p3_counts'), p3_tables()):
         (TAB / f'{name}.tex').write_text(block + '\n')
     hand, full = csafe_rows()
     (TAB / 'p1_csafe_hand_rows.tex').write_text('\n'.join(hand.values()) + '\n')

@@ -1,7 +1,7 @@
 {
   "counts": {
-    "Figure": 7,
-    "Table": 28,
+    "Figure": 8,
+    "Table": 31,
     "Equation": 4
   },
   "equation_numbers": [
@@ -53,6 +53,11 @@
     "sec:supextensions": "S18",
     "tab:p2ident": "S28",
     "tab:p2attr": "S26",
-    "tab:p2tests": "S27"
+    "tab:p2tests": "S27",
+    "sec:supsweep": "S19",
+    "tab:sweep": "S29",
+    "tab:rank": "S30",
+    "tab:counts": "S31",
+    "fig:representation": "S8"
   }
 }

@@ -1,13 +1,13 @@
 # IET Biometrics submission package
 
-Revised on 9 November 2026. Main PDF: **14 pages**, with **9 figures, 6 tables and 52 references**. Supporting PDF: **23 pages**, separate. The single-column editable Word versions have different pagination.
+Revised on 9 November 2026. Main PDF: **14 pages**, with **9 figures, 6 tables and 52 references**. Supporting PDF: **26 pages**, separate. The single-column editable Word versions have different pagination.
 
 Title: *Does predicted handedness improve writer identification? Oracle gains versus achieved utility in Bangla and English handwriting*.
 
 ## Files to use
 
 - `Manuscript.docx` is the editable main submission. `Manuscript.pdf` is its Wiley-template typeset counterpart.
-- `Supporting_information.pdf` / `.docx` contain the complete methods, controls, grids, the post hoc revision analyses (Sections S14–S16), the moved comparison table (S17) and the SIFT-VLAD and gender extensions (S18).
+- `Supporting_information.pdf` / `.docx` contain the complete methods, controls, grids, the post hoc revision analyses (Sections S14–S16), the moved comparison table (S17) and the SIFT-VLAD and gender extensions (S18) and the accuracy sweep, rank endpoints and sample sizes (S19).
 - `Cover_letter.pdf` / `.docx` are addressed to IET Biometrics.
 - `figures/` contains the 9 vector main figures. `Complete_120_setting_grid.csv` contains the BanglaHand grid. `CSAFE_complete_196_settings.csv` contains 980 method rows across 196 external settings, with the corrected adjusted-model rows.
 - `reproducibility/csafe-replication-2026-11-08.zip` contains the original CSAFE code, frozen features, protocols, manifests and results. `reproducibility/wid-revision-analyses-2026-11-09.zip` contains the revision analyses (precision, error clustering, corrected CSAFE sensitivity model, SIFT-VLAD matcher, gender attribute, figure and table generators).
@@ -22,6 +22,7 @@ Title: *Does predicted handedness improve writer identification? Oracle gains ve
 - An error-clustering decomposition explains why known handedness is no better than a random partition: Figure 5 and Supporting Table S23.
 - A numerical instability in the CSAFE adjusted sensitivity model is corrected: Section S16 and Table S24. Its below-chance accuracy (34%) becomes 61–69%. Primary results are unchanged.
 - A handwriting-specific SIFT-VLAD matcher (91–96% top-1) and gender as a second attribute are evaluated on CSAFE under a protocol fixed before their outcomes (Figure 9, Section S18). The opportunity disappears with the stronger matcher, errors cluster within gender too, and none of 16 primary fusion contrasts shows a gain.
+- An accuracy sweep with synthetic independent evidence (Figure 4, Table S29) shows that fusion would need roughly 70–90% attribute accuracy to help; rank-based endpoints (top-5, MRR; Table S30) and the sample sizes behind every clustering estimate (Table S31) are reported, and the contribution claims are worded more cautiously. The representation-utility figure moves to Figure S8.
 - The related work is expanded to 52 references (26 new, each checked against a bibliographic record). Figures 6 and 8 are restyled. The former Table 4, Table 6, Table 8 and Figure 5 move to the supporting information.
 
 ## Verified journal requirements
@@ -30,7 +31,7 @@ The [official author instructions](https://ietresearch.onlinelibrary.wiley.com/p
 
 - Editable Word is accepted. LaTeX submissions also need a review PDF and supporting sources.
 - Author identities remain visible for single-anonymized review.
-- The Abstract has 282 words, below 300.
+- The Abstract has 284 words, below 300.
 - Numbered citations follow first appearance; this is checked automatically.
 - Line numbers are present in the main files.
 

@@ -26,11 +26,11 @@ REVZIP = 'wid-revision-analyses-2026-11-09.zip'
 PANDOC = shutil.which('pandoc') or '/opt/homebrew/bin/pandoc'
 GUIDE = 'https://ietresearch.onlinelibrary.wiley.com/page/journal/ietbm/homepage/author-guidelines'
 BUILD_JUNK = {'.aux', '.log', '.fdb_latexmk', '.fls', '.out', '.pag', '.blg', '.synctex.gz'}
-REVISION_CODE = ['extract_csafe_sift_vlad.py', 'run_p2_csafe_extensions.py', 'run_p1_precision_mechanism.py', 'run_p1_csafe_adjusted_fix.py', 'check_p1_bangla_adjusted.py',
+REVISION_CODE = ['run_p3_sweep_rank_counts.py', 'extract_csafe_sift_vlad.py', 'run_p2_csafe_extensions.py', 'run_p1_precision_mechanism.py', 'run_p1_csafe_adjusted_fix.py', 'check_p1_bangla_adjusted.py',
                  'build_p1_csafe_corrected.py', 'make_p1_figures.py', 'make_p1_si_tables.py', 'finalize_p1_submission.py',
                  'run_csafe_replication.py', 'csafe_calibration.py', 'run_wid_handedness.py', 'revised_protocol.py',
                  'run_nested_fusion.py', 'summarize_csafe_replication.py']
-SOURCE_CODE = ['extract_csafe_sift_vlad.py', 'run_p2_csafe_extensions.py', 'build_iet_docx.py', 'convert_iet_biometrics.py', 'verify_iet_build.py', 'make_p1_figures.py',
+SOURCE_CODE = ['run_p3_sweep_rank_counts.py', 'extract_csafe_sift_vlad.py', 'run_p2_csafe_extensions.py', 'build_iet_docx.py', 'convert_iet_biometrics.py', 'verify_iet_build.py', 'make_p1_figures.py',
                'make_p1_si_tables.py', 'finalize_p1_submission.py', 'make_revision_paper.py',
                'make_representation_utility.py', 'summarize_csafe_replication.py']
 
@@ -108,7 +108,7 @@ def revision_archive():
     with zipfile.ZipFile(out, 'w', zipfile.ZIP_DEFLATED) as z:
         for name in REVISION_CODE:
             z.write(ROOT / 'code' / name, f'code/{name}')
-        for folder in ('p1_revision_2026-11-09', 'p2_extensions_2026-11-09'):
+        for folder in ('p1_revision_2026-11-09', 'p2_extensions_2026-11-09', 'p3_sweep_2026-11-09'):
             res = ROOT / 'results' / folder
             for p in sorted(res.rglob('*')):
                 if p.is_file() and not p.name.startswith('.') and not (p.suffix == '.npz' and 'attribute_cache' in p.parts):
@@ -129,6 +129,7 @@ results/wid_handedness_2026-10-29 (release v1.6.0) and results/csafe_replication
     python code/build_p1_csafe_corrected.py     # corrected CSAFE tables and figures
     python code/extract_csafe_sift_vlad.py      # SIFT-VLAD features (needs CSAFE images)
     python code/run_p2_csafe_extensions.py      # SIFT-VLAD matcher and gender attribute
+    python code/run_p3_sweep_rank_counts.py     # accuracy sweep, rank endpoints, sample sizes
     python code/make_p1_figures.py              # revised manuscript figures
     python code/make_p1_si_tables.py            # revised supporting tables
 
@@ -204,7 +205,7 @@ def main():
     report = dict(passed=True, date='9 November 2026', target='IET Biometrics', pdfs=rows,
                   main_figures=len(info['figures']), main_tables=info['tables'], main_equations=info['equations'],
                   main_references=info['citations'], abstract_words=info['abstract_words'],
-                  supplementary_tables=28, supplementary_figures=7,
+                  supplementary_tables=31, supplementary_figures=8,
                   revision='Title, abstract, introduction, results and discussion revised; post hoc precision and '
                            'error-clustering analyses; numerically corrected CSAFE adjusted sensitivity model; '
                            '26 new verified references; SIFT-VLAD matcher and gender attribute on CSAFE (Figure 9, S18); Figures 1, 3, 5 new and Figures 6, 8 restyled; former Table 4, '
@@ -237,7 +238,7 @@ Title: *Does predicted handedness improve writer identification? Oracle gains ve
 ## Files to use
 
 - `Manuscript.docx` is the editable main submission. `Manuscript.pdf` is its Wiley-template typeset counterpart.
-- `Supporting_information.pdf` / `.docx` contain the complete methods, controls, grids, the post hoc revision analyses (Sections S14–S16), the moved comparison table (S17) and the SIFT-VLAD and gender extensions (S18).
+- `Supporting_information.pdf` / `.docx` contain the complete methods, controls, grids, the post hoc revision analyses (Sections S14–S16), the moved comparison table (S17) and the SIFT-VLAD and gender extensions (S18) and the accuracy sweep, rank endpoints and sample sizes (S19).
 - `Cover_letter.pdf` / `.docx` are addressed to IET Biometrics.
 - `figures/` contains the {len(info['figures'])} vector main figures. `Complete_120_setting_grid.csv` contains the BanglaHand grid. `CSAFE_complete_196_settings.csv` contains 980 method rows across 196 external settings, with the corrected adjusted-model rows.
 - `reproducibility/csafe-replication-2026-11-08.zip` contains the original CSAFE code, frozen features, protocols, manifests and results. `reproducibility/{REVZIP}` contains the revision analyses (precision, error clustering, corrected CSAFE sensitivity model, SIFT-VLAD matcher, gender attribute, figure and table generators).
@@ -252,6 +253,7 @@ Title: *Does predicted handedness improve writer identification? Oracle gains ve
 - An error-clustering decomposition explains why known handedness is no better than a random partition: Figure 5 and Supporting Table S23.
 - A numerical instability in the CSAFE adjusted sensitivity model is corrected: Section S16 and Table S24. Its below-chance accuracy (34%) becomes 61–69%. Primary results are unchanged.
 - A handwriting-specific SIFT-VLAD matcher (91–96% top-1) and gender as a second attribute are evaluated on CSAFE under a protocol fixed before their outcomes (Figure 9, Section S18). The opportunity disappears with the stronger matcher, errors cluster within gender too, and none of 16 primary fusion contrasts shows a gain.
+- An accuracy sweep with synthetic independent evidence (Figure 4, Table S29) shows that fusion would need roughly 70–90% attribute accuracy to help; rank-based endpoints (top-5, MRR; Table S30) and the sample sizes behind every clustering estimate (Table S31) are reported, and the contribution claims are worded more cautiously. The representation-utility figure moves to Figure S8.
 - The related work is expanded to 52 references (26 new, each checked against a bibliographic record). Figures 6 and 8 are restyled. The former Table 4, Table 6, Table 8 and Figure 5 move to the supporting information.
 
 ## Verified journal requirements

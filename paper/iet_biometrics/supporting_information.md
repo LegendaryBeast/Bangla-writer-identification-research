@@ -12,7 +12,7 @@ reference-section-title: References
 
 Supporting information for **Does predicted handedness improve writer identification? Oracle gains versus achieved utility in Bangla and English handwriting**.
 
-This document accompanies the IET Biometrics manuscript. The authoritative numerical outputs are in `results/wid_revision_2026-11-08/`. Identification uses selected-reference normalization and equal writer weights. The primary BanglaHand analyses are retrospective and were not preregistered. Section S13 documents the separately specified CSAFE extension. Sections S14--S16 report the post hoc revision analyses: the precision of the fusion contrasts, the decomposition of the random-partition gap, and the numerical correction of the CSAFE adjusted sensitivity model. Section S17 retains the methodological comparison of cited approaches, and Section S18 reports the SIFT-VLAD matcher and gender extensions on CSAFE. Revision outputs are in `results/p1_revision_2026-11-09/`.
+This document accompanies the IET Biometrics manuscript. The authoritative numerical outputs are in `results/wid_revision_2026-11-08/`. Identification uses selected-reference normalization and equal writer weights. The primary BanglaHand analyses are retrospective and were not preregistered. Section S13 documents the separately specified CSAFE extension. Sections S14--S16 report the post hoc revision analyses: the precision of the fusion contrasts, the decomposition of the random-partition gap, and the numerical correction of the CSAFE adjusted sensitivity model. Section S17 retains the methodological comparison of cited approaches, Section S18 reports the SIFT-VLAD matcher and gender extensions on CSAFE, and Section S19 the accuracy sweep, rank-based endpoints and sample sizes. Revision outputs are in `results/p1_revision_2026-11-09/`.
 
 # S1 Data units, exclusion and weighting {#data-units-exclusion-and-weighting}
 
@@ -787,3 +787,139 @@ These two CSAFE extensions were added after an internal review. Their protocol (
   Gender       S3 different   STROKE          53.12   58.33    59.74    40.62   50.00    52.08
 
   : **Table S28.** CSAFE top-1 identification (%) with SIFT-VLAD added as a handwriting-specific matcher and gender as a second attribute. Random: exact expectation of a known random partition with the same group sizes as the attribute. Filter, Fixed and Nested use the predicted attribute.
+
+# S19 Accuracy sweep, rank-based endpoints and sample sizes {#accuracy-sweep-rank-based-endpoints-and-sample-sizes}
+
+**Accuracy sweep.** For every matcher, synthetic attribute log-odds $\ell=dz$ with $z\mid h\sim N\big((2h-1)d/2,1\big)$ and $d=2\Phi^{-1}(a)$ are fused with the fixed rule, at the identity-only temperatures already fitted for each setting. Accuracies run from 0.50 to 1.00 in steps of 0.05, with 200 draws each. The evidence is calibrated and independent of the identity scores given the attribute, so it carries no redundancy with the matcher; the curves are optimistic references, not predictions. The BanglaHand curves are the archived simulations of Section S7 (four settings, six matchers). The CSAFE curves use the session-2 conditions and all five matchers (`results/p3_sweep_2026-11-09/`, seed 20261110). Table S29 reports, for every setting, the simulated gain at the achieved accuracy of the real predictor, the real fixed-fusion gain, and the accuracies needed for $+1$ point and for half the oracle gain. Under the fixed rule, synthetic evidence of moderate accuracy can lower top-1 accuracy in some CSAFE settings. This shows that the identity-only temperature does not make fixed fusion optimal even for independent evidence.
+
+**Rank-based endpoints.** Table S30 reports changes in top-5 accuracy and mean reciprocal rank for the BanglaHand aggregate and designated settings and for the CSAFE neural and SIFT-VLAD contrasts. BanglaHand top-5 for nested fusion is not available from the saved rank files, so MRR is reported for nested fusion.
+
+**Sample sizes.** Table S31 gives the number of decisions, query units and writers behind every within-group clustering estimate. BanglaHand estimates pool correlated reference configurations and settings of the same writers, and their intervals resample writers. CSAFE estimates rest on 4--22 decisions per matcher.
+
+  Data         ID features   Setting                    Oracle   Achieved, %   Simulated   Observed   $+1$ pt   Half
+  ------------ ------------- ------------------------ -------- ------------- ----------- ---------- --------- ------
+  BanglaHand   EffNet-B0     own, paragraph, $k=1$         8.9          65.5       +1.57      -0.40        60     83
+  BanglaHand   EffNet-B0     own, paragraph, $k=6$         4.8          65.5       +0.24      -1.19        80     90
+  BanglaHand   EffNet-B0     own, quarter, $k=6$           8.3          66.8       +0.83      -0.34        68     85
+  BanglaHand   EffNet-B0     shared, quarter, $k=5$        6.8          65.9       +0.73      -0.30        69     85
+  BanglaHand   HC-183        own, paragraph, $k=1$         8.3          65.5       +1.51      -1.79        60     83
+  BanglaHand   HC-183        own, paragraph, $k=6$         4.8          65.5       -0.57      -2.38        80     89
+  BanglaHand   HC-183        own, quarter, $k=6$           9.8          66.8       +2.11      -0.89        60     81
+  BanglaHand   HC-183        shared, quarter, $k=5$        9.1          65.9       +1.22      -0.99        64     83
+  BanglaHand   ResNet-18     own, paragraph, $k=1$         5.0          65.5       -0.41      -0.79        81     90
+  BanglaHand   ResNet-18     own, paragraph, $k=6$         2.4          65.5       -0.07      -2.38        88     90
+  BanglaHand   ResNet-18     own, quarter, $k=6$           4.2          66.8       -0.27      -1.49        83     90
+  BanglaHand   ResNet-18     shared, quarter, $k=5$        6.4          65.9       +0.61      -0.89        70     85
+  BanglaHand   STROKE        own, paragraph, $k=1$         3.2          65.5       +0.39      +0.99        77     85
+  BanglaHand   STROKE        own, paragraph, $k=6$         3.6          65.5       +0.59      +1.19        76     88
+  BanglaHand   STROKE        own, quarter, $k=6$           2.1          66.8       -0.03      -0.30        91     91
+  BanglaHand   STROKE        shared, quarter, $k=5$        0.8          65.9       +0.00      -0.40        --     89
+  BanglaHand   Stroke-CNN    own, paragraph, $k=1$        12.1          65.5       +1.60      +1.19        61     84
+  BanglaHand   Stroke-CNN    own, paragraph, $k=6$        11.9          65.5       +2.96      +1.19        54     82
+  BanglaHand   Stroke-CNN    own, quarter, $k=6$           4.8          66.8       +0.80      +0.00        69     82
+  BanglaHand   Stroke-CNN    shared, quarter, $k=5$        8.1          65.9       +1.58      +0.69        62     80
+  BanglaHand   ViT-B/16      own, paragraph, $k=1$         5.8          65.5       +0.46      +0.20        72     86
+  BanglaHand   ViT-B/16      own, paragraph, $k=6$         2.4          65.5       +0.23      -1.19        88     90
+  BanglaHand   ViT-B/16      own, quarter, $k=6$           8.8          66.8       +0.98      -0.30        67     85
+  BanglaHand   ViT-B/16      shared, quarter, $k=5$        7.3          65.9       +1.05      -0.20        66     83
+  CSAFE        HC-183        S2 same                       4.2          67.7       -4.86      -4.17        91     94
+  CSAFE        HC-183        S2 different                 10.4          58.3       -0.47      +0.00        67     83
+  CSAFE        ResNet-18     S2 same                       7.3          67.7       +0.20      +1.04        73     88
+  CSAFE        ResNet-18     S2 different                  6.2          58.3       -1.71      -5.21        80     89
+  CSAFE        SIFT-VLAD     S2 same                       0.0          67.7       -0.02      +0.00        --     --
+  CSAFE        SIFT-VLAD     S2 different                  0.0          58.3       -0.05      -1.04        --     --
+  CSAFE        STROKE        S2 same                       3.1          67.7       -0.58      +1.04        90     93
+  CSAFE        STROKE        S2 different                  2.1          58.3       -2.08      -2.08        95     96
+  CSAFE        ViT-B/16      S2 same                       3.1          67.7       -0.87      -2.08        91     94
+  CSAFE        ViT-B/16      S2 different                  6.2          58.3       +0.14      -1.04        72     87
+
+  : **Table S29.** Accuracy sweep with synthetic calibrated attribute evidence that is independent of the identity scores given the attribute (200 draws per accuracy, fixed fusion). Simulated: gain at the achieved accuracy of the real HC-183 predictor; Observed: fixed-fusion gain of the real predictor in the same setting. The last two columns give the simulated accuracy (%) at which the mean gain first reaches $+1$ point and half the oracle gain; -- means never. Gains are percentage points.
+
+  Data         Attribute   Setting                       Rule          Metric        Change \[95% CI\]
+  ------------ ----------- ----------------------------- ------------- ------------- ----------------------------------
+  BanglaHand   hand        all 120 settings              fixed         MRR           -0.003 \[-0.018, +0.010\]
+  BanglaHand   hand        all 120 settings              nested        MRR           +0.001 \[-0.008, +0.009\]
+  BanglaHand   hand        ResNet-18, paragraph, $k=1$   fixed         MRR           -0.004 \[-0.027, +0.016\]
+  BanglaHand   hand        ResNet-18, paragraph, $k=1$   nested        MRR           +0.001 \[-0.012, +0.012\]
+  BanglaHand   hand        ResNet-18, quarter, $k=6$     fixed         MRR           -0.010 \[-0.028, +0.008\]
+  BanglaHand   hand        ResNet-18, quarter, $k=6$     nested        MRR           -0.003 \[-0.014, +0.007\]
+  BanglaHand   hand        ViT-B/16, paragraph, $k=1$    fixed         MRR           -0.001 \[-0.022, +0.017\]
+  BanglaHand   hand        ViT-B/16, paragraph, $k=1$    nested        MRR           +0.008 \[-0.002, +0.018\]
+  BanglaHand   hand        ViT-B/16, quarter, $k=6$      fixed         MRR           -0.003 \[-0.024, +0.017\]
+  BanglaHand   hand        ViT-B/16, quarter, $k=6$      nested        MRR           -0.002 \[-0.018, +0.013\]
+  BanglaHand   hand        all 120 settings              known         top-5         +8.04 \[+7.07, +9.11\]
+  BanglaHand   hand        all 120 settings              fixed         top-5         +0.03 \[-1.45, +1.34\]
+  BanglaHand   hand        all 120 settings              hard filter   top-5         -20.43 \[-27.13, -14.13\]
+  CSAFE        gender      ResNet-18, S2 same            fixed         top-5 / MRR   -4.17 \[-8.3, -1.0\] / -0.009
+  CSAFE        gender      ResNet-18, S2 same            hard filter   top-5 / MRR   -27.08 \[-36.5, -17.7\] / -0.209
+  CSAFE        gender      ResNet-18, S2 same            known         top-5 / MRR   +3.12 \[+0.0, +7.3\] / +0.052
+  CSAFE        gender      ResNet-18, S2 same            nested        top-5 / MRR   +0.00 \[+0.0, +0.0\] / +0.005
+  CSAFE        gender      ResNet-18, S2 different       fixed         top-5 / MRR   +3.12 \[-2.1, +8.3\] / -0.025
+  CSAFE        gender      ResNet-18, S2 different       hard filter   top-5 / MRR   -23.96 \[-35.4, -12.5\] / -0.226
+  CSAFE        gender      ResNet-18, S2 different       known         top-5 / MRR   +8.33 \[+3.1, +14.6\] / +0.059
+  CSAFE        gender      ResNet-18, S2 different       nested        top-5 / MRR   +4.17 \[+1.0, +8.3\] / -0.003
+  CSAFE        gender      SIFT-VLAD, S2 same            fixed         top-5 / MRR   +0.00 \[+0.0, +0.0\] / -0.005
+  CSAFE        gender      SIFT-VLAD, S2 same            hard filter   top-5 / MRR   -32.29 \[-41.7, -22.9\] / -0.318
+  CSAFE        gender      SIFT-VLAD, S2 same            known         top-5 / MRR   +0.00 \[+0.0, +0.0\] / +0.001
+  CSAFE        gender      SIFT-VLAD, S2 same            nested        top-5 / MRR   +0.00 \[+0.0, +0.0\] / -0.005
+  CSAFE        gender      SIFT-VLAD, S2 different       fixed         top-5 / MRR   +0.00 \[+0.0, +0.0\] / -0.002
+  CSAFE        gender      SIFT-VLAD, S2 different       hard filter   top-5 / MRR   -35.42 \[-44.8, -26.0\] / -0.341
+  CSAFE        gender      SIFT-VLAD, S2 different       known         top-5 / MRR   +0.00 \[+0.0, +0.0\] / +0.001
+  CSAFE        gender      SIFT-VLAD, S2 different       nested        top-5 / MRR   +0.00 \[+0.0, +0.0\] / +0.000
+  CSAFE        gender      ViT-B/16, S2 same             fixed         top-5 / MRR   -2.08 \[-6.2, +2.1\] / -0.012
+  CSAFE        gender      ViT-B/16, S2 same             hard filter   top-5 / MRR   -28.12 \[-38.5, -18.8\] / -0.232
+  CSAFE        gender      ViT-B/16, S2 same             known         top-5 / MRR   +5.21 \[+1.0, +10.4\] / +0.063
+  CSAFE        gender      ViT-B/16, S2 same             nested        top-5 / MRR   +0.00 \[+0.0, +0.0\] / +0.000
+  CSAFE        gender      ViT-B/16, S2 different        fixed         top-5 / MRR   -1.04 \[-5.2, +2.1\] / -0.006
+  CSAFE        gender      ViT-B/16, S2 different        hard filter   top-5 / MRR   -28.12 \[-38.5, -17.7\] / -0.208
+  CSAFE        gender      ViT-B/16, S2 different        known         top-5 / MRR   +6.25 \[+2.1, +11.5\] / +0.067
+  CSAFE        gender      ViT-B/16, S2 different        nested        top-5 / MRR   -1.04 \[-3.1, +0.0\] / +0.002
+  CSAFE        hand        ResNet-18, S2 same            fixed         top-5 / MRR   +0.00 \[-3.1, +3.1\] / +0.012
+  CSAFE        hand        ResNet-18, S2 same            hard filter   top-5 / MRR   -27.08 \[-37.5, -16.7\] / -0.203
+  CSAFE        hand        ResNet-18, S2 same            known         top-5 / MRR   +3.12 \[+0.0, +7.3\] / +0.062
+  CSAFE        hand        ResNet-18, S2 same            nested        top-5 / MRR   +0.00 \[-3.1, +3.1\] / +0.011
+  CSAFE        hand        ResNet-18, S2 different       fixed         top-5 / MRR   +1.04 \[-2.1, +4.2\] / -0.030
+  CSAFE        hand        ResNet-18, S2 different       hard filter   top-5 / MRR   -29.17 \[-39.6, -18.8\] / -0.255
+  CSAFE        hand        ResNet-18, S2 different       known         top-5 / MRR   +9.38 \[+4.2, +15.6\] / +0.065
+  CSAFE        hand        ResNet-18, S2 different       nested        top-5 / MRR   +0.00 \[+0.0, +0.0\] / -0.004
+  CSAFE        hand        SIFT-VLAD, S2 same            fixed         top-5 / MRR   +0.00 \[+0.0, +0.0\] / +0.000
+  CSAFE        hand        SIFT-VLAD, S2 same            hard filter   top-5 / MRR   -31.25 \[-40.6, -21.9\] / -0.305
+  CSAFE        hand        SIFT-VLAD, S2 same            known         top-5 / MRR   +0.00 \[+0.0, +0.0\] / +0.002
+  CSAFE        hand        SIFT-VLAD, S2 same            nested        top-5 / MRR   +0.00 \[+0.0, +0.0\] / -0.000
+  CSAFE        hand        SIFT-VLAD, S2 different       fixed         top-5 / MRR   +0.00 \[+0.0, +0.0\] / -0.005
+  CSAFE        hand        SIFT-VLAD, S2 different       hard filter   top-5 / MRR   -41.67 \[-52.1, -32.3\] / -0.407
+  CSAFE        hand        SIFT-VLAD, S2 different       known         top-5 / MRR   +0.00 \[+0.0, +0.0\] / +0.001
+  CSAFE        hand        SIFT-VLAD, S2 different       nested        top-5 / MRR   +0.00 \[+0.0, +0.0\] / -0.005
+  CSAFE        hand        ViT-B/16, S2 same             fixed         top-5 / MRR   +0.00 \[+0.0, +0.0\] / -0.005
+  CSAFE        hand        ViT-B/16, S2 same             hard filter   top-5 / MRR   -25.00 \[-36.5, -14.6\] / -0.245
+  CSAFE        hand        ViT-B/16, S2 same             known         top-5 / MRR   +5.21 \[+1.0, +10.4\] / +0.039
+  CSAFE        hand        ViT-B/16, S2 same             nested        top-5 / MRR   -1.04 \[-3.1, +0.0\] / -0.010
+  CSAFE        hand        ViT-B/16, S2 different        fixed         top-5 / MRR   +2.08 \[-2.1, +6.2\] / -0.010
+  CSAFE        hand        ViT-B/16, S2 different        hard filter   top-5 / MRR   -30.21 \[-41.7, -18.8\] / -0.245
+  CSAFE        hand        ViT-B/16, S2 different        known         top-5 / MRR   +10.42 \[+5.2, +16.7\] / +0.075
+  CSAFE        hand        ViT-B/16, S2 different        nested        top-5 / MRR   +2.08 \[+0.0, +5.2\] / -0.004
+
+  : **Table S30.** Rank-based endpoints: changes in top-5 accuracy (percentage points) and mean reciprocal rank (MRR) from identity-only ranking, with conditional 95% hand-stratified writer-bootstrap intervals (CSAFE intervals shown for top-5). Unadjusted; descriptive.
+
+  Data         Attribute    ID features     Decisions   Units   Writers   Share, %           95% CI   Random, %
+  ------------ ------------ ------------- ----------- ------- --------- ---------- ---------------- -----------
+  BanglaHand   handedness   EffNet-B0           5,382   1,112        42       47.3   \[39.7, 54.9\]        51.2
+  BanglaHand   handedness   HC-183              6,788   1,398        42       41.3   \[32.5, 50.0\]        51.2
+  BanglaHand   handedness   ResNet-18           5,767   1,139        42       34.2   \[26.0, 43.3\]        51.2
+  BanglaHand   handedness   STROKE              2,787     437        41       53.2   \[37.0, 68.4\]        51.2
+  BanglaHand   handedness   Stroke-CNN          3,265     661        42       62.8   \[51.0, 73.3\]        51.2
+  BanglaHand   handedness   ViT-B/16            6,426   1,213        42       36.6   \[27.7, 46.4\]        51.2
+  CSAFE        gender       HC-183                 17      17        17       64.7   \[41.4, 87.9\]        47.7
+  CSAFE        gender       ResNet-18              18      18        17       33.3   \[16.7, 50.0\]        41.8
+  CSAFE        gender       SIFT-VLAD               4       4         4        0.0     \[0.0, 0.0\]        42.6
+  CSAFE        gender       STROKE                  9       9         8       33.3    \[7.1, 42.9\]        45.3
+  CSAFE        gender       ViT-B/16               22      22        20       31.8   \[13.6, 50.0\]        50.5
+  CSAFE        handedness   HC-183                 17      17        17       58.8   \[36.4, 82.9\]        50.5
+  CSAFE        handedness   ResNet-18              18      18        17       44.4   \[22.2, 66.7\]        50.5
+  CSAFE        handedness   SIFT-VLAD               4       4         4        0.0     \[0.0, 0.0\]        50.5
+  CSAFE        handedness   STROKE                  9       9         8       44.4    \[7.1, 85.7\]        50.5
+  CSAFE        handedness   ViT-B/16               22      22        20       36.4   \[18.2, 59.1\]        50.5
+
+  : **Table S31.** Sample sizes behind the within-group clustering result: queries whose true writer is outranked by exactly one impostor. BanglaHand decisions are query-unit/reference-configuration pairs pooled over the 20 settings per representation (units: distinct query units); CSAFE decisions pool both session-2 conditions. Share: fraction of sole outranking impostors in the opposite group, with 95% intervals (writer bootstrap for BanglaHand, decision bootstrap stratified by hand for CSAFE); Random: the expected share. CSAFE rows rest on few decisions and are descriptive.
+
+![**Figure S8.** Representation-specific utility on BanglaHand, averaging 20 settings and all 42 writers equally (moved from the main text). (a) Top-1 changes from identification without handedness. (b) Nested minus fixed fusion on a separate scale. Bars are marginal conditional 95% writer-bootstrap intervals with shared resampling across contrasts. Nested-fusion changes range from $-0.64$ to $+0.42$ points, while the oracle opportunity ranges from 2.6 (STROKE) to 7.6 points (HC-183).](assets/representation_utility.png){width="6.65in"}

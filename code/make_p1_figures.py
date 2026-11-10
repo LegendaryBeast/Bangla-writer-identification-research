@@ -245,9 +245,15 @@ def mechanism_figure():
     i = len(order) + .35
     c.plot([100 * C.ci95_lo, 100 * C.ci95_hi], [i, i], color='#4338CA', lw=1.4)
     c.plot([100 * C.j1_opposite_hand_share], [i], 's', ms=4.4, color='#4338CA', mec='white', mew=.5)
+    K = pd.read_csv(ROOT / 'results/p3_sweep_2026-11-09/cluster_counts.csv')
+    kb = K[(K.dataset == 'BanglaHand')].set_index('rep')
+    for k, r in enumerate(order):
+        c.text(87.5, k, f'{int(kb.loc[r, "units"]):,}', fontsize=6.2, color=MUTED, va='center', ha='right')
+    c.text(87.5, i, f'{int(C.n_decisions)}', fontsize=6.2, color=MUTED, va='center', ha='right')
+    c.text(87.5, -.62, 'n', fontsize=6.2, color=MUTED, va='bottom', ha='right', style='italic')
     c.set_yticks(list(yy) + [i], [NAMES[r] for r in order] + ['CSAFE (neural)'])
     c.set_ylim(i + .7, -.7); c.tick_params(axis='y', length=0)
-    c.set_xlim(20, 80); c.set_xlabel('Sole outranking impostor has\nopposite hand (%, 95% CI)')
+    c.set_xlim(20, 88); c.set_xticks([20, 40, 60, 80]); c.set_xlabel('Sole outranking impostor has\nopposite hand (%, 95% CI)')
     c.text(ref + 1.2, i + .62, 'random 51.2%', fontsize=6.8, color=MUTED, va='bottom')
     c.text(21.5, -.62, 'same-hand\nconfusion', fontsize=6.6, color='#B91C1C', va='top', linespacing=1.1)
     c.grid(axis='x', color=GRID, lw=.5)
@@ -394,6 +400,62 @@ def extensions_figure():
     save(fig, 'extensions')
 
 
+# --------------------------------------------------------------------------- Figure 4 (accuracy sweep)
+def sweep_figure():
+    P3 = ROOT / 'results/p3_sweep_2026-11-09'
+    B = pd.read_csv(P3 / 'banglahand_accuracy_sweep.csv')
+    C = pd.read_csv(P3 / 'csafe_accuracy_sweep.csv')
+    S = pd.read_csv(P3 / 'sweep_summary.csv')
+    N = pd.read_csv(ROOT / 'results/wid_fusion_robustness_2026-11-08/nested_writer_outcomes.csv')
+    I = pd.read_csv(ROOT / 'results/p2_extensions_2026-11-09/identification_summary.csv')
+    colors = dict(COLORS, sift_vlad='#4338CA')
+    names = dict(NAMES, sift_vlad='SIFT-VLAD')
+    fig = plt.figure(figsize=(7.15, 2.6))
+    a = fig.add_axes([.07, .2, .25, .66]); b = fig.add_axes([.39, .2, .25, .66]); c = fig.add_axes([.8, .2, .175, .66])
+    g = B[(B['query'] == 'own') & (B.n == 1) & (B.k == 1)]
+    for rep in NAMES:
+        x = g[g.rep == rep].sort_values('acc')
+        a.plot(100 * x.acc, 100 * (x.fused - x.base), color=colors[rep], lw=1.4)
+        piv = N[(N.rep == rep) & (N['query'] == 'own') & (N.n == 1) & (N.k == 1)].pivot_table(index='writer_id', columns='method', values='top1')
+        a.plot([65.5], [100 * (piv.fixed - piv['none']).mean()], 'o', ms=4.5, color=colors[rep], mec='white', mew=.5, zorder=4)
+    a.axvline(65.5, color='#6B7280', lw=.8, ls=(0, (3, 2))); a.axhline(0, color='#9CA3AF', lw=.7)
+    a.text(66.5, 11.2, 'achieved\n65.5%', fontsize=6.6, color=MUTED, va='top')
+    a.set(xlim=(50, 100), ylim=(-3, 12.5), xlabel='Simulated attribute accuracy (%)', ylabel='Fusion gain in top-1 (points)')
+    a.grid(color=GRID, lw=.5)
+    panel(a, 'a', 'BanglaHand, paragraph, k=1')
+    for rep in ('resnet18', 'vit_b_16', 'hc183', 'stroke', 'sift_vlad'):
+        x = C[(C.rep == rep) & (C.condition == 'S2_LND_r01')].sort_values('acc')
+        b.plot(100 * x.acc, 100 * (x.fused - x.base), color=colors[rep], lw=1.4, label=names[rep])
+        y = I[(I.attribute == 'handedness') & (I.rep == rep) & (I.condition == 'S2_LND_r01')].set_index('method').top1
+        b.plot([67.7], [y.fixed - y.identity_only], 'o', ms=4.5, color=colors[rep], mec='white', mew=.5, zorder=4)
+    b.axvline(67.7, color='#6B7280', lw=.8, ls=(0, (3, 2))); b.axhline(0, color='#9CA3AF', lw=.7)
+    b.text(68.7, 11.2, 'achieved\n67.7%', fontsize=6.6, color=MUTED, va='top')
+    b.set(xlim=(50, 100), ylim=(-6, 12.5), xlabel='Simulated attribute accuracy (%)')
+    b.grid(color=GRID, lw=.5)
+    handles = [Line2D([], [], color=colors[r], lw=1.6, label=names[r]) for r in list(NAMES) + ['sift_vlad']]
+    fig.legend(handles=handles, ncol=7, frameon=False, fontsize=6.8, loc='lower center', bbox_to_anchor=(.5, -.02),
+               handlelength=1.4, columnspacing=1.1)
+    panel(b, 'b', 'CSAFE, S2 same prompt')
+    T = S[S.oracle_gain > 0].copy()
+    order = [('BanglaHand', r) for r in NAMES] + [('CSAFE', r) for r in ('resnet18', 'vit_b_16', 'hc183', 'stroke')]
+    for i, (d, r) in enumerate(order):
+        t = T[(T.dataset == d) & (T.rep == r)]
+        c.plot([100 * t.acc_for_1pt.min(), 100 * t.acc_for_1pt.max()], [i - .13] * 2, color=colors[r], lw=1, alpha=.6)
+        c.plot([100 * t.acc_for_1pt.median()], [i - .13], 'o', ms=3.8, color=colors[r], mec='white', mew=.4)
+        c.plot([100 * t.acc_for_half_oracle.min(), 100 * t.acc_for_half_oracle.max()], [i + .13] * 2, color=colors[r], lw=1, alpha=.6)
+        c.plot([100 * t.acc_for_half_oracle.median()], [i + .13], 'D', ms=3.6, color=colors[r], mec='white', mew=.4)
+    c.axvspan(58, 69, color='#F3F4F6', lw=0, zorder=0)
+    c.set_yticks(range(len(order)), [('BH ' if d == 'BanglaHand' else 'CS ') + names[r] for d, r in order], fontsize=6.6)
+    c.set_ylim(len(order) - .5, -.6); c.tick_params(axis='y', length=0)
+    c.axhline(5.5, color='#D1D5DB', lw=.7)
+    c.set(xlim=(50, 101), xlabel='Required accuracy (%)'); c.set_xticks([60, 80, 100]); c.grid(axis='x', color=GRID, lw=.5)
+    c.legend(handles=[Line2D([], [], marker='o', lw=0, color='#4B5563', label='+1 point'),
+                      Line2D([], [], marker='D', lw=0, color='#4B5563', label='half of oracle')],
+             frameon=False, fontsize=6.6, loc='lower left', handletextpad=.2, borderaxespad=.1)
+    panel(c, 'c', 'Accuracy needed', x=-.62)
+    save(fig, 'sweep')
+
+
 def main():
     protocol_figure()
     precision_figure()
@@ -401,6 +463,7 @@ def main():
     label_controls_figure()
     csafe_figure()
     extensions_figure()
+    sweep_figure()
     print('wrote', [p.name for p in OUT.glob('*') if p.stem in ('protocol', 'precision', 'mechanism')])
 
 

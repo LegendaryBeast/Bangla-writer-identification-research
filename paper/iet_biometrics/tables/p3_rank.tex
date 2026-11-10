@@ -1,0 +1,72 @@
+{\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{longtable}{llllll}
+\caption{Rank-based endpoints: changes in top-5 accuracy (percentage points) and mean reciprocal rank (MRR) from identity-only ranking, with conditional 95\% hand-stratified writer-bootstrap intervals (CSAFE intervals shown for top-5). Unadjusted; descriptive.}\label{tab:rank}\\
+\toprule Data & Attribute & Setting & Rule & Metric & Change [95\% CI]\\\midrule
+\endfirsthead
+\toprule Data & Attribute & Setting & Rule & Metric & Change [95\% CI]\\\midrule
+\endhead
+BanglaHand & hand & all 120 settings & fixed & MRR & -0.003 [-0.018, +0.010] \\
+BanglaHand & hand & all 120 settings & nested & MRR & +0.001 [-0.008, +0.009] \\
+BanglaHand & hand & ResNet-18, paragraph, $k=1$ & fixed & MRR & -0.004 [-0.027, +0.016] \\
+BanglaHand & hand & ResNet-18, paragraph, $k=1$ & nested & MRR & +0.001 [-0.012, +0.012] \\
+BanglaHand & hand & ResNet-18, quarter, $k=6$ & fixed & MRR & -0.010 [-0.028, +0.008] \\
+BanglaHand & hand & ResNet-18, quarter, $k=6$ & nested & MRR & -0.003 [-0.014, +0.007] \\
+BanglaHand & hand & ViT-B/16, paragraph, $k=1$ & fixed & MRR & -0.001 [-0.022, +0.017] \\
+BanglaHand & hand & ViT-B/16, paragraph, $k=1$ & nested & MRR & +0.008 [-0.002, +0.018] \\
+BanglaHand & hand & ViT-B/16, quarter, $k=6$ & fixed & MRR & -0.003 [-0.024, +0.017] \\
+BanglaHand & hand & ViT-B/16, quarter, $k=6$ & nested & MRR & -0.002 [-0.018, +0.013] \\
+BanglaHand & hand & all 120 settings & known & top-5 & +8.04 [+7.07, +9.11] \\
+BanglaHand & hand & all 120 settings & fixed & top-5 & +0.03 [-1.45, +1.34] \\
+BanglaHand & hand & all 120 settings & hard filter & top-5 & -20.43 [-27.13, -14.13] \\
+\midrule
+CSAFE & gender & ResNet-18, S2 same & fixed & top-5 / MRR & -4.17 [-8.3, -1.0] / -0.009 \\
+CSAFE & gender & ResNet-18, S2 same & hard filter & top-5 / MRR & -27.08 [-36.5, -17.7] / -0.209 \\
+CSAFE & gender & ResNet-18, S2 same & known & top-5 / MRR & +3.12 [+0.0, +7.3] / +0.052 \\
+CSAFE & gender & ResNet-18, S2 same & nested & top-5 / MRR & +0.00 [+0.0, +0.0] / +0.005 \\
+CSAFE & gender & ResNet-18, S2 different & fixed & top-5 / MRR & +3.12 [-2.1, +8.3] / -0.025 \\
+CSAFE & gender & ResNet-18, S2 different & hard filter & top-5 / MRR & -23.96 [-35.4, -12.5] / -0.226 \\
+CSAFE & gender & ResNet-18, S2 different & known & top-5 / MRR & +8.33 [+3.1, +14.6] / +0.059 \\
+CSAFE & gender & ResNet-18, S2 different & nested & top-5 / MRR & +4.17 [+1.0, +8.3] / -0.003 \\
+CSAFE & gender & SIFT-VLAD, S2 same & fixed & top-5 / MRR & +0.00 [+0.0, +0.0] / -0.005 \\
+CSAFE & gender & SIFT-VLAD, S2 same & hard filter & top-5 / MRR & -32.29 [-41.7, -22.9] / -0.318 \\
+CSAFE & gender & SIFT-VLAD, S2 same & known & top-5 / MRR & +0.00 [+0.0, +0.0] / +0.001 \\
+CSAFE & gender & SIFT-VLAD, S2 same & nested & top-5 / MRR & +0.00 [+0.0, +0.0] / -0.005 \\
+CSAFE & gender & SIFT-VLAD, S2 different & fixed & top-5 / MRR & +0.00 [+0.0, +0.0] / -0.002 \\
+CSAFE & gender & SIFT-VLAD, S2 different & hard filter & top-5 / MRR & -35.42 [-44.8, -26.0] / -0.341 \\
+CSAFE & gender & SIFT-VLAD, S2 different & known & top-5 / MRR & +0.00 [+0.0, +0.0] / +0.001 \\
+CSAFE & gender & SIFT-VLAD, S2 different & nested & top-5 / MRR & +0.00 [+0.0, +0.0] / +0.000 \\
+CSAFE & gender & ViT-B/16, S2 same & fixed & top-5 / MRR & -2.08 [-6.2, +2.1] / -0.012 \\
+CSAFE & gender & ViT-B/16, S2 same & hard filter & top-5 / MRR & -28.12 [-38.5, -18.8] / -0.232 \\
+CSAFE & gender & ViT-B/16, S2 same & known & top-5 / MRR & +5.21 [+1.0, +10.4] / +0.063 \\
+CSAFE & gender & ViT-B/16, S2 same & nested & top-5 / MRR & +0.00 [+0.0, +0.0] / +0.000 \\
+CSAFE & gender & ViT-B/16, S2 different & fixed & top-5 / MRR & -1.04 [-5.2, +2.1] / -0.006 \\
+CSAFE & gender & ViT-B/16, S2 different & hard filter & top-5 / MRR & -28.12 [-38.5, -17.7] / -0.208 \\
+CSAFE & gender & ViT-B/16, S2 different & known & top-5 / MRR & +6.25 [+2.1, +11.5] / +0.067 \\
+CSAFE & gender & ViT-B/16, S2 different & nested & top-5 / MRR & -1.04 [-3.1, +0.0] / +0.002 \\
+CSAFE & hand & ResNet-18, S2 same & fixed & top-5 / MRR & +0.00 [-3.1, +3.1] / +0.012 \\
+CSAFE & hand & ResNet-18, S2 same & hard filter & top-5 / MRR & -27.08 [-37.5, -16.7] / -0.203 \\
+CSAFE & hand & ResNet-18, S2 same & known & top-5 / MRR & +3.12 [+0.0, +7.3] / +0.062 \\
+CSAFE & hand & ResNet-18, S2 same & nested & top-5 / MRR & +0.00 [-3.1, +3.1] / +0.011 \\
+CSAFE & hand & ResNet-18, S2 different & fixed & top-5 / MRR & +1.04 [-2.1, +4.2] / -0.030 \\
+CSAFE & hand & ResNet-18, S2 different & hard filter & top-5 / MRR & -29.17 [-39.6, -18.8] / -0.255 \\
+CSAFE & hand & ResNet-18, S2 different & known & top-5 / MRR & +9.38 [+4.2, +15.6] / +0.065 \\
+CSAFE & hand & ResNet-18, S2 different & nested & top-5 / MRR & +0.00 [+0.0, +0.0] / -0.004 \\
+CSAFE & hand & SIFT-VLAD, S2 same & fixed & top-5 / MRR & +0.00 [+0.0, +0.0] / +0.000 \\
+CSAFE & hand & SIFT-VLAD, S2 same & hard filter & top-5 / MRR & -31.25 [-40.6, -21.9] / -0.305 \\
+CSAFE & hand & SIFT-VLAD, S2 same & known & top-5 / MRR & +0.00 [+0.0, +0.0] / +0.002 \\
+CSAFE & hand & SIFT-VLAD, S2 same & nested & top-5 / MRR & +0.00 [+0.0, +0.0] / -0.000 \\
+CSAFE & hand & SIFT-VLAD, S2 different & fixed & top-5 / MRR & +0.00 [+0.0, +0.0] / -0.005 \\
+CSAFE & hand & SIFT-VLAD, S2 different & hard filter & top-5 / MRR & -41.67 [-52.1, -32.3] / -0.407 \\
+CSAFE & hand & SIFT-VLAD, S2 different & known & top-5 / MRR & +0.00 [+0.0, +0.0] / +0.001 \\
+CSAFE & hand & SIFT-VLAD, S2 different & nested & top-5 / MRR & +0.00 [+0.0, +0.0] / -0.005 \\
+CSAFE & hand & ViT-B/16, S2 same & fixed & top-5 / MRR & +0.00 [+0.0, +0.0] / -0.005 \\
+CSAFE & hand & ViT-B/16, S2 same & hard filter & top-5 / MRR & -25.00 [-36.5, -14.6] / -0.245 \\
+CSAFE & hand & ViT-B/16, S2 same & known & top-5 / MRR & +5.21 [+1.0, +10.4] / +0.039 \\
+CSAFE & hand & ViT-B/16, S2 same & nested & top-5 / MRR & -1.04 [-3.1, +0.0] / -0.010 \\
+CSAFE & hand & ViT-B/16, S2 different & fixed & top-5 / MRR & +2.08 [-2.1, +6.2] / -0.010 \\
+CSAFE & hand & ViT-B/16, S2 different & hard filter & top-5 / MRR & -30.21 [-41.7, -18.8] / -0.245 \\
+CSAFE & hand & ViT-B/16, S2 different & known & top-5 / MRR & +10.42 [+5.2, +16.7] / +0.075 \\
+CSAFE & hand & ViT-B/16, S2 different & nested & top-5 / MRR & +2.08 [+0.0, +5.2] / -0.004 \\
+\bottomrule
+\end{longtable}
+}
