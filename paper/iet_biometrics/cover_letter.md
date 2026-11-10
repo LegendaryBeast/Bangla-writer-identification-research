@@ -1,6 +1,6 @@
 ---
 title: Cover letter
-date: 9 November 2026
+date: 11 November 2026
 ---
 
 Editors, IET Biometrics
