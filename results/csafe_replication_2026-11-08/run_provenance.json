@@ -1,0 +1,44 @@
+{
+  "completed": true,
+  "protocol_sha256": "09f716f63c735a2f5645c69cbc1a0997512b41000288aa77558ce0c66963f02a",
+  "input_code_sha256": {
+    "code/run_csafe_replication.py": "aeeb53f6ba4c452459fbdb561e0db2954469700c4ffba400f3e843658b01a8fb",
+    "code/csafe_calibration.py": "8f1e21dfa7a0daedac6bfa6a7fd58ce42f7c27b8724860df166d6a7492711adf",
+    "code/run_wid_handedness.py": "a8c78865b5da672ce14faea0fb0101351f4ec46f0aea8cd7b75f1646ccb76fc0",
+    "code/revised_protocol.py": "18c6e99dcb434f0d4424db0226c52b0431fec23e29a1095e10088396bc525a66",
+    "code/run_nested_fusion.py": "ed3bf4daa13da870a492fa3b4fb28fce51849c8c808330d440d4a3fde515ef6d",
+    "results/csafe_replication_2026-11-08/protocol_v1_1.json": "09f716f63c735a2f5645c69cbc1a0997512b41000288aa77558ce0c66963f02a",
+    "results/csafe_replication_2026-11-08/units.csv": "15bc4eb579d2df0c6322b99adb086e81ac23eea1c2fdca8bf8b1f01ec5d78438",
+    "results/csafe_replication_2026-11-08/features.npz": "5db06523ef0870108782196e3adeb5edb1b8d87f8f407349bc6243e8f8a0c5d4"
+  },
+  "python": "3.13.9",
+  "sklearn": "1.7.2",
+  "seconds": 95.41288208961487,
+  "galleries": 21,
+  "sensitivity_galleries": 20,
+  "full_gallery_writers": 96,
+  "settings": 196,
+  "primary_tests": 8,
+  "representations": [
+    "resnet18",
+    "vit_b_16",
+    "hc183",
+    "stroke"
+  ],
+  "hand_models": [
+    "hc183",
+    "stroke",
+    "hc183_adj"
+  ],
+  "query_reference_image_overlap": false,
+  "query_reference_session_overlap": false,
+  "attribute_fit_sessions": [
+    1
+  ],
+  "query_sessions": [
+    2,
+    3
+  ],
+  "inference": "Conditional on fitted models and observed gallery; eight Holm-adjusted primary comparisons; remaining comparisons descriptive.",
+  "interpretation": "Independent-dataset, separate-page and cross-session evaluation with within-dataset refitting; not cross-dataset transfer of a Bangla-trained model."
+}

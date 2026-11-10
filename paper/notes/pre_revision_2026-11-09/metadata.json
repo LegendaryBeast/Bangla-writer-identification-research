@@ -1,0 +1,23 @@
+{
+  "title": "Handedness for Bangla writer identification: Oracle gains and predicted-attribute utility",
+  "authors": [
+    "Tanzim Hasan Prappo",
+    "M. Shahidur Rahman"
+  ],
+  "affiliation": "Department of Computer Science and Engineering, Shahjalal University of Science and Technology, Sylhet 3114, Bangladesh",
+  "abstract": "Attribute-classification accuracy can misrepresent the identification value of a soft biometric. We present a controlled framework separating oracle gains, prediction errors, evidence dependence and writer-associated information, and apply it to BanglaHand: 42 writers, six representations and 120 identification settings. Normalization uses selected gallery references only; query-handedness models exclude the queried writer from training and calibration. Known handedness improves top-1 accuracy by 6.1 percentage points, compared with 6.9 points for an expected known random partition. With query handedness predicted at 65.5\\% accuracy on self-chosen paragraphs, calibrated fixed-weight fusion changes identification accuracy by -0.6 points, properly nested learned weighting by -0.08, and hard filtering by -14.3. Neither fusion rule establishes a gain in the designated comparisons. Filtering and margin diagnostics explain how joint correctness and confidence affect ranking. Random writer labels expose writer-associated information in enrolled-writer attribute evaluation. An external CSAFE evaluation uses 96 writers and separate gallery/query capture sessions. Handedness accuracy is 67.7\\% for same-prompt and 58.3\\% for cross-prompt session-2 queries; none of eight primary fusion comparisons establishes a Holm-adjusted gain. Session-3 and gallery-subsample analyses provide secondary checks. The framework provides reusable controls for evaluating auxiliary attributes in biometric candidate ranking, helping researchers distinguish oracle opportunity from operational benefit and make fusion decisions using measured identification utility.",
+  "keywords": [
+    "Writer identification",
+    "Soft biometrics",
+    "Handedness",
+    "Bangla handwriting",
+    "Score fusion",
+    "Evaluation protocol"
+  ],
+  "ethics_source": "Author-supplied Data in Brief manuscript, page 6",
+  "ethics_statement": "Informed consent was obtained voluntarily from all participants before data collection. Handwriting samples use pseudonymous writer identifiers. Formal institutional ethical approval was not required under the policies of Shahjalal University of Science and Technology because data collection involved non-invasive, voluntary handwriting tasks with no personal or health identifiers recorded. Writers received an honorarium paid by the authors from personal funds.",
+  "new_experiments": true,
+  "new_datasets": true,
+  "external_dataset": "CSAFE Handwriting Database v2",
+  "framing": "Original controlled framework and title retained; CSAFE is external validation, not a paper-wide empirical-study reframing."
+}

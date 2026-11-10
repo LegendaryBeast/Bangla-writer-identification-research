@@ -1,0 +1,14 @@
+{
+  "script": "code/extract_csafe_sift_vlad.py",
+  "script_sha256": "ef62b1200f4d0ddbc9cebf375d9d8786d06e6811cf8b43dcc73448d539f55c9c",
+  "opencv": "5.0.0",
+  "pages_with_features": 576,
+  "codebook_pages": 192,
+  "descriptors_per_page_median": 4000,
+  "pca_dim": 64,
+  "clusters": 100,
+  "whitened_dim": 128,
+  "codebook_sample": 57600,
+  "seconds": 141.0,
+  "note": "Codebook, PCA and whitening fitted on session-1 repetition-2 pages only; no labels used."
+}

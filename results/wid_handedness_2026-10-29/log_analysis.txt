@@ -1,0 +1,183 @@
+5040 units, 42 writers, 39 invalid units
+  handedness hc183 n=1 done
+  handedness hc183 n=2 done
+  handedness hc183 n=4 done
+  handedness hc183 n=8 done
+  handedness hc183_adj n=1 done
+  handedness hc183_adj n=2 done
+  handedness hc183_adj n=4 done
+  handedness hc183_adj n=8 done
+  handedness stroke n=1 done
+  handedness stroke n=2 done
+  handedness stroke n=4 done
+  handedness stroke n=8 done
+hand_model  n   own  shared  writer_all_units
+     hc183  1 0.655   0.687             0.738
+     hc183  2 0.661   0.659             0.786
+     hc183  4 0.669   0.659             0.690
+     hc183  8 0.617   0.632             0.667
+ hc183_adj  1 0.619   0.567             0.619
+ hc183_adj  2 0.571   0.633             0.667
+ hc183_adj  4 0.609   0.586             0.667
+ hc183_adj  8 0.593   0.608             0.690
+    stroke  1 0.488   0.532             0.548
+    stroke  2 0.464   0.516             0.476
+    stroke  4 0.412   0.446             0.452
+    stroke  8 0.467   0.466             0.500
+  id stroke {'query': 'shared', 'n': 1, 'k': 5} queries=252 top1=1.000
+  id stroke {'query': 'own', 'n': 1, 'k': 1} queries=504 top1=0.927
+  id stroke {'query': 'own', 'n': 1, 'k': 2} queries=1260 top1=0.948
+  id stroke {'query': 'own', 'n': 1, 'k': 3} queries=1680 top1=0.951
+  id stroke {'query': 'own', 'n': 1, 'k': 6} queries=84 top1=0.952
+  id stroke {'query': 'shared', 'n': 2, 'k': 5} queries=504 top1=0.992
+  id stroke {'query': 'own', 'n': 2, 'k': 1} queries=1008 top1=0.886
+  id stroke {'query': 'own', 'n': 2, 'k': 2} queries=2520 top1=0.915
+  id stroke {'query': 'own', 'n': 2, 'k': 3} queries=3360 top1=0.925
+  id stroke {'query': 'own', 'n': 2, 'k': 6} queries=168 top1=0.929
+  id stroke {'query': 'shared', 'n': 4, 'k': 5} queries=1008 top1=0.960
+  id stroke {'query': 'own', 'n': 4, 'k': 1} queries=2010 top1=0.828
+  id stroke {'query': 'own', 'n': 4, 'k': 2} queries=5025 top1=0.866
+  id stroke {'query': 'own', 'n': 4, 'k': 3} queries=6700 top1=0.877
+  id stroke {'query': 'own', 'n': 4, 'k': 6} queries=335 top1=0.890
+  id stroke {'query': 'shared', 'n': 8, 'k': 5} queries=2008 top1=0.866
+  id stroke {'query': 'own', 'n': 8, 'k': 1} queries=3852 top1=0.687
+  id stroke {'query': 'own', 'n': 8, 'k': 2} queries=9630 top1=0.718
+  id stroke {'query': 'own', 'n': 8, 'k': 3} queries=12840 top1=0.725
+  id stroke {'query': 'own', 'n': 8, 'k': 6} queries=642 top1=0.727
+  id hc183 {'query': 'shared', 'n': 1, 'k': 5} queries=252 top1=0.845
+  id hc183 {'query': 'own', 'n': 1, 'k': 1} queries=504 top1=0.421
+  id hc183 {'query': 'own', 'n': 1, 'k': 2} queries=1260 top1=0.487
+  id hc183 {'query': 'own', 'n': 1, 'k': 3} queries=1680 top1=0.521
+  id hc183 {'query': 'own', 'n': 1, 'k': 6} queries=84 top1=0.571
+  id hc183 {'query': 'shared', 'n': 2, 'k': 5} queries=504 top1=0.673
+  id hc183 {'query': 'own', 'n': 2, 'k': 1} queries=1008 top1=0.356
+  id hc183 {'query': 'own', 'n': 2, 'k': 2} queries=2520 top1=0.434
+  id hc183 {'query': 'own', 'n': 2, 'k': 3} queries=3360 top1=0.481
+  id hc183 {'query': 'own', 'n': 2, 'k': 6} queries=168 top1=0.548
+  id hc183 {'query': 'shared', 'n': 4, 'k': 5} queries=1008 top1=0.424
+  id hc183 {'query': 'own', 'n': 4, 'k': 1} queries=2010 top1=0.232
+  id hc183 {'query': 'own', 'n': 4, 'k': 2} queries=5025 top1=0.273
+  id hc183 {'query': 'own', 'n': 4, 'k': 3} queries=6700 top1=0.301
+  id hc183 {'query': 'own', 'n': 4, 'k': 6} queries=335 top1=0.331
+  id hc183 {'query': 'shared', 'n': 8, 'k': 5} queries=2008 top1=0.258
+  id hc183 {'query': 'own', 'n': 8, 'k': 1} queries=3852 top1=0.156
+  id hc183 {'query': 'own', 'n': 8, 'k': 2} queries=9630 top1=0.183
+  id hc183 {'query': 'own', 'n': 8, 'k': 3} queries=12840 top1=0.194
+  id hc183 {'query': 'own', 'n': 8, 'k': 6} queries=642 top1=0.218
+  id resnet18 {'query': 'shared', 'n': 1, 'k': 5} queries=252 top1=0.968
+  id resnet18 {'query': 'own', 'n': 1, 'k': 1} queries=504 top1=0.617
+  id resnet18 {'query': 'own', 'n': 1, 'k': 2} queries=1260 top1=0.735
+  id resnet18 {'query': 'own', 'n': 1, 'k': 3} queries=1680 top1=0.774
+  id resnet18 {'query': 'own', 'n': 1, 'k': 6} queries=84 top1=0.833
+  id resnet18 {'query': 'shared', 'n': 2, 'k': 5} queries=504 top1=0.802
+  id resnet18 {'query': 'own', 'n': 2, 'k': 1} queries=1008 top1=0.438
+  id resnet18 {'query': 'own', 'n': 2, 'k': 2} queries=2520 top1=0.524
+  id resnet18 {'query': 'own', 'n': 2, 'k': 3} queries=3360 top1=0.558
+  id resnet18 {'query': 'own', 'n': 2, 'k': 6} queries=168 top1=0.601
+  id resnet18 {'query': 'shared', 'n': 4, 'k': 5} queries=1008 top1=0.634
+  id resnet18 {'query': 'own', 'n': 4, 'k': 1} queries=2010 top1=0.356
+  id resnet18 {'query': 'own', 'n': 4, 'k': 2} queries=5025 top1=0.407
+  id resnet18 {'query': 'own', 'n': 4, 'k': 3} queries=6700 top1=0.432
+  id resnet18 {'query': 'own', 'n': 4, 'k': 6} queries=335 top1=0.475
+  id resnet18 {'query': 'shared', 'n': 8, 'k': 5} queries=2008 top1=0.170
+  id resnet18 {'query': 'own', 'n': 8, 'k': 1} queries=3852 top1=0.101
+  id resnet18 {'query': 'own', 'n': 8, 'k': 2} queries=9630 top1=0.111
+  id resnet18 {'query': 'own', 'n': 8, 'k': 3} queries=12840 top1=0.114
+  id resnet18 {'query': 'own', 'n': 8, 'k': 6} queries=642 top1=0.118
+  id efficientnet_b0 {'query': 'shared', 'n': 1, 'k': 5} queries=252 top1=0.960
+  id efficientnet_b0 {'query': 'own', 'n': 1, 'k': 1} queries=504 top1=0.556
+  id efficientnet_b0 {'query': 'own', 'n': 1, 'k': 2} queries=1260 top1=0.625
+  id efficientnet_b0 {'query': 'own', 'n': 1, 'k': 3} queries=1680 top1=0.670
+  id efficientnet_b0 {'query': 'own', 'n': 1, 'k': 6} queries=84 top1=0.702
+  id efficientnet_b0 {'query': 'shared', 'n': 2, 'k': 5} queries=504 top1=0.748
+  id efficientnet_b0 {'query': 'own', 'n': 2, 'k': 1} queries=1008 top1=0.434
+  id efficientnet_b0 {'query': 'own', 'n': 2, 'k': 2} queries=2520 top1=0.500
+  id efficientnet_b0 {'query': 'own', 'n': 2, 'k': 3} queries=3360 top1=0.542
+  id efficientnet_b0 {'query': 'own', 'n': 2, 'k': 6} queries=168 top1=0.571
+  id efficientnet_b0 {'query': 'shared', 'n': 4, 'k': 5} queries=1008 top1=0.637
+  id efficientnet_b0 {'query': 'own', 'n': 4, 'k': 1} queries=2010 top1=0.335
+  id efficientnet_b0 {'query': 'own', 'n': 4, 'k': 2} queries=5025 top1=0.402
+  id efficientnet_b0 {'query': 'own', 'n': 4, 'k': 3} queries=6700 top1=0.436
+  id efficientnet_b0 {'query': 'own', 'n': 4, 'k': 6} queries=335 top1=0.493
+  id efficientnet_b0 {'query': 'shared', 'n': 8, 'k': 5} queries=2008 top1=0.169
+  id efficientnet_b0 {'query': 'own', 'n': 8, 'k': 1} queries=3852 top1=0.126
+  id efficientnet_b0 {'query': 'own', 'n': 8, 'k': 2} queries=9630 top1=0.146
+  id efficientnet_b0 {'query': 'own', 'n': 8, 'k': 3} queries=12840 top1=0.160
+  id efficientnet_b0 {'query': 'own', 'n': 8, 'k': 6} queries=642 top1=0.176
+  id vit_b_16 {'query': 'shared', 'n': 1, 'k': 5} queries=252 top1=0.964
+  id vit_b_16 {'query': 'own', 'n': 1, 'k': 1} queries=504 top1=0.687
+  id vit_b_16 {'query': 'own', 'n': 1, 'k': 2} queries=1260 top1=0.765
+  id vit_b_16 {'query': 'own', 'n': 1, 'k': 3} queries=1680 top1=0.801
+  id vit_b_16 {'query': 'own', 'n': 1, 'k': 6} queries=84 top1=0.833
+  id vit_b_16 {'query': 'shared', 'n': 2, 'k': 5} queries=504 top1=0.857
+  id vit_b_16 {'query': 'own', 'n': 2, 'k': 1} queries=1008 top1=0.490
+  id vit_b_16 {'query': 'own', 'n': 2, 'k': 2} queries=2520 top1=0.554
+  id vit_b_16 {'query': 'own', 'n': 2, 'k': 3} queries=3360 top1=0.578
+  id vit_b_16 {'query': 'own', 'n': 2, 'k': 6} queries=168 top1=0.613
+  id vit_b_16 {'query': 'shared', 'n': 4, 'k': 5} queries=1008 top1=0.648
+  id vit_b_16 {'query': 'own', 'n': 4, 'k': 1} queries=2010 top1=0.376
+  id vit_b_16 {'query': 'own', 'n': 4, 'k': 2} queries=5025 top1=0.420
+  id vit_b_16 {'query': 'own', 'n': 4, 'k': 3} queries=6700 top1=0.449
+  id vit_b_16 {'query': 'own', 'n': 4, 'k': 6} queries=335 top1=0.484
+  id vit_b_16 {'query': 'shared', 'n': 8, 'k': 5} queries=2008 top1=0.275
+  id vit_b_16 {'query': 'own', 'n': 8, 'k': 1} queries=3852 top1=0.172
+  id vit_b_16 {'query': 'own', 'n': 8, 'k': 2} queries=9630 top1=0.189
+  id vit_b_16 {'query': 'own', 'n': 8, 'k': 3} queries=12840 top1=0.203
+  id vit_b_16 {'query': 'own', 'n': 8, 'k': 6} queries=642 top1=0.235
+  id stroke_cnn {'query': 'shared', 'n': 1, 'k': 5} queries=252 top1=0.905
+  id stroke_cnn {'query': 'own', 'n': 1, 'k': 1} queries=504 top1=0.589
+  id stroke_cnn {'query': 'own', 'n': 1, 'k': 2} queries=1260 top1=0.683
+  id stroke_cnn {'query': 'own', 'n': 1, 'k': 3} queries=1680 top1=0.711
+  id stroke_cnn {'query': 'own', 'n': 1, 'k': 6} queries=84 top1=0.714
+  id stroke_cnn {'query': 'shared', 'n': 2, 'k': 5} queries=504 top1=0.677
+  id stroke_cnn {'query': 'own', 'n': 2, 'k': 1} queries=1008 top1=0.419
+  id stroke_cnn {'query': 'own', 'n': 2, 'k': 2} queries=2520 top1=0.494
+  id stroke_cnn {'query': 'own', 'n': 2, 'k': 3} queries=3360 top1=0.526
+  id stroke_cnn {'query': 'own', 'n': 2, 'k': 6} queries=168 top1=0.542
+  id stroke_cnn {'query': 'shared', 'n': 4, 'k': 5} queries=1008 top1=0.158
+  id stroke_cnn {'query': 'own', 'n': 4, 'k': 1} queries=2010 top1=0.105
+  id stroke_cnn {'query': 'own', 'n': 4, 'k': 2} queries=5025 top1=0.103
+  id stroke_cnn {'query': 'own', 'n': 4, 'k': 3} queries=6700 top1=0.106
+  id stroke_cnn {'query': 'own', 'n': 4, 'k': 6} queries=335 top1=0.107
+  id stroke_cnn {'query': 'shared', 'n': 8, 'k': 5} queries=2008 top1=0.042
+  id stroke_cnn {'query': 'own', 'n': 8, 'k': 1} queries=3852 top1=0.039
+  id stroke_cnn {'query': 'own', 'n': 8, 'k': 2} queries=9630 top1=0.041
+  id stroke_cnn {'query': 'own', 'n': 8, 'k': 3} queries=12840 top1=0.039
+  id stroke_cnn {'query': 'own', 'n': 8, 'k': 6} queries=642 top1=0.040
+  simulation stroke {'query': 'own', 'n': 1, 'k': 1} done
+  simulation stroke {'query': 'own', 'n': 4, 'k': 6} done
+  simulation stroke {'query': 'own', 'n': 1, 'k': 6} done
+  simulation stroke {'query': 'shared', 'n': 4, 'k': 5} done
+  simulation hc183 {'query': 'own', 'n': 1, 'k': 1} done
+  simulation hc183 {'query': 'own', 'n': 4, 'k': 6} done
+  simulation hc183 {'query': 'own', 'n': 1, 'k': 6} done
+  simulation hc183 {'query': 'shared', 'n': 4, 'k': 5} done
+  simulation resnet18 {'query': 'own', 'n': 1, 'k': 1} done
+  simulation resnet18 {'query': 'own', 'n': 4, 'k': 6} done
+  simulation resnet18 {'query': 'own', 'n': 1, 'k': 6} done
+  simulation resnet18 {'query': 'shared', 'n': 4, 'k': 5} done
+  simulation efficientnet_b0 {'query': 'own', 'n': 1, 'k': 1} done
+  simulation efficientnet_b0 {'query': 'own', 'n': 4, 'k': 6} done
+  simulation efficientnet_b0 {'query': 'own', 'n': 1, 'k': 6} done
+  simulation efficientnet_b0 {'query': 'shared', 'n': 4, 'k': 5} done
+  simulation vit_b_16 {'query': 'own', 'n': 1, 'k': 1} done
+  simulation vit_b_16 {'query': 'own', 'n': 4, 'k': 6} done
+  simulation vit_b_16 {'query': 'own', 'n': 1, 'k': 6} done
+  simulation vit_b_16 {'query': 'shared', 'n': 4, 'k': 5} done
+  simulation stroke_cnn {'query': 'own', 'n': 1, 'k': 1} done
+  simulation stroke_cnn {'query': 'own', 'n': 4, 'k': 6} done
+  simulation stroke_cnn {'query': 'own', 'n': 1, 'k': 6} done
+  simulation stroke_cnn {'query': 'shared', 'n': 4, 'k': 5} done
+  prevalence stroke {'query': 'own', 'n': 1, 'k': 1} done
+  prevalence stroke {'query': 'own', 'n': 4, 'k': 6} done
+  prevalence hc183 {'query': 'own', 'n': 1, 'k': 1} done
+  prevalence hc183 {'query': 'own', 'n': 4, 'k': 6} done
+  prevalence resnet18 {'query': 'own', 'n': 1, 'k': 1} done
+  prevalence resnet18 {'query': 'own', 'n': 4, 'k': 6} done
+  prevalence efficientnet_b0 {'query': 'own', 'n': 1, 'k': 1} done
+  prevalence efficientnet_b0 {'query': 'own', 'n': 4, 'k': 6} done
+  prevalence vit_b_16 {'query': 'own', 'n': 1, 'k': 1} done
+  prevalence vit_b_16 {'query': 'own', 'n': 4, 'k': 6} done
+  prevalence stroke_cnn {'query': 'own', 'n': 1, 'k': 1} done
+  prevalence stroke_cnn {'query': 'own', 'n': 4, 'k': 6} done
+done in 8.9 min

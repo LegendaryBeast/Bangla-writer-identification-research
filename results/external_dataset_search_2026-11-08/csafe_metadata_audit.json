@@ -1,0 +1,18 @@
+{
+  "dataset": "CSAFE Handwriting Database v2",
+  "official_record": "https://doi.org/10.25380/iastate.10062203.v2",
+  "verified_survey_file": "surveydata_v2.csv",
+  "rows": 475,
+  "unique_writer_ids": 475,
+  "handedness_counts": {
+    "right": 423,
+    "left": 48,
+    "ambidextrous": 3,
+    "nan": 1
+  },
+  "documented_acquisition": "Three sessions at least three weeks apart; three prompts each copied three times per session.",
+  "binary_cohort_limit_before_image_quality_checks": 96,
+  "source_of_counts": "Downloaded official survey CSV; not inferred from earlier 90-writer paper.",
+  "performance_not_tested": true,
+  "selection_basis": "Verified handedness, multiple source pages and capture sessions; no selection on classification accuracy."
+}

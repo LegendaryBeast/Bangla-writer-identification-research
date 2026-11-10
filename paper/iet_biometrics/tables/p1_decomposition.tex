@@ -1,0 +1,19 @@
+\begin{table}[ht]
+\caption{Decomposition of the known-hand minus random-partition gap by the number $j$ of impostors outranking the true writer (Eq.~\ref{eq:supdecomp}), in percentage points averaged over settings. The $j=1$ share is the writer-weighted fraction of queries with exactly one outranking impostor; the last column is the fraction of those impostors with the opposite hand, with conditional 95\% writer-bootstrap intervals. Random references: 51.2\% (BanglaHand) and 50.5\% (CSAFE). CSAFE rows average the two session-2 conditions; their $j=1$ shares pool decisions across conditions and representations.}\label{tab:decomposition}
+\centering\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrrrrr}\toprule
+Representation & Gap & $j=1$ & $j=2$ & $j=3$ & $j\geq4$ & $j=1$ share, \% & Opposite hand at $j=1$, \%\\\midrule
+STROKE & +0.11 & +0.07 & -0.07 & +0.12 & -0.02 & 3.7 & 53.2 [37.0, 68.4] \\
+HC-183 & -1.71 & -1.23 & -0.27 & -0.15 & -0.05 & 12.4 & 41.3 [32.5, 50.0] \\
+ResNet-18 & -2.06 & -1.71 & -0.52 & -0.02 & +0.20 & 10.0 & 34.2 [26.0, 43.3] \\
+EffNet-B0 & -0.74 & -0.40 & -0.08 & -0.15 & -0.10 & 10.4 & 47.3 [39.7, 54.9] \\
+ViT-B/16 & -0.35 & -1.59 & -0.08 & +0.15 & +1.17 & 10.9 & 36.6 [27.7, 46.4] \\
+Stroke-CNN & +0.07 & +0.96 & -0.36 & -0.28 & -0.26 & 8.3 & 62.8 [51.0, 73.3] \\
+\midrule
+All settings & -0.78 & -0.65 & -0.23 & -0.06 & +0.16 &  &  \\
+\midrule
+CSAFE, ResNet-18 and ViT-B/16 & -1.83 & -1.10 & -0.41 & -0.06 & -0.26 &  & 40.0 [27.0, 54.1] \\
+CSAFE, all four & -1.46 & -0.44 & -0.54 & -0.21 & -0.28 &  & 45.5 [34.2, 56.9] \\
+\bottomrule
+\end{tabular}
+\end{table}

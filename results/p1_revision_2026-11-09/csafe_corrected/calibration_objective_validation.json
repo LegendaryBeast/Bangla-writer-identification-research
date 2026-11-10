@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "reference_probability_max_difference": 2.2689239376205705e-11,
+  "raw_vs_transformed_objective_difference": 5.88418203051333e-15,
+  "large_offset_gradient": 1.1524735159251787e-11,
+  "constant_score_gradient": 0.0,
+  "test_code_sha256": "78952db5029d32df2fb57f7223dc8772fd35a94baeacda8b328aec82415688a1"
+}

@@ -1,0 +1,30 @@
+macro,displayed,unrounded,source,location
+rKnownGain,6.1,6.10748417346505,checks_effect_intervals.csv,Main results / Supplement S4
+rKnownLo,+5.1,5.1202927878455995,checks_effect_intervals.csv,Main results / Supplement S4
+rKnownHi,+7.1,7.13759389869366,checks_effect_intervals.csv,Main results / Supplement S4
+rFusionGain,-0.6,-0.56708391449533,checks_effect_intervals.csv,Main results / Supplement S4
+rFusionLo,-2.3,-2.32424673220854,checks_effect_intervals.csv,Main results / Supplement S4
+rFusionHi,+0.9,0.9206928383774101,checks_effect_intervals.csv,Main results / Supplement S4
+rFilterGain,-14.3,-14.288554449249599,checks_effect_intervals.csv,Main results / Supplement S4
+rFilterLo,-19.3,-19.30699495131456,checks_effect_intervals.csv,Main results / Supplement S4
+rFilterHi,-9.5,-9.54461832863162,checks_effect_intervals.csv,Main results / Supplement S4
+rOracleVsRandom,-0.8,-0.78086117316357,checks_effect_intervals.csv,Main results / Supplement S4
+rOracleVsRandomLo,-1.8,-1.7698560635790699,checks_effect_intervals.csv,Main results / Supplement S4
+rOracleVsRandomHi,+0.2,0.23284656425083,checks_effect_intervals.csv,Main results / Supplement S4
+rRandomKnownGain,6.9,6.88834534662863,checks_effect_intervals.csv,Abstract / Main results / Supplement S4
+rNestedGain,-0.08,-0.08145340292605,nested_effect_intervals.csv,Abstract / Main results / Supplement S8
+rNestedLo,-1.13,-1.1293591329664299,nested_effect_intervals.csv,Abstract / Main results / Supplement S8
+rNestedHi,+0.81,0.80774378686343,nested_effect_intervals.csv,Abstract / Main results / Supplement S8
+rNestedVsFixedGain,+0.49,0.48563051156927,nested_effect_intervals.csv,Abstract / Main results / Supplement S8
+rNestedVsFixedLo,-0.15,-0.14668352182417,nested_effect_intervals.csv,Abstract / Main results / Supplement S8
+rNestedVsFixedHi,+1.28,1.28246562381478,nested_effect_intervals.csv,Abstract / Main results / Supplement S8
+rHandShared,68.7,68.65079365079364,handedness_accuracy.csv,Main results / Supplement S5 and full numerical outputs
+rHandOwn,65.5,65.47619047619048,handedness_accuracy.csv,Main results / Supplement S5 and full numerical outputs
+rHandWriter,73.8,73.80952380952381,handedness_accuracy.csv,Main results / Supplement S5 and full numerical outputs
+rBothGain,+1.08,1.0824508796979,checks_both_own_effect.csv,Main exploratory result / Supplement S6
+rBothLo,+0.50,0.50435815872013,checks_both_own_effect.csv,Main exploratory result / Supplement S6
+rBothHi,+1.72,1.71654153362207,checks_both_own_effect.csv,Main exploratory result / Supplement S6
+rFixedRescued,2.02,2.02322475078428,margin_effect_intervals.csv,Main Discussion / Supplement S10
+rFixedDamaged,2.59,2.59030866527961,margin_effect_intervals.csv,Main Discussion / Supplement S10
+rNestedRescued,1.33,1.33499326676537,margin_effect_intervals.csv,Main Discussion / Supplement S10
+rNestedDamaged,1.42,1.41644666969143,margin_effect_intervals.csv,Main Discussion / Supplement S10

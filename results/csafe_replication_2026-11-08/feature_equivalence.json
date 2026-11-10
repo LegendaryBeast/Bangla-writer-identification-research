@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "device": "mps",
+  "samples": [
+    {
+      "image_id": "w0016_s01_pLND_r01",
+      "neural_comparison": true,
+      "max_absolute_difference": {
+        "hc183": 0.0,
+        "stroke": 0.0,
+        "global_intensity": 0.0,
+        "resnet18": 0.0,
+        "vit_b_16": 0.0
+      }
+    },
+    {
+      "image_id": "w0023_s01_pLND_r01",
+      "neural_comparison": true,
+      "max_absolute_difference": {
+        "hc183": 0.0,
+        "stroke": 0.0,
+        "global_intensity": 0.0,
+        "resnet18": 0.0,
+        "vit_b_16": 0.0
+      }
+    },
+    {
+      "image_id": "w0218_s01_pLND_r02",
+      "neural_comparison": false,
+      "max_absolute_difference": {
+        "hc183": 0.0,
+        "stroke": 0.0,
+        "global_intensity": 0.0
+      }
+    }
+  ],
+  "tolerance": {
+    "rtol": 1e-05,
+    "atol": 1e-06
+  },
+  "scope": "Original image_units n=1 followed by original float32 storage; one gallery sample per hand plus one prefetched auxiliary page. Unused EfficientNet stand-in excluded from comparison."
+}

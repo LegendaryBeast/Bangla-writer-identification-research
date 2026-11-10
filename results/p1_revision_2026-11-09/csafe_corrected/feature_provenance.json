@@ -1,0 +1,54 @@
+{
+  "code": {
+    "extract_csafe_features.py": "9211c50017135a8a05879ecaf4cbe1e9bc9a94a1562d71a30aa6bc0d444ca8ea",
+    "wid_features.py": "4b916218bcb91a5f8cca389af147687f6eb3d917b5b570fc54d449daa7f5222b",
+    "hc183.py": "3dd4071bfb5a8dbf29153e4d8c73a372a86627add621d18f8f2f92db5cb1d18a",
+    "stroke_features.py": "b45e573d6a44cb6992ac982ee99bee6380eae1e0e560af7270a6b74d148c3dba"
+  },
+  "checkpoints": {
+    "ResNet18_Weights.IMAGENET1K_V1": {
+      "file": "resnet18-f37072fd.pth",
+      "sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+      "url": "https://download.pytorch.org/models/resnet18-f37072fd.pth"
+    },
+    "ViT_B_16_Weights.IMAGENET1K_V1": {
+      "file": "vit_b_16-c867db91.pth",
+      "sha256": "c867db91d3e12c6cbadabb610d73c24a546bf82d8c03a9fea34f43a712ddb0e9",
+      "url": "https://download.pytorch.org/models/vit_b_16-c867db91.pth"
+    }
+  },
+  "manifest_sha256": "19c1bf0beb39b499dfe738175837e082d66e1ffeee96ec54b3d7f65f2487605a",
+  "neural_device": "mps",
+  "python": "3.13.9",
+  "torch": "2.14.0",
+  "torchvision": "0.29.0",
+  "device": "mps",
+  "threads": 4,
+  "n_images": 864,
+  "invalid_images": [],
+  "dimensions": {
+    "hc183": [
+      864,
+      183
+    ],
+    "stroke": [
+      864,
+      208
+    ],
+    "resnet18": [
+      864,
+      512
+    ],
+    "vit_b_16": [
+      864,
+      768
+    ],
+    "global_intensity": [
+      864,
+      7
+    ]
+  },
+  "seconds": 656.1928567886353,
+  "crop_policy": "Original provider-cropped handwriting pages; no demographic survey, filenames or printed headers supplied to descriptors.",
+  "preprocessing": "Original n=1 extraction applied to whole handwriting pages: HC-183 at 768px, STROKE at 1536px, ImageNet tiles at 1568px. Neural embeddings only for gallery/query pages; all six session-1 pages supply handcrafted auxiliary features."
+}

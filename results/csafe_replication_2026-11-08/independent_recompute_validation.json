@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "fresh_attribute_fits": true,
+  "supplied_attribute_cache_used": false,
+  "used_identical_frozen_features": true,
+  "all_nine_output_files_match_exactly": true,
+  "files": {
+    "id_summary.csv": true,
+    "writer_outcomes.csv.gz": true,
+    "selected_parameters.csv": true,
+    "lambda_loss_profiles.csv.gz": true,
+    "diagnostics.csv": true,
+    "handedness_summary.csv": true,
+    "paired_tests.csv": true,
+    "fitting_manifest.json": true,
+    "gallery_manifest.json": true
+  },
+  "scope": "Independent computational rerun in an extracted package; not another empirical dataset replication."
+}

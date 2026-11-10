@@ -1,0 +1,26 @@
+{
+  "selected_writers": 96,
+  "reported_days_after_enrolment": {
+    "s2_dae minus s1_dae": {
+      "nonmissing": 94,
+      "minimum": 18.0,
+      "median": 33.0,
+      "maximum": 252.0,
+      "nonpositive": 0
+    },
+    "s3_dae minus s1_dae": {
+      "nonmissing": 95,
+      "minimum": 42.0,
+      "median": 68.0,
+      "maximum": 272.0,
+      "nonpositive": 0
+    },
+    "s3_dae minus s2_dae": {
+      "nonmissing": 93,
+      "minimum": 19.0,
+      "median": 32.0,
+      "maximum": 211.0,
+      "nonpositive": 0
+    }
+  }
+}

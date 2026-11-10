@@ -1,0 +1,417 @@
+\begin{thebibliography}{52}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Jain et~al.(2004{\natexlab{a}})Jain, Dass, and
+  Nandakumar]{jain2004soft}
+A.~K. Jain, S.~C. Dass, and K.~Nandakumar.
+\newblock Soft biometric traits for personal recognition systems.
+\newblock In \emph{Biometric Authentication (ICBA 2004)}, volume 3072 of
+  \emph{Lecture Notes in Computer Science}, pages 731--738. Springer,
+  2004{\natexlab{a}}.
+\newblock \doi{10.1007/978-3-540-25948-0_99}.
+
+\bibitem[Jain et~al.(2004{\natexlab{b}})Jain, Nandakumar, Lu, and
+  Park]{jain2004integrating}
+A.~K. Jain, K.~Nandakumar, X.~Lu, and U.~Park.
+\newblock Integrating faces, fingerprints, and soft biometric traits for user
+  recognition.
+\newblock In \emph{Biometric Authentication (BioAW 2004)}, volume 3087 of
+  \emph{Lecture Notes in Computer Science}, pages 259--269. Springer,
+  2004{\natexlab{b}}.
+\newblock \doi{10.1007/978-3-540-25976-3_24}.
+
+\bibitem[Dantcheva et~al.(2016)Dantcheva, Elia, and Ross]{dantcheva2016soft}
+A.~Dantcheva, P.~Elia, and A.~Ross.
+\newblock What else does your biometric data reveal? {A} survey on soft
+  biometrics.
+\newblock \emph{IEEE Trans. Inf. Forensics Secur.}, 11\penalty0 (3):\penalty0
+  441--467, 2016.
+\newblock \doi{10.1109/TIFS.2015.2480381}.
+
+\bibitem[Nixon et~al.(2015)Nixon, Correia, Nasrollahi, Moeslund, Hadid, and
+  Tistarelli]{nixon2015soft}
+M.~S. Nixon, P.~L. Correia, K.~Nasrollahi, T.~B. Moeslund, A.~Hadid, and
+  M.~Tistarelli.
+\newblock On soft biometrics.
+\newblock \emph{Pattern Recognition Letters}, 68:\penalty0 218--230, 2015.
+\newblock \doi{10.1016/j.patrec.2015.08.006}.
+
+\bibitem[Liwicki et~al.(2011)Liwicki, Schlapbach, and Bunke]{liwicki2011gender}
+M.~Liwicki, A.~Schlapbach, and H.~Bunke.
+\newblock Automatic gender detection using on-line and off-line information.
+\newblock \emph{Pattern Anal. Appl.}, 14\penalty0 (1):\penalty0 87--92, 2011.
+\newblock \doi{10.1007/s10044-010-0178-6}.
+
+\bibitem[Siddiqi et~al.(2015)Siddiqi, Djeddi, Raza, and
+  Souici-Meslati]{siddiqi2015gender}
+I.~Siddiqi, C.~Djeddi, A.~Raza, and L.~Souici-Meslati.
+\newblock Automatic analysis of handwriting for gender classification.
+\newblock \emph{Pattern Anal. Appl.}, 18\penalty0 (4):\penalty0 887--899, 2015.
+\newblock \doi{10.1007/s10044-014-0371-0}.
+
+\bibitem[Bouadjenek et~al.(2016)Bouadjenek, Nemmour, and
+  Chibani]{bouadjenek2016soft}
+N.~Bouadjenek, H.~Nemmour, and Y.~Chibani.
+\newblock Robust soft-biometrics prediction from off-line handwriting analysis.
+\newblock \emph{Appl. Soft Comput.}, 46:\penalty0 980--990, 2016.
+\newblock \doi{10.1016/j.asoc.2015.10.021}.
+
+\bibitem[Al-Maadeed et~al.(2016)Al-Maadeed, Ferjani, Elloumi, and
+  Jaoua]{almaadeed2016handedness}
+S.~Al-Maadeed, F.~Ferjani, S.~Elloumi, and A.~Jaoua.
+\newblock A novel approach for handedness detection from off-line handwriting
+  using fuzzy conceptual reduction.
+\newblock \emph{EURASIP J. Image Video Process.}, 2016:\penalty0 1, 2016.
+\newblock \doi{10.1186/s13640-015-0097-y}.
+
+\bibitem[Morera et~al.(2018)Morera, S{\'a}nchez, V{\'e}lez, and
+  Moreno]{morera2018handedness}
+{\'A}.~Morera, {\'A}.~S{\'a}nchez, J.~F. V{\'e}lez, and A.~B. Moreno.
+\newblock Gender and handedness prediction from offline handwriting using
+  convolutional neural networks.
+\newblock \emph{Complexity}, 2018:\penalty0 3891624, 2018.
+\newblock \doi{10.1155/2018/3891624}.
+
+\bibitem[Rahmanian and Shayegan(2021)]{rahmanian2021handedness}
+M.~Rahmanian and M.~A. Shayegan.
+\newblock Handwriting-based gender and handedness classification using
+  convolutional neural networks.
+\newblock \emph{Multimed. Tools Appl.}, 80:\penalty0 35341--35364, 2021.
+\newblock \doi{10.1007/s11042-020-10170-7}.
+
+\bibitem[Bulacu and Schomaker(2007)]{bulacu2007text}
+M.~Bulacu and L.~Schomaker.
+\newblock Text-independent writer identification and verification using
+  textural and allographic features.
+\newblock \emph{IEEE Trans. Pattern Anal. Mach. Intell.}, 29\penalty0
+  (4):\penalty0 701--717, 2007.
+\newblock \doi{10.1109/TPAMI.2007.1009}.
+
+\bibitem[Schomaker et~al.(2007)Schomaker, Franke, and
+  Bulacu]{schomaker2007codebooks}
+L.~Schomaker, K.~Franke, and M.~Bulacu.
+\newblock Using codebooks of fragmented connected-component contours in
+  forensic and historic writer identification.
+\newblock \emph{Pattern Recognition Letters}, 28\penalty0 (6):\penalty0
+  719--727, 2007.
+\newblock \doi{10.1016/j.patrec.2006.08.005}.
+
+\bibitem[Kaufman et~al.(2012)Kaufman, Rosset, Perlich, and
+  Stitelman]{kaufman2012leakage}
+S.~Kaufman, S.~Rosset, C.~Perlich, and O.~Stitelman.
+\newblock Leakage in data mining: Formulation, detection, and avoidance.
+\newblock \emph{ACM Transactions on Knowledge Discovery from Data}, 6\penalty0
+  (4):\penalty0 15:1--15:21, 2012.
+\newblock \doi{10.1145/2382577.2382579}.
+
+\bibitem[Crawford et~al.(2020)Crawford, Ray, and
+  Carriquiry]{crawford2020database}
+A.~Crawford, A.~Ray, and A.~Carriquiry.
+\newblock A database of handwriting samples for applications in forensic
+  statistics.
+\newblock \emph{Data in Brief}, 28:\penalty0 105059, 2020.
+\newblock \doi{10.1016/j.dib.2019.105059}.
+
+\bibitem[Crawford et~al.(2026)Crawford, Ray, Carriquiry, Kruse, and
+  Peterson]{crawford2026csafe}
+A.~Crawford, A.~Ray, A.~Carriquiry, J.~Kruse, and M.~Peterson.
+\newblock {CSAFE} handwriting database.
+\newblock Iowa State University DataShare, version 2, 2026.
+\newblock \doi{10.25380/iastate.10062203.v2}.
+\newblock URL \url{https://doi.org/10.25380/iastate.10062203.v2}.
+\newblock Released 23 June 2026.
+
+\bibitem[Prappo et~al.(2026{\natexlab{a}})Prappo, Hassan, Ali, Dhar, and
+  Rahman]{banglahand2026data}
+T.~H. Prappo, S.~Hassan, S.~Ali, S.~N. Dhar, and M.~S. Rahman.
+\newblock {BanglaHand}: A dataset of handwritten paragraphs for
+  writer-independent handedness recognition.
+\newblock Mendeley Data, V1, 2026{\natexlab{a}}.
+\newblock \doi{10.17632/n4sjstdzfy.1}.
+
+\bibitem[Prappo et~al.(2026{\natexlab{b}})Prappo, Hassan, Ali, Dhar, and
+  Rahman]{prappo2026handedness}
+T.~H. Prappo, S.~Hassan, S.~Ali, S.~N. Dhar, and M.~S. Rahman.
+\newblock Writer-independent handedness identification from offline {Bangla}
+  handwriting under controlled acquisition.
+\newblock SSRN preprint, 2026{\natexlab{b}}.
+\newblock \doi{10.2139/ssrn.7662278}.
+\newblock URL \url{https://ssrn.com/abstract=7662278}.
+\newblock Posted 23 October 2026; not peer reviewed.
+
+\bibitem[Dantcheva et~al.(2011)Dantcheva, Velardo, D'Angelo, and
+  Dugelay]{dantcheva2011bag}
+A.~Dantcheva, C.~Velardo, A.~D'Angelo, and J.-L. Dugelay.
+\newblock Bag of soft biometrics for person identification: New trends and
+  challenges.
+\newblock \emph{Multimed. Tools Appl.}, 51\penalty0 (2):\penalty0 739--777,
+  2011.
+\newblock \doi{10.1007/s11042-010-0635-7}.
+
+\bibitem[Reid et~al.(2014)Reid, Nixon, and Stevenage]{reid2014comparative}
+D.~A. Reid, M.~S. Nixon, and S.~V. Stevenage.
+\newblock Soft biometrics; human identification using comparative descriptions.
+\newblock \emph{IEEE Trans. Pattern Anal. Mach. Intell.}, 36\penalty0
+  (6):\penalty0 1216--1228, 2014.
+\newblock \doi{10.1109/TPAMI.2013.219}.
+
+\bibitem[Park and Jain(2010)]{park2010soft}
+U.~Park and A.~K. Jain.
+\newblock Face matching and retrieval using soft biometrics.
+\newblock \emph{IEEE Trans. Inf. Forensics Secur.}, 5\penalty0 (3):\penalty0
+  406--415, 2010.
+\newblock \doi{10.1109/TIFS.2010.2049842}.
+
+\bibitem[Kittler et~al.(1998)Kittler, Hatef, Duin, and
+  Matas]{kittler1998combining}
+J.~Kittler, M.~Hatef, R.~P.~W. Duin, and J.~Matas.
+\newblock On combining classifiers.
+\newblock \emph{IEEE Trans. Pattern Anal. Mach. Intell.}, 20\penalty0
+  (3):\penalty0 226--239, 1998.
+\newblock \doi{10.1109/34.667881}.
+
+\bibitem[Ross and Jain(2003)]{ross2003fusion}
+A.~Ross and A.~Jain.
+\newblock Information fusion in biometrics.
+\newblock \emph{Pattern Recognition Letters}, 24\penalty0 (13):\penalty0
+  2115--2125, 2003.
+\newblock \doi{10.1016/S0167-8655(03)00079-5}.
+
+\bibitem[Jain et~al.(2005)Jain, Nandakumar, and Ross]{jain2005normalization}
+A.~Jain, K.~Nandakumar, and A.~Ross.
+\newblock Score normalization in multimodal biometric systems.
+\newblock \emph{Pattern Recognition}, 38\penalty0 (12):\penalty0 2270--2285,
+  2005.
+\newblock \doi{10.1016/j.patcog.2005.01.012}.
+
+\bibitem[Nandakumar et~al.(2008)Nandakumar, Chen, Dass, and
+  Jain]{nandakumar2008likelihood}
+K.~Nandakumar, Y.~Chen, S.~C. Dass, and A.~K. Jain.
+\newblock Likelihood ratio-based biometric score fusion.
+\newblock \emph{IEEE Trans. Pattern Anal. Mach. Intell.}, 30\penalty0
+  (2):\penalty0 342--347, 2008.
+\newblock \doi{10.1109/TPAMI.2007.70796}.
+
+\bibitem[Hassa{\"i}ne et~al.(2013)Hassa{\"i}ne, Al-Maadeed, Aljaam, and
+  Jaoua]{hassaine2013icdar}
+A.~Hassa{\"i}ne, S.~Al-Maadeed, J.~Aljaam, and A.~Jaoua.
+\newblock {ICDAR} 2013 competition on gender prediction from handwriting.
+\newblock In \emph{Proceedings of the 12th International Conference on Document
+  Analysis and Recognition (ICDAR)}, pages 1417--1421. IEEE, 2013.
+\newblock \doi{10.1109/ICDAR.2013.286}.
+
+\bibitem[Djeddi et~al.(2015)Djeddi, Al-Maadeed, Gattal, Siddiqi,
+  Souici-Meslati, and El~Abed]{djeddi2015icdar}
+C.~Djeddi, S.~Al-Maadeed, A.~Gattal, I.~Siddiqi, L.~Souici-Meslati, and
+  H.~El~Abed.
+\newblock {ICDAR2015} competition on multi-script writer identification and
+  gender classification using {`QUWI'} database.
+\newblock In \emph{Proceedings of the 13th International Conference on Document
+  Analysis and Recognition (ICDAR)}, pages 1191--1195. IEEE, 2015.
+\newblock \doi{10.1109/ICDAR.2015.7333949}.
+
+\bibitem[Illouz et~al.(2018)Illouz, David, and Netanyahu]{illouz2018gender}
+E.~Illouz, E.~O. David, and N.~S. Netanyahu.
+\newblock Handwriting-based gender classification using end-to-end deep neural
+  networks.
+\newblock In \emph{Artificial Neural Networks and Machine Learning (ICANN
+  2018)}, volume 11141 of \emph{Lecture Notes in Computer Science}, pages
+  613--621. Springer, 2018.
+
+\bibitem[Srihari et~al.(2002)Srihari, Cha, Arora, and
+  Lee]{srihari2002individuality}
+S.~N. Srihari, S.-H. Cha, H.~Arora, and S.~Lee.
+\newblock Individuality of handwriting.
+\newblock \emph{Journal of Forensic Sciences}, 47\penalty0 (4):\penalty0
+  856--872, 2002.
+
+\bibitem[Lowe(2004)]{lowe2004sift}
+D.~G. Lowe.
+\newblock Distinctive image features from scale-invariant keypoints.
+\newblock \emph{Int. J. Comput. Vis.}, 60\penalty0 (2):\penalty0 91--110, 2004.
+\newblock \doi{10.1023/B:VISI.0000029664.99615.94}.
+
+\bibitem[Arandjelovi{\'c} and Zisserman(2012)]{arandjelovic2012rootsift}
+R.~Arandjelovi{\'c} and A.~Zisserman.
+\newblock Three things everyone should know to improve object retrieval.
+\newblock In \emph{Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR)},
+  pages 2911--2918, 2012.
+\newblock \doi{10.1109/CVPR.2012.6248018}.
+
+\bibitem[J{\'e}gou et~al.(2010)J{\'e}gou, Douze, Schmid, and
+  P{\'e}rez]{jegou2010vlad}
+H.~J{\'e}gou, M.~Douze, C.~Schmid, and P.~P{\'e}rez.
+\newblock Aggregating local descriptors into a compact image representation.
+\newblock In \emph{Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR)},
+  pages 3304--3311, 2010.
+\newblock \doi{10.1109/CVPR.2010.5540039}.
+
+\bibitem[Christlein et~al.(2017{\natexlab{a}})Christlein, Bernecker, H{\"o}nig,
+  Maier, and Angelopoulou]{christlein2017gmm}
+V.~Christlein, D.~Bernecker, F.~H{\"o}nig, A.~Maier, and E.~Angelopoulou.
+\newblock Writer identification using {GMM} supervectors and exemplar-{SVMs}.
+\newblock \emph{Pattern Recognition}, 63:\penalty0 258--267,
+  2017{\natexlab{a}}.
+\newblock \doi{10.1016/j.patcog.2016.10.005}.
+
+\bibitem[Louloudis et~al.(2013)Louloudis, Gatos, Stamatopoulos, and
+  Papandreou]{louloudis2013icdar}
+G.~Louloudis, B.~Gatos, N.~Stamatopoulos, and A.~Papandreou.
+\newblock {ICDAR} 2013 competition on writer identification.
+\newblock In \emph{Proceedings of the 12th International Conference on Document
+  Analysis and Recognition (ICDAR)}, pages 1397--1401. IEEE, 2013.
+\newblock \doi{10.1109/ICDAR.2013.282}.
+
+\bibitem[Fiel and Sablatnig(2015)]{fiel2015cnn}
+S.~Fiel and R.~Sablatnig.
+\newblock Writer identification and retrieval using a convolutional neural
+  network.
+\newblock In \emph{Computer Analysis of Images and Patterns (CAIP 2015)},
+  volume 9257 of \emph{Lecture Notes in Computer Science}, pages 26--37.
+  Springer, 2015.
+\newblock \doi{10.1007/978-3-319-23117-4_3}.
+
+\bibitem[Christlein et~al.(2017{\natexlab{b}})Christlein, Gropp, Fiel, and
+  Maier]{christlein2017unsupervised}
+V.~Christlein, M.~Gropp, S.~Fiel, and A.~Maier.
+\newblock Unsupervised feature learning for writer identification and writer
+  retrieval.
+\newblock In \emph{2017 14th IAPR International Conference on Document Analysis
+  and Recognition (ICDAR)}, pages 991--997. IEEE, 2017{\natexlab{b}}.
+\newblock \doi{10.1109/ICDAR.2017.165}.
+
+\bibitem[He and Schomaker(2020)]{he2020fragnet}
+S.~He and L.~Schomaker.
+\newblock {FragNet}: Writer identification using deep fragment networks.
+\newblock \emph{IEEE Trans. Inf. Forensics Secur.}, 15:\penalty0 3013--3022,
+  2020.
+\newblock \doi{10.1109/TIFS.2020.2981236}.
+
+\bibitem[Chanda et~al.(2010)Chanda, Franke, Pal, and
+  Wakabayashi]{chanda2010bengali}
+S.~Chanda, K.~Franke, U.~Pal, and T.~Wakabayashi.
+\newblock Text independent writer identification for {Bengali} script.
+\newblock In \emph{Proceedings of the 20th International Conference on Pattern
+  Recognition (ICPR)}, pages 2005--2008. IEEE, 2010.
+\newblock \doi{10.1109/ICPR.2010.494}.
+
+\bibitem[Paul et~al.(2024)Paul, Dutta, Sarkar, Roy, and Das]{paul2024bangla}
+J.~Paul, K.~Dutta, A.~Sarkar, K.~Roy, and N.~Das.
+\newblock Writer verification using feature selection based on genetic
+  algorithm: A case study on handwritten {Bangla} dataset.
+\newblock \emph{ETRI Journal}, 46\penalty0 (4):\penalty0 648--659, 2024.
+\newblock \doi{10.4218/etrij.2023-0188}.
+
+\bibitem[Adak et~al.(2019)Adak, Chaudhuri, and
+  Blumenstein]{adak2019intravariable}
+C.~Adak, B.~B. Chaudhuri, and M.~Blumenstein.
+\newblock An empirical study on writer identification and verification from
+  intra-variable individual handwriting.
+\newblock \emph{IEEE Access}, 7:\penalty0 24738--24758, 2019.
+\newblock \doi{10.1109/ACCESS.2019.2899908}.
+
+\bibitem[Mridha et~al.(2021)Mridha, Ohi, Ali, Emon, and
+  Kabir]{mridha2021banglawriting}
+M.~F. Mridha, A.~Q. Ohi, M.~A. Ali, M.~I. Emon, and M.~M. Kabir.
+\newblock {BanglaWriting}: A multi-purpose offline {Bangla} handwriting
+  dataset.
+\newblock \emph{Data Brief}, 34:\penalty0 106633, 2021.
+\newblock \doi{10.1016/j.dib.2020.106633}.
+
+\bibitem[Majid and {Barney Smith}(2018)]{majid2018bangla}
+N.~Majid and E.~H. {Barney Smith}.
+\newblock Introducing the {Boise State Bangla Handwriting Dataset} and an
+  efficient offline recognizer of isolated {Bangla} characters.
+\newblock In \emph{2018 16th International Conference on Frontiers in
+  Handwriting Recognition (ICFHR)}, pages 380--385. IEEE, 2018.
+\newblock \doi{10.1109/ICFHR-2018.2018.00073}.
+
+\bibitem[Varma and Simon(2006)]{varma2006bias}
+S.~Varma and R.~Simon.
+\newblock Bias in error estimation when using cross-validation for model
+  selection.
+\newblock \emph{BMC Bioinformatics}, 7:\penalty0 91, 2006.
+\newblock \doi{10.1186/1471-2105-7-91}.
+
+\bibitem[Cawley and Talbot(2010)]{cawley2010selection}
+G.~C. Cawley and N.~L.~C. Talbot.
+\newblock On over-fitting in model selection and subsequent selection bias in
+  performance evaluation.
+\newblock \emph{J. Mach. Learn. Res.}, 11:\penalty0 2079--2107, 2010.
+\newblock URL \url{https://jmlr.org/papers/v11/cawley10a.html}.
+
+\bibitem[Gneiting and Raftery(2007)]{gneiting2007scoring}
+T.~Gneiting and A.~E. Raftery.
+\newblock Strictly proper scoring rules, prediction, and estimation.
+\newblock \emph{Journal of the American Statistical Association}, 102\penalty0
+  (477):\penalty0 359--378, 2007.
+\newblock \doi{10.1198/016214506000001437}.
+
+\bibitem[Guo et~al.(2017)Guo, Pleiss, Sun, and Weinberger]{guo2017calibration}
+C.~Guo, G.~Pleiss, Y.~Sun, and K.~Q. Weinberger.
+\newblock On calibration of modern neural networks.
+\newblock In \emph{Proceedings of the 34th International Conference on Machine
+  Learning}, volume~70 of \emph{Proceedings of Machine Learning Research},
+  pages 1321--1330, 2017.
+
+\bibitem[Lakens(2017)]{lakens2017equivalence}
+D.~Lakens.
+\newblock Equivalence tests: A practical primer for t tests, correlations, and
+  meta-analyses.
+\newblock \emph{Social Psychological and Personality Science}, 8\penalty0
+  (4):\penalty0 355--362, 2017.
+\newblock \doi{10.1177/1948550617697177}.
+
+\bibitem[He et~al.(2016)He, Zhang, Ren, and Sun]{he2016resnet}
+K.~He, X.~Zhang, S.~Ren, and J.~Sun.
+\newblock Deep residual learning for image recognition.
+\newblock In \emph{Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR)},
+  pages 770--778, 2016.
+\newblock \doi{10.1109/CVPR.2016.90}.
+
+\bibitem[Tan and Le(2019)]{tan2019efficientnet}
+M.~Tan and Q.~V. Le.
+\newblock {EfficientNet}: Rethinking model scaling for convolutional neural
+  networks.
+\newblock In \emph{Proc. 36th Int. Conf. Mach. Learn. (ICML)}, volume~97 of
+  \emph{Proc. Mach. Learn. Res.}, pages 6105--6114, 2019.
+
+\bibitem[Dosovitskiy et~al.(2021)Dosovitskiy, Beyer, Kolesnikov, Weissenborn,
+  Zhai, Unterthiner, Dehghani, Minderer, Heigold, Gelly, Uszkoreit, and
+  Houlsby]{dosovitskiy2021vit}
+A.~Dosovitskiy, L.~Beyer, A.~Kolesnikov, D.~Weissenborn, X.~Zhai,
+  T.~Unterthiner, M.~Dehghani, M.~Minderer, G.~Heigold, S.~Gelly, J.~Uszkoreit,
+  and N.~Houlsby.
+\newblock An image is worth 16x16 words: Transformers for image recognition at
+  scale.
+\newblock International Conference on Learning Representations (ICLR), 2021.
+\newblock URL \url{https://openreview.net/forum?id=YicbFdNTTy}.
+
+\bibitem[Platt(2000)]{platt1999probabilistic}
+J.~C. Platt.
+\newblock Probabilistic outputs for support vector machines and comparisons to
+  regularized likelihood methods.
+\newblock In A.~J. Smola, P.~Bartlett, B.~Sch{\"o}lkopf, and D.~Schuurmans,
+  editors, \emph{Advances in Large-Margin Classifiers}, pages 61--74. MIT
+  Press, Cambridge, MA, 2000.
+
+\bibitem[Holm(1979)]{holm1979simple}
+S.~Holm.
+\newblock A simple sequentially rejective multiple test procedure.
+\newblock \emph{Scandinavian Journal of Statistics}, 6\penalty0 (2):\penalty0
+  65--70, 1979.
+
+\bibitem[Ahmed et~al.(2026)Ahmed, Rahim, Zaman, Mian, Ahmed, and
+  Miah]{bdshwa2026}
+M.~R. Ahmed, M.~A. Rahim, M.~R. Zaman, R.-u.-H. Mian, M.~T. Ahmed, and A.~S.~M.
+  Miah.
+\newblock {BDSHWA}: {Bengali--English} online handwriting dataset for forensic
+  biometric analysis.
+\newblock Mendeley Data, V1, 2026.
+\newblock \doi{10.17632/99t9jhvksv.1}.
+
+\end{thebibliography}

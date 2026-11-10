@@ -1,0 +1,12 @@
+# Exact CSAFE replication environment: Python 3.13.9, macOS arm64; frozen neural features extracted with MPS
+numpy==2.3.5
+pandas==2.3.2
+scipy==1.16.3
+scikit-learn==1.7.2
+scikit-image==0.25.2
+joblib==1.5.2
+pillow==12.0.0
+matplotlib==3.10.6
+torch==2.14.0
+torchvision==0.29.0
+requests==2.32.5

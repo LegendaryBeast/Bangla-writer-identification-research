@@ -1,0 +1,170 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{jain2004soft}
+A.~K. Jain, S.~C. Dass, K.~Nandakumar, Soft biometric traits for personal
+  recognition systems, in: Biometric Authentication (ICBA 2004), Vol. 3072 of
+  Lecture Notes in Computer Science, Springer, 2004, pp. 731--738.
+\newblock \href {https://doi.org/10.1007/978-3-540-25948-0_99}
+  {\path{doi:10.1007/978-3-540-25948-0_99}}.
+
+\bibitem{dantcheva2016soft}
+A.~Dantcheva, P.~Elia, A.~Ross, What else does your biometric data reveal? {A}
+  survey on soft biometrics, IEEE Trans. Inf. Forensics Secur. 11~(3) (2016)
+  441--467.
+\newblock \href {https://doi.org/10.1109/TIFS.2015.2480381}
+  {\path{doi:10.1109/TIFS.2015.2480381}}.
+
+\bibitem{liwicki2011gender}
+M.~Liwicki, A.~Schlapbach, H.~Bunke, Automatic gender detection using on-line
+  and off-line information, Pattern Anal. Appl. 14~(1) (2011) 87--92.
+\newblock \href {https://doi.org/10.1007/s10044-010-0178-6}
+  {\path{doi:10.1007/s10044-010-0178-6}}.
+
+\bibitem{siddiqi2015gender}
+I.~Siddiqi, C.~Djeddi, A.~Raza, L.~Souici-Meslati, Automatic analysis of
+  handwriting for gender classification, Pattern Anal. Appl. 18~(4) (2015)
+  887--899.
+\newblock \href {https://doi.org/10.1007/s10044-014-0371-0}
+  {\path{doi:10.1007/s10044-014-0371-0}}.
+
+\bibitem{bouadjenek2016soft}
+N.~Bouadjenek, H.~Nemmour, Y.~Chibani, Robust soft-biometrics prediction from
+  off-line handwriting analysis, Appl. Soft Comput. 46 (2016) 980--990.
+\newblock \href {https://doi.org/10.1016/j.asoc.2015.10.021}
+  {\path{doi:10.1016/j.asoc.2015.10.021}}.
+
+\bibitem{almaadeed2016handedness}
+S.~Al-Maadeed, F.~Ferjani, S.~Elloumi, A.~Jaoua, A novel approach for
+  handedness detection from off-line handwriting using fuzzy conceptual
+  reduction, EURASIP J. Image Video Process. 2016 (2016) 1.
+\newblock \href {https://doi.org/10.1186/s13640-015-0097-y}
+  {\path{doi:10.1186/s13640-015-0097-y}}.
+
+\bibitem{morera2018handedness}
+{\'A}.~Morera, {\'A}.~S{\'a}nchez, J.~F. V{\'e}lez, A.~B. Moreno, Gender and
+  handedness prediction from offline handwriting using convolutional neural
+  networks, Complexity 2018 (2018) 3891624.
+\newblock \href {https://doi.org/10.1155/2018/3891624}
+  {\path{doi:10.1155/2018/3891624}}.
+
+\bibitem{rahmanian2021handedness}
+M.~Rahmanian, M.~A. Shayegan, Handwriting-based gender and handedness
+  classification using convolutional neural networks, Multimed. Tools Appl. 80
+  (2021) 35341--35364.
+\newblock \href {https://doi.org/10.1007/s11042-020-10170-7}
+  {\path{doi:10.1007/s11042-020-10170-7}}.
+
+\bibitem{bulacu2007text}
+M.~Bulacu, L.~Schomaker, Text-independent writer identification and
+  verification using textural and allographic features, IEEE Trans. Pattern
+  Anal. Mach. Intell. 29~(4) (2007) 701--717.
+\newblock \href {https://doi.org/10.1109/TPAMI.2007.1009}
+  {\path{doi:10.1109/TPAMI.2007.1009}}.
+
+\bibitem{schomaker2007codebooks}
+L.~Schomaker, K.~Franke, M.~Bulacu, Using codebooks of fragmented
+  connected-component contours in forensic and historic writer identification,
+  Pattern Recognition Letters 28~(6) (2007) 719--727.
+\newblock \href {https://doi.org/10.1016/j.patrec.2006.08.005}
+  {\path{doi:10.1016/j.patrec.2006.08.005}}.
+
+\bibitem{kaufman2012leakage}
+S.~Kaufman, S.~Rosset, C.~Perlich, O.~Stitelman, Leakage in data mining:
+  Formulation, detection, and avoidance, ACM Transactions on Knowledge
+  Discovery from Data 6~(4) (2012) 15:1--15:21.
+\newblock \href {https://doi.org/10.1145/2382577.2382579}
+  {\path{doi:10.1145/2382577.2382579}}.
+
+\bibitem{prappo2026handedness}
+T.~H. Prappo, S.~Hassan, S.~Ali, S.~N. Dhar, M.~S. Rahman,
+  \href{https://ssrn.com/abstract=7662278}{Writer-independent handedness
+  identification from offline {Bangla} handwriting under controlled
+  acquisition}, SSRN preprint, posted 23 October 2026; not peer reviewed
+  (2026).
+\newblock \href {https://doi.org/10.2139/ssrn.7662278}
+  {\path{doi:10.2139/ssrn.7662278}}.
+\newline\urlprefix\url{https://ssrn.com/abstract=7662278}
+
+\bibitem{banglahand2026data}
+T.~H. Prappo, S.~Hassan, S.~Ali, S.~N. Dhar, M.~S. Rahman, {BanglaHand}: A
+  dataset of handwritten paragraphs for writer-independent handedness
+  recognition, Mendeley Data, V1 (2026).
+\newblock \href {https://doi.org/10.17632/n4sjstdzfy.1}
+  {\path{doi:10.17632/n4sjstdzfy.1}}.
+
+\bibitem{hassaine2013icdar}
+A.~Hassa{\"i}ne, S.~Al-Maadeed, J.~Aljaam, A.~Jaoua, {ICDAR} 2013 competition
+  on gender prediction from handwriting, in: Proceedings of the 12th
+  International Conference on Document Analysis and Recognition (ICDAR), IEEE,
+  2013, pp. 1417--1421.
+\newblock \href {https://doi.org/10.1109/ICDAR.2013.286}
+  {\path{doi:10.1109/ICDAR.2013.286}}.
+
+\bibitem{mridha2021banglawriting}
+M.~F. Mridha, A.~Q. Ohi, M.~A. Ali, M.~I. Emon, M.~M. Kabir, {BanglaWriting}: A
+  multi-purpose offline {Bangla} handwriting dataset, Data Brief 34 (2021)
+  106633.
+\newblock \href {https://doi.org/10.1016/j.dib.2020.106633}
+  {\path{doi:10.1016/j.dib.2020.106633}}.
+
+\bibitem{majid2018bangla}
+N.~Majid, E.~H. {Barney Smith}, Introducing the {Boise State Bangla Handwriting
+  Dataset} and an efficient offline recognizer of isolated {Bangla} characters,
+  in: 2018 16th International Conference on Frontiers in Handwriting
+  Recognition (ICFHR), IEEE, 2018, pp. 380--385.
+\newblock \href {https://doi.org/10.1109/ICFHR-2018.2018.00073}
+  {\path{doi:10.1109/ICFHR-2018.2018.00073}}.
+
+\bibitem{paul2024bangla}
+J.~Paul, K.~Dutta, A.~Sarkar, K.~Roy, N.~Das, Writer verification using feature
+  selection based on genetic algorithm: A case study on handwritten {Bangla}
+  dataset, ETRI Journal 46~(4) (2024) 648--659.
+\newblock \href {https://doi.org/10.4218/etrij.2023-0188}
+  {\path{doi:10.4218/etrij.2023-0188}}.
+
+\bibitem{he2016resnet}
+K.~He, X.~Zhang, S.~Ren, J.~Sun, Deep residual learning for image recognition,
+  in: Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR), 2016, pp.
+  770--778.
+\newblock \href {https://doi.org/10.1109/CVPR.2016.90}
+  {\path{doi:10.1109/CVPR.2016.90}}.
+
+\bibitem{tan2019efficientnet}
+M.~Tan, Q.~V. Le, {EfficientNet}: Rethinking model scaling for convolutional
+  neural networks, in: Proc. 36th Int. Conf. Mach. Learn. (ICML), Vol.~97 of
+  Proc. Mach. Learn. Res., 2019, pp. 6105--6114.
+
+\bibitem{dosovitskiy2021vit}
+A.~Dosovitskiy, L.~Beyer, A.~Kolesnikov, D.~Weissenborn, X.~Zhai,
+  T.~Unterthiner, M.~Dehghani, M.~Minderer, G.~Heigold, S.~Gelly, J.~Uszkoreit,
+  N.~Houlsby, \href{https://openreview.net/forum?id=YicbFdNTTy}{An image is
+  worth 16x16 words: Transformers for image recognition at scale},
+  International Conference on Learning Representations (ICLR) (2021).
+\newline\urlprefix\url{https://openreview.net/forum?id=YicbFdNTTy}
+
+\bibitem{platt1999probabilistic}
+J.~C. Platt, Probabilistic outputs for support vector machines and comparisons
+  to regularized likelihood methods, in: A.~J. Smola, P.~Bartlett,
+  B.~Sch{\"o}lkopf, D.~Schuurmans (Eds.), Advances in Large-Margin Classifiers,
+  MIT Press, Cambridge, MA, 2000, pp. 61--74.
+
+\bibitem{cawley2010selection}
+G.~C. Cawley, N.~L.~C. Talbot,
+  \href{https://jmlr.org/papers/v11/cawley10a.html}{On over-fitting in model
+  selection and subsequent selection bias in performance evaluation}, J. Mach.
+  Learn. Res. 11 (2010) 2079--2107.
+\newline\urlprefix\url{https://jmlr.org/papers/v11/cawley10a.html}
+
+\bibitem{bdshwa2026}
+M.~R. Ahmed, M.~A. Rahim, M.~R. Zaman, R.-u.-H. Mian, M.~T. Ahmed, A.~S.~M.
+  Miah, {BDSHWA}: {Bengali--English} online handwriting dataset for forensic
+  biometric analysis, Mendeley Data, V1 (2026).
+\newblock \href {https://doi.org/10.17632/99t9jhvksv.1}
+  {\path{doi:10.17632/99t9jhvksv.1}}.
+
+\end{thebibliography}

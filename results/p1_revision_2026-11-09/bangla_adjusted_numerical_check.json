@@ -1,0 +1,10 @@
+{
+  "max_abs_logit_diff_original_vs_archive": 2.220446049250313e-16,
+  "original_own_paragraph_accuracy": 0.6190476190476191,
+  "original_max_abs_raw": 7.135693271274471,
+  "stable_own_paragraph_accuracy": 0.6190476190476191,
+  "stable_max_abs_raw": 7.13556711388317,
+  "max_abs_logit_diff_stable_vs_original": 0.00039584187855623565,
+  "units_changing_predicted_hand": 0,
+  "note": "n=1 units only; identification-level adjusted-model results were not recomputed."
+}

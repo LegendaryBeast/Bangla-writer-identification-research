@@ -1,0 +1,11 @@
+# Assessment of the proposed methodological strengthening plan
+
+The supplied guide is a proposal; it states that it did not audit the supplement/source. It should not be read as evidence that every listed component is missing or completed. The user asked whether to add it; no new experiments were authorized by that question.
+
+- P0: the primary pipeline, current outcomes, valid-unit counts, numerical tables, nested exclusions and release manifests have been audited. Freezing full per-query score arrays would be a useful convenience but is not required for reproducing scores from frozen features, reference manifests and code.
+- P1: the current article already gives the exact filtering identity, covariance term and Frechet bounds. A controlled fixed-weighted-accuracy dependence plot is the clearest optional extension. It must be presented as synthetic feasibility/stress testing, not better observed handedness prediction or new probability theory. Unequal writer/unit weights and clustered errors constrain exactly attainable finite assignments.
+- P2: the current margin diagnostic, exact reconstruction of all 664,680 fixed/nested decisions, rescue/damage decomposition and conditional intervals provide its core. More confidence-by-margin stratification, group-level flips and hypothetical confidence allocation would be additions. A logit scale and relative fusion weight are ranking-equivalent under the binary known-gallery rule and must not be counted as independent mechanisms.
+- P3: this is a new study condition, valuable but not a repair that can be obtained by relabeling the existing both-sided diagnostic. Fourteen-writer evaluation galleries require identical matched baselines, new development-only selection and explicit differences in training population size. Results cannot be compared directly with the 42-writer accuracies, or called external validation.
+- P4: exact balanced random-partition expectation is already derived and implemented; the alternative combinatorial expression in the guide is equivalent.
+
+Recommendation: finalize the present focused submission and freeze release v1.6.0. If further work is chosen, prioritize one interpretable P1 figure; reserve P3 for a separately scoped extension. The current release does not include any unrun proposal as an empirical result.

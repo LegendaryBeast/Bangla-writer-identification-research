@@ -1,0 +1,21 @@
+{
+  "bootstrap": {
+    "B": 10000,
+    "seed": 20261109,
+    "scheme": "equal-hand-weight writer bootstrap; conditional on fitted models and gallery"
+  },
+  "bangla_mean_gap_known_minus_random_pts": -0.7808611731635732,
+  "bangla_mean_gap_by_j_pts": {
+    "j=1": -0.649651103103713,
+    "j=2": -0.2322162844670444,
+    "j=3": -0.056698886106498876,
+    "j>=4": 0.15770510051368317
+  },
+  "bangla_j1_known_rescue_mean": 0.44216061278769847,
+  "csafe_mean_gap_known_minus_random_pts": -1.4619112480601038,
+  "validation": {
+    "bangla_max_abs_error_vs_saved_partition_pts": 3.632649736573512e-13,
+    "csafe_max_abs_error_vs_saved_diagnostics_pts": 1.0658141036401503e-14
+  },
+  "note": "Margins are reported as a continuum; no equivalence margin was specified before seeing the data."
+}

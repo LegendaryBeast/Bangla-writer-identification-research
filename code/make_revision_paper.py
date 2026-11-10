@@ -61,6 +61,75 @@ def panel(ax, letter):
     ax.set_title(f'({letter})',loc='left',fontweight='bold',fontsize=9,pad=6)
 
 
+def make_performance_figure(S, T):
+    """Render the main performance figure from saved, unchanged estimates."""
+    def series(scenario, hm, method):
+        return S[(S.scenario==scenario)&(S.hand_model==hm)&(S.method==method)].set_index(KEY).top1
+    none=series('none','-','none')
+    known=series('oracle','-','filter')
+    fusion=series('query','hc183','bayes')
+    fig,axes=plt.subplots(1,3,figsize=(7.15,2.0),
+                          gridspec_kw={'width_ratios':[1,1,1.05]})
+    shown=['stroke','hc183','resnet18','vit_b_16']
+    styles=[(none,'-',1.35,'o'),(known,(0,(4,2)),1.05,None),
+            (fusion,(0,(1,1.5)),1.2,None)]
+    for ax,condition in zip(axes[:2],['query','reference']):
+        for rep in shown:
+            for ser,style,width,marker in styles:
+                vals=([ser.loc[(rep,'own',n,6)] for n in [1,2,4,8]]
+                      if condition=='query' else
+                      [ser.loc[(rep,'own',1,k)] for k in [1,2,3,6]])
+                ax.plot(range(4),100*np.array(vals),ls=style,color=COLORS[rep],
+                        linewidth=width,marker=marker,markersize=2.8,
+                        markeredgecolor='white',markeredgewidth=.3)
+        ax.set_ylim(0,103)
+        ax.set_yticks([0,25,50,75,100])
+        ax.set_xticks(range(4))
+        ax.set_axisbelow(True)
+        ax.grid(axis='y',color='#E5E7EB',linewidth=.55)
+    axes[0].set_xticklabels(['Full','1/2','1/4','1/8'])
+    axes[0].set_xlabel('Query fraction',labelpad=3)
+    axes[0].set_ylabel('Top-1 accuracy (%)',labelpad=4)
+    axes[1].set_xticklabels(['1','2','3','6'])
+    axes[1].set_xlabel('Gallery paragraphs',labelpad=3)
+    axes[1].tick_params(axis='y',labelleft=False)
+    rep_handles=[Line2D([],[],color=COLORS[r],lw=1.6) for r in shown]
+    method_handles=[Line2D([],[],color='#444444',ls=style,lw=width)
+                    for _,style,width,_ in styles]
+    fig.legend(rep_handles+method_handles,
+               [NAMES[r] for r in shown]+['Identity only','Known hand','Fixed fusion'],
+               loc='upper center',bbox_to_anchor=(.53,1.01),ncol=7,
+               frameon=False,fontsize=7.5,handlelength=1.8,handletextpad=.4,
+               columnspacing=.95)
+    P=T[T.primary].sort_values(['n','rep']).reset_index(drop=True)
+    for j,p in P.iterrows():
+        if j%2==0:
+            axes[2].axhspan(j-.45,j+.45,color='#F4F6F8',zorder=0)
+        axes[2].errorbar(100*p.diff_top1,j,
+                        xerr=[[100*(p.diff_top1-p.ci_lo)],
+                              [100*(p.ci_hi-p.diff_top1)]],
+                        fmt='o',color=COLORS[p.rep],capsize=1.6,
+                        markersize=3.2,lw=.9,zorder=3)
+    axes[2].set_yticks(range(4),[
+        ('R18' if r.rep=='resnet18' else 'ViT')+
+        (': full' if r.n==1 else ': 1/4') for r in P.itertuples()])
+    axes[2].set_ylim(3.5,-.5)
+    axes[2].axvline(0,color='#8A919B',ls=(0,(2,2)),lw=.7,zorder=1)
+    axes[2].set_xlabel('Fusion gain (points)',labelpad=3)
+    axes[2].set_xlim(-5,4)
+    axes[2].set_xticks([-4,-2,0,2,4])
+    axes[2].tick_params(axis='y',length=0,pad=5)
+    axes[2].spines['left'].set_visible(False)
+    for ax,letter in zip(axes,'abc'):
+        panel(ax,letter)
+        ax.tick_params(axis='both',labelsize=7.5,width=.6,length=3)
+        ax.spines['bottom'].set_color('#8A919B')
+        ax.spines['left'].set_color('#8A919B')
+    axes[2].tick_params(axis='y',length=0)
+    fig.subplots_adjust(left=.075,right=.985,bottom=.22,top=.77,wspace=.58)
+    save(fig,'performance')
+
+
 def main():
     OUT.mkdir(exist_ok=True)
     S=pd.read_csv(RUN/'id_summary.csv')
@@ -182,29 +251,7 @@ def main():
     tabfile('table_all_settings.tex',rows,bottom=False)
 
     # Main figure: two difficulty panels and designated paired intervals.
-    fig,axes=plt.subplots(1,3,figsize=(7.15,2.5),gridspec_kw={'width_ratios':[1,1,1.05]})
-    shown=['stroke','hc183','resnet18','vit_b_16']
-    for ax,condition in zip(axes[:2],['query','reference']):
-        for rep in shown:
-            for ser,style in [(none,'-'),(known,'--'),(fusion,':')]:
-                vals=[ser.loc[(rep,'own',n,6)] for n in [1,2,4,8]] if condition=='query' else [ser.loc[(rep,'own',1,k)] for k in [1,2,3,6]]
-                ax.plot(range(4),100*np.array(vals),style,color=COLORS[rep],linewidth=1.3,marker='o',markersize=2)
-        ax.set_ylim(0,103);ax.set_xticks(range(4))
-        ax.grid(axis='y',alpha=.15)
-    axes[0].set_xticklabels(['Full','1/2','1/4','1/8']);axes[0].set_xlabel('Query fraction (six references)')
-    axes[0].set_ylabel('Top-1 accuracy (%)')
-    axes[1].set_xticklabels(['1','2','3','6']);axes[1].set_xlabel('Reference paragraphs (full query)')
-    axes[0].legend([Line2D([0],[0],color=COLORS[r],lw=1.5) for r in shown],[NAMES[r] for r in shown],loc='lower left',frameon=False,handlelength=1.3)
-    axes[1].legend([Line2D([0],[0],color='black',ls=s) for s in ['-','--',':']],['None','Known','Fusion'],loc='lower right',frameon=False,handlelength=1.5)
-    P=T[T.primary].sort_values(['n','rep']).reset_index(drop=True)
-    for j,p in P.iterrows():
-        axes[2].errorbar(100*p.diff_top1,j,xerr=np.array([[100*(p.diff_top1-p.ci_lo)],[100*(p.ci_hi-p.diff_top1)]]),fmt='o',color=COLORS[p.rep],capsize=2,markersize=3)
-    axes[2].set_yticks(range(4),[('R18' if r.rep=='resnet18' else 'ViT')+(' full' if r.n==1 else ' quarter') for r in P.itertuples()])
-    axes[2].invert_yaxis();axes[2].axvline(0,color='gray',ls=':',lw=.8)
-    axes[2].set_xlabel('Fusion minus none (points)');axes[2].set_xlim(-5,4)
-    for ax,l in zip(axes,'abc'):panel(ax,l)
-    fig.subplots_adjust(left=.085,right=.985,bottom=.24,top=.87,wspace=.6)
-    save(fig,'performance')
+    make_performance_figure(S,T)
 
     fig,axes=plt.subplots(1,3,figsize=(7.15,2.7),gridspec_kw={'width_ratios':[1.1,1.15,1]})
     hnames={'hc183':'HC-183','hc183_adj':'Adjusted HC-183','stroke':'STROKE','hc183_writerlevel':'HC-183 linked texts'}

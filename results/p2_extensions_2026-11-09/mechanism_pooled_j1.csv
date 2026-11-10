@@ -1,0 +1,3 @@
+attribute,reps,n_decisions,share,ci95_lo,ci95_hi,reference
+handedness,sift_vlad,4,0.0,0.0,0.0,0.5052631578947369
+gender,resnet18+vit_b_16+sift_vlad,44,0.29545454545454547,0.16279069767441862,0.45,0.46220095693779906

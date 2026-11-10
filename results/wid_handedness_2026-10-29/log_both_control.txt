@@ -1,0 +1,31 @@
+  pseudo split 0 trained (20s)
+  pseudo split 1 trained (37s)
+  pseudo split 2 trained (54s)
+  pseudo split 3 trained (73s)
+  pseudo split 4 trained (92s)
+  pseudo split 5 trained (110s)
+  pseudo split 6 trained (130s)
+  pseudo split 7 trained (151s)
+  pseudo split 8 trained (172s)
+  pseudo split 9 trained (193s)
+  pseudo split 10 trained (214s)
+  pseudo split 11 trained (233s)
+  pseudo split 12 trained (252s)
+  pseudo split 13 trained (274s)
+  pseudo split 14 trained (294s)
+  pseudo split 15 trained (314s)
+  pseudo split 16 trained (336s)
+  pseudo split 17 trained (356s)
+  pseudo split 18 trained (379s)
+  pseudo split 19 trained (400s)
+  stroke done (509s)
+  hc183 done (618s)
+  resnet18 done (760s)
+  efficientnet_b0 done (984s)
+  vit_b_16 done (1226s)
+  stroke_cnn done (1379s)
+      control  instances  hand_mean_gain  control_mean_gain  control_sd  control_q05  control_q95  p_ge_hand
+       pseudo         20          0.0095             0.0003      0.0002      -0.0000       0.0006     0.0476
+pseudo_scaled         20          0.0095             0.0021      0.0020      -0.0004       0.0050     0.0476
+       random        100          0.0095             0.0019      0.0020      -0.0010       0.0049     0.0099
+done in 23.0 min

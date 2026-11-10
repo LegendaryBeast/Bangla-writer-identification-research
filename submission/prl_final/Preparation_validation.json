@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "graphical_abstract_pixels": [
+    2760,
+    1104
+  ],
+  "source_sha256": {
+    "results/wid_revision_2026-11-08/checks_effect_intervals.csv": "4e3a407c4e727ab72e302d34a3078841bf6bd16009f1252f1f6e565a6c67d6c8",
+    "results/wid_fusion_robustness_2026-11-08/nested_effect_intervals.csv": "267deea95b9a95813abd1d2c0a13706db3e4eab68f9dc5708dba903233e234a6",
+    "submission/revised/PRL-authorship-and-formatting-official.pdf": "75141e40dbdd074349e310efb75fc51d4f40fb2c4b8f65fae81506d4fbebda4a",
+    "submission/prl_final/source/Publication_status.json": "98e9628241bc39b1133edd04385b7640e9a646a396de406469ff06e4524809f6",
+    "code/prepare_prl_submission.py": "e33a5724912c43d53a6068638ca4b507e47df81b6cc8c64de9ac206f896d3d79"
+  },
+  "files": {
+    "submission/prl_final/upload/Graphical_abstract.pdf": "28ed495d315a5b871f5b1257c6e543e50cd874b038890e02490c36aea43d5671",
+    "submission/prl_final/upload/Cover_letter.pdf": "f7df9bc78f6a7193f03a01015930136da18acd0c2a739303aff5021162c4f213",
+    "submission/prl_final/upload/Authorship_confirmation_form.pdf": "4ee3d84df40438166748981dd4f015c4d39a125423121346b0a5962d039a3d19"
+  },
+  "form_fields": [
+    "conference_history",
+    "corresponding_author",
+    "manuscript_preprints",
+    "republication_justification",
+    "signature",
+    "signature_date"
+  ],
+  "signature_reused": false,
+  "approval_recorded": false,
+  "scope": "Submission material generation and technical checks only; no new experiment or external submission."
+}

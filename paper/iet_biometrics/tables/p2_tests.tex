@@ -1,0 +1,24 @@
+\begin{table}[ht]
+\caption{The 16 pre-specified primary extension contrasts (fixed or nested fusion minus identity-only ranking, percentage points), with conditional 95\% writer-bootstrap intervals, the smallest equivalence margin supported by the 90\% interval, the number of writer decisions changed, and Holm-adjusted sign-flip $p$-values across all 16.}\label{tab:p2tests}
+\centering\footnotesize\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{lllrrrrrr}\toprule
+Attribute & ID features & Query & Fusion & Change & 95\% CI & $\Delta^*$ & Changed & Holm $p$\\\midrule
+Handedness & SIFT-VLAD & S2 same & Fixed & +0.00 & [+0.00, +0.00] & none changed & 0 & 1.000 \\
+Handedness & SIFT-VLAD & S2 same & Nested & +0.00 & [+0.00, +0.00] & none changed & 0 & 1.000 \\
+Handedness & SIFT-VLAD & S2 different & Fixed & -1.04 & [-3.12, +0.00] & 3.12 & 1 & 1.000 \\
+Handedness & SIFT-VLAD & S2 different & Nested & -1.04 & [-3.12, +0.00] & 3.12 & 1 & 1.000 \\
+Gender & ResNet-18 & S2 same & Fixed & -1.04 & [-6.25, +3.12] & 5.21 & 5 & 1.000 \\
+Gender & ResNet-18 & S2 same & Nested & +1.04 & [-2.08, +5.21] & 4.17 & 3 & 1.000 \\
+Gender & ResNet-18 & S2 different & Fixed & -4.17 & [-10.42, +1.04] & 9.38 & 8 & 1.000 \\
+Gender & ResNet-18 & S2 different & Nested & -1.04 & [-5.21, +2.08] & 4.17 & 3 & 1.000 \\
+Gender & ViT-B/16 & S2 same & Fixed & -2.08 & [-6.25, +2.08] & 5.21 & 4 & 1.000 \\
+Gender & ViT-B/16 & S2 same & Nested & +0.00 & [+0.00, +0.00] & none changed & 0 & 1.000 \\
+Gender & ViT-B/16 & S2 different & Fixed & +0.00 & [-5.21, +5.21] & 4.17 & 6 & 1.000 \\
+Gender & ViT-B/16 & S2 different & Nested & +0.00 & [+0.00, +0.00] & none changed & 0 & 1.000 \\
+Gender & SIFT-VLAD & S2 same & Fixed & -1.04 & [-3.12, +0.00] & 3.12 & 1 & 1.000 \\
+Gender & SIFT-VLAD & S2 same & Nested & -1.04 & [-3.12, +0.00] & 3.12 & 1 & 1.000 \\
+Gender & SIFT-VLAD & S2 different & Fixed & +0.00 & [+0.00, +0.00] & none changed & 0 & 1.000 \\
+Gender & SIFT-VLAD & S2 different & Nested & +0.00 & [+0.00, +0.00] & none changed & 0 & 1.000 \\
+\bottomrule
+\end{tabular}
+\end{table}

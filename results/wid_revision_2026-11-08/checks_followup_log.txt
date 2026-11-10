@@ -1,0 +1,13 @@
+            group  combinations      bias  bias_ci_lo  bias_ci_hi      mae  mae_ci_lo  mae_ci_hi  pooled_r  pooled_r_ci_lo  pooled_r_ci_hi
+          all_456           456 -0.009397   -0.020488    0.001445 0.014803   0.012681   0.024527  0.995588        0.987583        0.996614
+            hc183           120 -0.005729   -0.017552    0.005397 0.013010   0.010197   0.022314  0.996259        0.988754        0.997853
+        hc183_adj           120 -0.008650   -0.020759    0.002872 0.013991   0.010915   0.024248  0.995110        0.984086        0.997088
+hc183_writerlevel            96 -0.006033   -0.020784    0.008467 0.012209   0.011030   0.025547  0.997511        0.988698        0.998376
+           stroke           120 -0.016504   -0.031303   -0.001389 0.019481   0.013504   0.033168  0.991266        0.974388        0.994306
+            rep  cross_hand_share    ci_lo    ci_hi  uniform_wrong_writer_reference                                               interpretation
+efficientnet_b0          0.473995 0.418015 0.533534                        0.512195 Proximity to this reference does not establish independence.
+          hc183          0.423456 0.364553 0.487501                        0.512195 Proximity to this reference does not establish independence.
+       resnet18          0.437704 0.389341 0.484466                        0.512195 Proximity to this reference does not establish independence.
+         stroke          0.554181 0.436146 0.659559                        0.512195 Proximity to this reference does not establish independence.
+     stroke_cnn          0.524424 0.479828 0.570929                        0.512195 Proximity to this reference does not establish independence.
+       vit_b_16          0.446599 0.383645 0.509964                        0.512195 Proximity to this reference does not establish independence.

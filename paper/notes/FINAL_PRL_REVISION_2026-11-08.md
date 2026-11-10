@@ -1,0 +1,17 @@
+# Final focused PRL revision — version 1.5.0
+
+The user's final request was a framing/editing pass, technical consistency audit, graphical abstract, editor-facing cover letter and authorship confirmation in the previous paper's format, with the supplement kept separate and no additional experiments.
+
+The abstract, Introduction and Discussion now make the controlled downstream-utility framework the central contribution. Oracle opportunity, predictor errors, evidence dependence and writer-associated information are distinguished explicitly. Calibrated and nested fusion results remain scoped to the tested cohort and rules. Repeated background text was removed to preserve the seven-page limit. All empirical estimates are unchanged. The supplement remains fourteen pages and separate.
+
+The graphical abstract is deterministic vector artwork generated from the verified fixed/nested numerical outputs, including conditional writer intervals and the known random-partition control. No generated handwriting or copied imagery is used. PNG/TIFF previews and editable SVG accompany the vector PDF. Its source values are saved beside the artwork.
+
+The cover letter explains the methodological contribution and relevance to biometrics, document analysis and recognition pipelines, and explicitly distinguishes this article from the companion SSRN handedness preprint. It does not claim an independent replication or unrecorded final author approval.
+
+The user's supplied previous authorship document was inspected visually. It contained a signature/date and declarations for the companion paper. The new form instead uses the blank official template's first page, with the same wording/layout, manuscript-specific title and retained authors, and editable fields. The user confirmed no preprint or prior submission for this exact manuscript and referred to the previously provided preprint as the distinct companion. The new manuscript history fields are completed accordingly. Signature and date are blank; final coauthor approval is not recorded. The previous signature and date were not reused, and the previous signed file is not redistributed in the new archives.
+
+The current PRL guide was checked in the browser on 8 November 2026. It requires a separate graphical abstract at least 1,328 pixels wide, whereas the old template described the graphical abstract as optional. The current seven-page, institutional-email, separate-highlight and authorship-form requirements are reflected in the upload mapping. The dataset landing page and DOI were rechecked.
+
+The finalizer explicitly compares 29 displayed numerical quantities with the numerical sources supplying the supplement, checks all five graphical-abstract estimates and intervals, verifies all 23 compiled reference entries against citations, checks the author-form canonical fields and appearance streams, validates page counts/metadata and builds a CRC/hash-verified upload archive. The existing broader scientific and document audits remain separate. The archive builder now rejects changed PDFs if their hashes no longer match the current successful validation report. This prevents packaging a stale successful report after a later edit or failed audit.
+
+Final technical reports and the upload map are in `submission/prl_final/`. Main and supplementary sources, submission materials and full reproducibility outputs are also included in the version 1.5.0 source/reproducibility archives. No journal submission or external author communication occurred.

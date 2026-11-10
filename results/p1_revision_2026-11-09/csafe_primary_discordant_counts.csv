@@ -1,0 +1,9 @@
+condition,rep,method,rescued,damaged
+S2_LND_r01,resnet18,fixed_fusion_lambda1,4,3
+S2_LND_r01,resnet18,nested_fusion,4,3
+S2_LND_r01,vit_b_16,fixed_fusion_lambda1,1,3
+S2_LND_r01,vit_b_16,nested_fusion,1,3
+S2_WOZ_r01,resnet18,fixed_fusion_lambda1,0,5
+S2_WOZ_r01,resnet18,nested_fusion,0,0
+S2_WOZ_r01,vit_b_16,fixed_fusion_lambda1,0,1
+S2_WOZ_r01,vit_b_16,nested_fusion,0,1

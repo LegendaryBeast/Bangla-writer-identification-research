@@ -1,0 +1,13 @@
+\begin{table}[ht]
+\caption{Four designated BanglaHand settings (self-chosen queries). Entries are paired top-1 differences in percentage points with conditional 95\% writer-bootstrap intervals. Fixed and Nested are differences from no fusion. Holm adjustment covers the four fixed-fusion comparisons and, separately, the eight learned-weight comparisons (four settings, two comparators).}\label{tab:designated}
+\centering\footnotesize\setlength{\tabcolsep}{2.2pt}
+\begin{tabular}{llrrrrrr}\toprule
+ & & & Holm $p$ & & & \multicolumn{2}{c}{Holm $p$, nested vs}\\\cmidrule(lr){7-8}
+Query & Features & Fixed [95\% CI] & fixed & Nested [95\% CI] & Nested$-$fixed [95\% CI] & None & Fixed\\\midrule
+Paragraph, $k=1$ & ResNet-18 & -0.79 [-3.77, +1.79] & 1.000 & -0.20 [-2.18, +1.59] & +0.60 [-0.99, +2.38] & 1.000 & 1.000 \\
+Paragraph, $k=1$ & ViT-B/16 & +0.20 [-2.58, +2.78] & 1.000 & +1.19 [-0.40, +2.78] & +0.99 [-0.60, +2.78] & 1.000 & 1.000 \\
+Quarter, $k=6$ & ResNet-18 & -1.49 [-3.87, +0.89] & 1.000 & -0.89 [-2.68, +0.89] & +0.60 [-1.49, +2.98] & 1.000 & 1.000 \\
+Quarter, $k=6$ & ViT-B/16 & -0.30 [-3.57, +2.68] & 1.000 & -0.30 [-2.98, +1.79] & +0.00 [-1.49, +1.19] & 1.000 & 1.000 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,5 @@
+Oracle gains and predicted-attribute utility require separate evaluation.
+Calibrated and nested learned fusion show no established identification gain.
+Correct binary partitions benchmark the oracle benefit of handedness.
+Joint correctness and identity margins explain fusion benefits and failures.
+Random labels reveal writer-associated information in attribute prediction.
